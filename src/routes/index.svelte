@@ -5,25 +5,22 @@
     {
       slug: 'basic',
       title: 'Kadang Bingung Sama Manusia 1',
-      description: 'This is an Kadang Bingung Sama Manusia of a divider.',
     },
     {
       slug: 'basics',
       title: 'Kadang Bingung Sama Manusia 2',
-      description: 'This is an Kadang Bingung Sama Manusia of a divider with a custom color.',
     },
     {
       slug: 'basicd',
       title: 'Kadang Bingung Sama Manusia 3',
-      description: 'This is an Kadang Bingung Sama Manusia of a divider with a custom height.',
     },
   ];
 </script>
 
 <img src="/logo.jpg" alt="Logo" width="50" height="50" class="rounded-full shadow" decoding="async" loading="lazy" />
 
-<h1 class="mt-12 text-2xl mb-16">
-  Haii! Saya Kalwabed, seorang software engineer. <br />
+<h1 class="mt-12 text-xl md:text-2xl mb-16">
+  Haii! Saya Kalwabed, <br class="md:hidden" />seorang software engineer. <br />
   Sekarang lagi ngumpulin tulisan-tulisan saya yang berserakan ke sini.
 </h1>
 

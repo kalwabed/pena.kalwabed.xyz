@@ -19,7 +19,7 @@
 
 <div class="w-full flex-auto flex flex-col h-full">
   <TopNavigation />
-  <main class="w-full max-w-full md:max-w-screen-lg mx-auto flex flex-col mt-20">
+  <main class="w-full max-w-full md:max-w-screen-lg mx-auto flex flex-col mt-10 md:mt-20 p-4 md:p-0">
     <slot />
   </main>
   <Footer />
