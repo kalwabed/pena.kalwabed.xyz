@@ -1,7 +1,5 @@
 <script context="module" lang="ts">
   export async function load({ params }) {
-    console.log(params);
-
     return {
       props: {}
     };
