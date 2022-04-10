@@ -2,11 +2,9 @@
   import 'uno.css';
   import '@unocss/reset/tailwind.css';
 
-  import '@fontsource/yrsa/400.css';
-  import '@fontsource/yrsa/500.css';
-  import '@fontsource/yrsa/600.css';
+  import '@fontsource/open-sans/400.css';
+  import '@fontsource/open-sans/600.css';
   import '@fontsource/montserrat/400.css';
-  import '@fontsource/montserrat/500.css';
   import '@fontsource/montserrat/600.css';
 
   import TopNavigation from '$lib/components/TopNavigation.svelte';
@@ -27,7 +25,7 @@
 
 <style global>
   html {
-    font-family: Yrsa, serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
   html,

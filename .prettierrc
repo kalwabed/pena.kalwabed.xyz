@@ -3,5 +3,6 @@
   "printWidth": 120,
   "svelteAllowShorthand": true,
   "arrowParens": "avoid",
-  "singleQuote": true
+  "singleQuote": true,
+  "trailingComma": "none"
 }

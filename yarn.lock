@@ -35,10 +35,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.7.tgz#5fa342958655d3309eeae552a409f75a5453173f"
   integrity sha512-eROpR2P7faJpXtjPx7XGESSNJXT6zUKUnLuUalR8YRpAi7Z4Hg+++LSTRX2GItQDaQliScGapTW10cYunhQDiw==
 
-"@fontsource/yrsa@^4.5.8":
+"@fontsource/open-sans@^4.5.8":
   version "4.5.8"
-  resolved "https://registry.yarnpkg.com/@fontsource/yrsa/-/yrsa-4.5.8.tgz#4c8ea828eaff07063efa08a1ee9eefcca7d69c2d"
-  integrity sha512-avkVEUw9IX9uUllCo2RK1qG91wALY/t3WUVFrd2j/Nx/oRO6AZ6Nyh8XR9gn/ULtX0NF5v14nyDKfqrG2Wu2SQ==
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.8.tgz#31f727353e89ce886e1076bd58536834e0778fda"
+  integrity sha512-3b94XDdRLqL7OlE7OjWg/4pgG825Juw8PLVEDm6h5pio0gMU89ICxfatGxHsBxMGfqad+wnvdmUweZWlELDFpQ==
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
