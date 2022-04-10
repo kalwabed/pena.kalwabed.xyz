@@ -1,19 +1,39 @@
 <script lang="ts">
-  import 'uno.css'
-  import '@unocss/reset/tailwind.css'
+  import 'uno.css';
+  import '@unocss/reset/tailwind.css';
 
-  import '@fontsource/yrsa/400.css'
-  import '@fontsource/yrsa/500.css'
-  import '@fontsource/yrsa/600.css'
-  import '@fontsource/montserrat/400.css'
-  import '@fontsource/montserrat/600.css'
+  import '@fontsource/yrsa/400.css';
+  import '@fontsource/yrsa/500.css';
+  import '@fontsource/yrsa/600.css';
+  import '@fontsource/montserrat/400.css';
+  import '@fontsource/montserrat/500.css';
+  import '@fontsource/montserrat/600.css';
+
+  import TopNavigation from '$lib/components/TopNavigation.svelte';
+  import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<slot />
+<svelte:head>
+  <title>Pena Kalwabed</title>
+</svelte:head>
+
+<div class="w-full flex-auto flex flex-col h-full">
+  <TopNavigation />
+  <main class="w-full max-w-full md:max-w-screen-lg mx-auto flex flex-col mt-20">
+    <slot />
+  </main>
+  <Footer />
+</div>
 
 <style global>
   html {
     font-family: Yrsa, serif;
+  }
+
+  html,
+  body,
+  #svelte {
+    height: 100%;
   }
 
   h1,

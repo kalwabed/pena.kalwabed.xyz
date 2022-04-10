@@ -1,0 +1,7 @@
+{
+  "semi": true,
+  "printWidth": 120,
+  "svelteAllowShorthand": true,
+  "arrowParens": "avoid",
+  "singleQuote": true
+}
