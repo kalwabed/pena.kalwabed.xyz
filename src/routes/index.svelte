@@ -1,21 +1,22 @@
+<script context="module" lang="ts">
+  export async function load({ fetch }) {
+    const getPosts = await fetch('/api/posts.json');
+    const posts = await getPosts.json();
+
+    return {
+      props: {
+        posts
+      }
+    };
+  }
+</script>
+
 <script lang="ts">
   import Divider from '$lib/components/Divider.svelte';
   import PostList from '$lib/components/PostList.svelte';
+  import type { ResourceMetadata } from '$lib/utils/fetch-data';
 
-  const exampleData = [
-    {
-      slug: 'basic',
-      title: 'Kadang Bingung Sama Manusia 1'
-    },
-    {
-      slug: 'basics',
-      title: 'Kadang Bingung Sama Manusia 2'
-    },
-    {
-      slug: 'basicd',
-      title: 'Kadang Bingung Sama Manusia 3'
-    }
-  ];
+  export let posts: ResourceMetadata[];
 </script>
 
 <img src="/logo.jpg" alt="Logo" width="50" height="50" class="rounded-full shadow" decoding="async" loading="lazy" />
@@ -29,4 +30,4 @@
 
 <h2 class="text-3xl font-bold mt-16">🌅 Tulisan</h2>
 
-<PostList posts={exampleData} />
+<PostList {posts} />

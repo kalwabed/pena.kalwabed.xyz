@@ -1,8 +1,8 @@
 Arguments: 
-  /home/kalwabed/.fnm/node-versions/v16.13.1/installation/bin/node /tmp/fnm_multishells/30897_1649561026652/bin/yarn add @fontsource/droidsans
+  /home/kalwabed/.fnm/node-versions/v16.13.1/installation/bin/node /tmp/fnm_multishells/19908_1649637897650/bin/yarn add --dev @svelte/adapter-static
 
 PATH: 
-  /tmp/fnm_multishells/30897_1649561026652/bin:/home/kalwabed/.local/bin:/home/kalwabed/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/home/kalwabed/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/usr/local/go/bin:/home/kalwabed/.yarn/bin
+  /tmp/fnm_multishells/19908_1649637897650/bin:/home/kalwabed/.local/bin:/home/kalwabed/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/home/kalwabed/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/usr/local/go/bin:/home/kalwabed/.yarn/bin
 
 Yarn version: 
   1.22.18
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@fontsource%2fdroidsans: Not found
+  Error: https://registry.yarnpkg.com/@svelte%2fadapter-static: Not found
       at Request.params.callback [as _callback] (/home/kalwabed/.fnm/node-versions/v16.13.1/installation/lib/node_modules/yarn/lib/cli.js:66138:18)
       at Request.self.callback (/home/kalwabed/.fnm/node-versions/v16.13.1/installation/lib/node_modules/yarn/lib/cli.js:140883:22)
       at Request.emit (node:events:390:28)
@@ -59,7 +59,11 @@ npm manifest:
       "typescript": "~4.6.2",
       "unocss": "^0.30.12"
     },
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+      "@fontsource/montserrat": "^4.5.7",
+      "@fontsource/open-sans": "^4.5.8"
+    }
   }
 
 yarn manifest: 
@@ -97,6 +101,16 @@ Lockfile:
       js-yaml "^4.1.0"
       minimatch "^3.0.4"
       strip-json-comments "^3.1.1"
+  
+  "@fontsource/montserrat@^4.5.7":
+    version "4.5.7"
+    resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.7.tgz#5fa342958655d3309eeae552a409f75a5453173f"
+    integrity sha512-eROpR2P7faJpXtjPx7XGESSNJXT6zUKUnLuUalR8YRpAi7Z4Hg+++LSTRX2GItQDaQliScGapTW10cYunhQDiw==
+  
+  "@fontsource/open-sans@^4.5.8":
+    version "4.5.8"
+    resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.8.tgz#31f727353e89ce886e1076bd58536834e0778fda"
+    integrity sha512-3b94XDdRLqL7OlE7OjWg/4pgG825Juw8PLVEDm6h5pio0gMU89ICxfatGxHsBxMGfqad+wnvdmUweZWlELDFpQ==
   
   "@humanwhocodes/config-array@^0.9.2":
     version "0.9.5"

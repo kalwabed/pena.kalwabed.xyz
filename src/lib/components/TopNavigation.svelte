@@ -1,6 +1,5 @@
 <script>
   import { page, navigating } from '$app/stores';
-  import { onMount } from 'svelte';
 
   let breadcrumbs = [];
 

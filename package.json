@@ -13,8 +13,8 @@
     "lint": "eslint --ignore-path .gitignore ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "next",
+    "@sveltejs/adapter-static": "^1.0.0-next.29",
+    "@sveltejs/kit": "^1.0.0-next.310",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
     "@unocss/preset-typography": "^0.30.12",
@@ -23,7 +23,9 @@
     "@unocss/transformer-variant-group": "^0.30.12",
     "eslint": "^8.13.0",
     "eslint-plugin-svelte3": "^3.2.1",
-    "svelte": "^3.44.0",
+    "gray-matter": "^4.0.3",
+    "mdsvex": "^0.10.5",
+    "svelte": "^3.47.0",
     "svelte-check": "^2.2.6",
     "svelte-preprocess": "^4.10.1",
     "tslib": "^2.3.1",
