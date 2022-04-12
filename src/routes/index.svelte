@@ -21,10 +21,10 @@
 
 <img src="/logo.jpg" alt="Logo" width="50" height="50" class="rounded-full shadow" decoding="async" loading="lazy" />
 
-<h1 class="mt-12 text-xl md:text-2xl mb-16">
-  Haii! Saya Kalwabed, <br class="md:hidden" />seorang software engineer. <br />
+<p class="mt-12 text-xl md:text-2xl mb-16">
+  Hai! Saya Kalwabed, <br class="md:hidden" />seorang software engineer. <br />
   Sekarang lagi ngumpulin tulisan-tulisan saya yang berserakan ke sini.
-</h1>
+</p>
 
 <Divider />
 

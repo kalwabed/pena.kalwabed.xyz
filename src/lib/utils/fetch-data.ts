@@ -13,7 +13,7 @@ export interface ResourceMetadata {
 export type ResourceKind = 'posts';
 
 const POSTS = import.meta.glob('/src/routes/**/index.svx', {
-  assert: { type: 'raw' }
+  as: 'raw'
 });
 
 export const getResourcesAsync = async (kind: ResourceKind): Promise<ResourceMetadata[]> => {
