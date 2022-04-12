@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
   import { page, navigating } from '$app/stores';
+  import { fly } from 'svelte/transition';
 
   let breadcrumbs = [];
 
@@ -28,13 +29,14 @@
   <div class="link inline-flex items-center gap-1">
     {#each breadcrumbs as breadcrumb}
       <a
+        transition:fly={{ x: -10 }}
         href={breadcrumb.url}
         class="outline-none hover:bg-gray-200 focus:(ring ring-offset-2 ring-blue-500) transition p-0.5"
       >
         {breadcrumb.label}
       </a>
       {#if breadcrumb.url !== $page.url.pathname}
-        <span class="text-gray-500">/</span>
+        <span transition:fly={{ x: -10 }} class="text-gray-500">/</span>
       {/if}
     {/each}
   </div>
