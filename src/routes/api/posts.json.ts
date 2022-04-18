@@ -1,11 +1,10 @@
 import type { RequestEvent } from '@sveltejs/kit/types/private';
 
 import { getResourcesAsync } from '$lib/utils/fetch-data';
-import type { ResourceKind } from '$lib/utils/fetch-data';
 
-export async function get({ params, url: { searchParams: q } }: RequestEvent<{ kind: ResourceKind }>) {
+export async function get({ url: { searchParams: q } }: RequestEvent) {
   const limit = parseInt(q.get('limit'));
-  let items = await getResourcesAsync(params.kind);
+  let items = await getResourcesAsync();
 
   if (limit) items = items.slice(0, limit);
 

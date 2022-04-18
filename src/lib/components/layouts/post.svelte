@@ -4,16 +4,13 @@
   import { page } from '$app/stores';
   import redis from '$lib/providers/redis';
   import Divider from '../Divider.svelte';
+  import { tagSlugify } from '$lib/utils/slug';
 
   export let title = '';
   export let publishedAt = new Date();
   export let tags = [];
   export let updatedAt = new Date();
   let readCount = 0;
-
-  const tagSlugify = tag => {
-    return tag.toLowerCase().replace(/\s+/g, '-');
-  };
 
   const dateFormatter = date => {
     const currentDate = new Date(date);
@@ -34,7 +31,9 @@
 
   <header class="text-lg mt-2 mb-10 mx-auto flex flex-col gap-4">
     <div class="text-gray-500">
-      <a href="https://instagram.com/kalwabed" target="_blank" rel="noopener noreferrer">@kalwabed</a>
+      <a href="https://instagram.com/kalwabed" title="Instagram account" target="_blank" rel="noopener noreferrer"
+        >@kalwabed</a
+      >
       <span class="text-gray-500">/</span>
       <time datetime={new Date(publishedAt).toDateString()}>{dateFormatter(publishedAt)}</time>
     </div>

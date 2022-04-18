@@ -1,0 +1,56 @@
+---
+draft: false
+title: My impression on two border window manager
+publishedAt: 2020-04-01
+tags:
+  - linux
+  - window manager
+---
+
+# Introduction
+Hi everyone! This time I will talk about a (Neo)vim plugin called [Defx](https://github.com/airblade/defx.nvim). I've been looking for an alternative to [NERDTree](https://github.com/preservim/nerdtree) for quite a while now. I came across this plugin from a telegram channel called "Vim Indonesia". Since I have no project that I'm currently working on, why don't I give it a shot?
+
+# Installation
+The installation is pretty simple. You can add this plugin just like any other plugin from your plugin manager. I'm using [vim-plug](https://github.com/junegunn/vim-plug) as my plugin manager. To add a plugin, I would simply add this into my plugin list.
+
+# Spotify TUI
+## What Is Spotify Tui?
+Spotify TUI is a spotify client or frontend based on Terminal User Interface written in Rust. It's an awesome alternative for the official Spotify client.
+
+I like this software because it's lightweight and it's based on TUI which can be controlled fully with a keyboard. I also like its UI, it's simple and straight forward. For more details about this software, you can visit their [github page](https://github.com/Rigellute/spotify-tui).
+
+## Installation
+Installing spotify-tui is pretty straight forward. I use Arch so I can just use AUR. If you're on the other distro, check out their [readme](https://github.com/Rigellute/spotify-tui/blob/master/README.md) for installation.
+
+``` bash
+# yay
+$ yay -S spotify-tui
+
+# trizen
+$ trizen spotify-tui
+```
+
+After installing it, the executable binary is called `spt`. I got confused the first time I installed it because I missed the part where it says
+
+> The binary executable is `spt`
+
+So don't get confused when you type `spotify-tui` and nothing happens.
+
+## Authentication
+Spotify-tui needs to be authenticated by spotify. Don't worry though, it's super simple. Just run `spt` and fill out the needed field which are:
+
+- **Client ID**
+
+    Your spotify client ID which can be acquired from [Spotify Dashboard](https://developer.spotify.com/dashboard/applications) then click on `Create a Client iD`. Then go to `Edit Settings`, add `http://localhost:8888/callback` to Redirect URIs
+
+- **Client Secret**
+
+    Your spotify client secret which available on the same website as your spotify client ID.
+
+After filling those out, you will get redirected to Spotify website that ask for your permissions.
+
+## Configuration
+There's a lot of spotify-tui configuration which can make this post longer. I use the default configuration for it and satisfied enough. If you want to configure it yourself, please refer to [their guide](https://github.com/Rigellute/spotify-tui/blob/master/README.md#configuration).
+
+# Conclusion
+There we have it. Spotifyd + Spotify-tui. A Lightweight alternative for the official spotify client. Unfortunately, this setup doesn't support offline mode yet. I would really like to see this feature implemented. Huge thank you goes to the developers of spotifyd and spotify-tui. Anyway, thanks for reading my post and have a nice day!

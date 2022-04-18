@@ -1,7 +1,7 @@
 <script context="module" lang="ts">
   export async function load({ fetch }) {
     const getPosts = await fetch('/api/posts.json');
-    const posts = await getPosts.json();
+    const posts = (await getPosts.json()) as ResourceMetadata[];
 
     return {
       props: {

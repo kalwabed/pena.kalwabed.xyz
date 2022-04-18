@@ -10,16 +10,13 @@ export interface ResourceMetadata {
   draft: boolean;
   type: string;
 }
-export type ResourceKind = 'posts';
 
 const POSTS = import.meta.glob('/src/routes/**/index.svx', {
   as: 'raw'
 });
 
-export const getResourcesAsync = async (kind: ResourceKind): Promise<ResourceMetadata[]> => {
-  if (!kind) throw new Error('kind is required');
-
-  const validFiles = kind === 'posts' ? POSTS : [];
+export const getResourcesAsync = async (): Promise<ResourceMetadata[]> => {
+  const validFiles = POSTS ?? [];
   const fileMetadata = Object.keys(validFiles).map(async (filename): Promise<ResourceMetadata> => {
     const postContent = validFiles[filename] as string;
     const { data } = matter(postContent);
