@@ -1,6 +1,6 @@
 import matter from 'gray-matter';
 
-export interface ResourceMetadata {
+export interface Post {
   title: string;
   publishedAt: string;
   updatedAt: string;
@@ -15,15 +15,15 @@ const POSTS = import.meta.glob('/src/routes/**/index.svx', {
   as: 'raw'
 });
 
-export const getResourcesAsync = async (): Promise<ResourceMetadata[]> => {
+export const getResourcesAsync = async (): Promise<Post[]> => {
   const validFiles = POSTS ?? [];
-  const fileMetadata = Object.keys(validFiles).map(async (filename): Promise<ResourceMetadata> => {
+  const fileMetadata = Object.keys(validFiles).map(async (filename): Promise<Post> => {
     const postContent = validFiles[filename] as string;
     const { data } = matter(postContent);
     const slug = filename.replace(new RegExp('/src/routes/(.*)/index.svx'), '$1');
 
     return {
-      ...(data as ResourceMetadata),
+      ...(data as Post),
       slug
     };
   });

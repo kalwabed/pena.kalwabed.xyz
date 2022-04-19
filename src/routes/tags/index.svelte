@@ -1,7 +1,7 @@
 <script context="module" lang="ts">
   export async function load({ fetch }) {
     const getPosts = await fetch('/api/posts.json');
-    const posts = (await getPosts.json()) as ResourceMetadata[];
+    const posts = (await getPosts.json()) as Post[];
 
     const postsTag = [];
     posts.forEach(post => {
@@ -23,7 +23,7 @@
 </script>
 
 <script lang="ts">
-  import type { ResourceMetadata } from '$lib/utils/fetch-data';
+  import type { Post } from '$lib/utils/fetch-data';
   import { tagSlugify } from '$lib/utils/slug';
 
   export let tags;

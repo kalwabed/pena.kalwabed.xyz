@@ -1,10 +1,9 @@
 ---
 draft: false
-title: My impression on two border window manager
+title: Random things in my life
 publishedAt: 2020-04-01
 tags:
   - linux
-  - window manager
 ---
 
 # Introduction

@@ -1,7 +1,7 @@
 <script context="module" lang="ts">
   export async function load({ fetch }) {
     const getPosts = await fetch('/api/posts.json');
-    const posts = (await getPosts.json()) as ResourceMetadata[];
+    const posts = (await getPosts.json()) as Post[];
 
     return {
       props: {
@@ -14,9 +14,9 @@
 <script lang="ts">
   import Divider from '$lib/components/Divider.svelte';
   import PostList from '$lib/components/PostList.svelte';
-  import type { ResourceMetadata } from '$lib/utils/fetch-data';
+  import type { Post } from '$lib/utils/fetch-data';
 
-  export let posts: ResourceMetadata[];
+  export let posts: Post[];
 </script>
 
 <img src="/logo.jpg" alt="Logo" width="50" height="50" class="rounded-full shadow" decoding="async" loading="lazy" />

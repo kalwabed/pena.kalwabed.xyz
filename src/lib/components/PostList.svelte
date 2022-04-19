@@ -1,7 +1,7 @@
 <script lang="ts">
-  import type { ResourceMetadata } from '$lib/utils/fetch-data';
+  import type { Post } from '$lib/utils/fetch-data';
 
-  export let posts: ResourceMetadata[];
+  export let posts: Post[];
 </script>
 
 <section class="mt-4 grid grid-rows-1 gap-4">
