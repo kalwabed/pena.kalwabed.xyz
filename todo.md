@@ -4,5 +4,5 @@
 - [x] Manifest
 - [ ] Comment system // untuk sekarang hold dulu
 - [ ] Finalisasi nama
-- [ ] Adding some animations?
+- [x] Adding some animations?
 - [ ] Adding 'back to top' button?
