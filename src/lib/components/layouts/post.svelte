@@ -7,13 +7,14 @@
   import { tagSlugify } from '$lib/utils/slug';
   import Seo from '../SEO.svelte';
 
-  export let title = '';
+  export let title: string;
   export let publishedAt = new Date();
   export let tags = [];
   export let updatedAt = new Date();
+  export let desc: string;
   let readCount = 0;
 
-  const dateFormatter = date => {
+  const dateFormatter = (date: Date) => {
     const currentDate = new Date(date);
 
     return `${currentDate.getDate()} ${currentDate.toLocaleString('default', {
@@ -27,7 +28,7 @@
   });
 </script>
 
-<Seo {title} />
+<Seo {title} {desc} />
 
 <article class="flex flex-col mx-auto">
   <h1 class="text-4xl font-bold text-center">{title}</h1>
@@ -54,7 +55,7 @@
     <slot />
   </main>
 
-  <footer class="w-full flex flex-col mt-14">
+  <footer class="w-full flex flex-col my-14">
     <Divider />
     <p class="mt-8">Terakhir update: {dateFormatter(updatedAt)}</p>
     <p>Sudah tayang: {readCount} kali</p>
