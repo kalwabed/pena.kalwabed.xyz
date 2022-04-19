@@ -7,14 +7,14 @@
   import { tagSlugify } from '$lib/utils/slug';
   import Seo from '../SEO.svelte';
 
-  export let title: string;
+  export let title = '';
   export let publishedAt = new Date();
   export let tags = [];
   export let updatedAt = new Date();
-  export let desc: string;
+  export let desc = '';
   let readCount = 0;
 
-  const dateFormatter = (date: Date) => {
+  const dateFormatter = date => {
     const currentDate = new Date(date);
 
     return `${currentDate.getDate()} ${currentDate.toLocaleString('default', {
