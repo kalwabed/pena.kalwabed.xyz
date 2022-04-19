@@ -8,7 +8,7 @@
   {#each posts as post}
     <a
       href={`/${post.slug}`}
-      class="link outline-none text-lg underline w-fit transition hover:(no-underline bg-gray-200) focus:(ring ring-blue-500 ring-offset-2)"
+      class="link outline-none text-lg w-fit underline transition-none hover:(no-underline bg-gray-200) focus:(ring ring-blue-500 ring-offset-2)"
     >
       {post.title}
     </a>
