@@ -13,7 +13,7 @@
 
       return {
         url: url || '/',
-        label: label || 'Pena Kalwabed'
+        label: label || 'Pena'
       };
     });
 

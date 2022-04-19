@@ -17,12 +17,15 @@
 
 <script lang="ts">
   import PostList from '$lib/components/PostList.svelte';
+  import Seo from '$lib/components/SEO.svelte';
   import type { Post } from '$lib/utils/fetch-data';
   import { tagDeslugify } from '$lib/utils/slug';
 
   export let posts: Post[];
   export let tag: string;
 </script>
+
+<Seo title={tag} />
 
 <h1 class="text-3xl font-bold">🧵{tag}</h1>
 

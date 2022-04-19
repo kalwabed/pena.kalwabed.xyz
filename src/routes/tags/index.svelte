@@ -23,11 +23,14 @@
 </script>
 
 <script lang="ts">
+  import Seo from '$lib/components/SEO.svelte';
   import type { Post } from '$lib/utils/fetch-data';
   import { tagSlugify } from '$lib/utils/slug';
 
   export let tags;
 </script>
+
+<Seo title="Tags" />
 
 <section class="flex gap-4">
   {#each tags as tag}

@@ -1,0 +1,4 @@
+- [ ] SEO
+- [ ] Finalisasi nama
+- [ ] Adding some animations?
+- [ ] Adding 'back to top' button?

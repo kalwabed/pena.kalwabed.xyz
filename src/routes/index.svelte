@@ -14,10 +14,13 @@
 <script lang="ts">
   import Divider from '$lib/components/Divider.svelte';
   import PostList from '$lib/components/PostList.svelte';
+  import Seo from '$lib/components/SEO.svelte';
   import type { Post } from '$lib/utils/fetch-data';
 
   export let posts: Post[];
 </script>
+
+<Seo title="Home" />
 
 <img src="/logo.jpg" alt="Logo" width="50" height="50" class="rounded-full shadow" decoding="async" loading="lazy" />
 

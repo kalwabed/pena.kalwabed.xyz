@@ -5,6 +5,7 @@
   import redis from '$lib/providers/redis';
   import Divider from '../Divider.svelte';
   import { tagSlugify } from '$lib/utils/slug';
+  import Seo from '../SEO.svelte';
 
   export let title = '';
   export let publishedAt = new Date();
@@ -26,6 +27,8 @@
   });
 </script>
 
+<Seo {title} />
+
 <article class="flex flex-col mx-auto">
   <h1 class="text-4xl font-bold text-center">{title}</h1>
 
@@ -37,7 +40,7 @@
       <span class="text-gray-500">/</span>
       <time datetime={new Date(publishedAt).toDateString()}>{dateFormatter(publishedAt)}</time>
     </div>
-    <div class="inline-flex items-center space-x-2">
+    <div class="inline-flex items-center justify-center space-x-2">
       {#each tags as tag}
         <a
           href="/tags/{tagSlugify(tag)}"

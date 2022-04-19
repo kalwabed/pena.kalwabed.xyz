@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-  <title>Pena Kalwabed</title>
+  <title>Pena</title>
 </svelte:head>
 
 <div class="w-full flex-auto flex flex-col h-full">
