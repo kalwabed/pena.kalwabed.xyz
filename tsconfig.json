@@ -1,3 +1,17 @@
 {
+  "compilerOptions": {
+    "module": "ES2020",
+    "moduleResolution": "Node",
+    "target": "ES2018",
+    "sourceMap": true,
+    /**
+      To have warnings/errors of the Svelte compiler at the correct position,
+      enable source maps by default.
+      */
+    "lib": ["ES2019", "ES6", "DOM"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowJs": true
+  },
   "extends": "./.svelte-kit/tsconfig.json"
 }

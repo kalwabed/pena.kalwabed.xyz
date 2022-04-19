@@ -5,6 +5,7 @@
 
   const { siteName, siteUrl, siteDescription, keywords } = app;
   const pathname = siteUrl.concat($page.url.pathname);
+
   export let title: string;
   export let desc: string = siteDescription;
 </script>

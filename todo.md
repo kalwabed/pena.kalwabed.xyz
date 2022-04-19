@@ -1,4 +1,7 @@
-- [ ] SEO
+- [x] SEO
+- [x] RSS
+- [ ] Add post description
+- [ ] Manifest
 - [ ] Finalisasi nama
 - [ ] Adding some animations?
 - [ ] Adding 'back to top' button?
