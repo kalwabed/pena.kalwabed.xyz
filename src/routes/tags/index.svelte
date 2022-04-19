@@ -32,8 +32,12 @@
 
 <Seo title="Tags" />
 
-<section class="flex gap-4">
+<h1 class="text-4xl font-bold mb-8">🪢 Tags</h1>
+
+<ul class="flex gap-4">
   {#each tags as tag}
-    <a href="/tags/{tagSlugify(tag)}" class="bg-gray-100 hover:bg-gray-200 transition">#{tagSlugify(tag)}</a>
+    <li>
+      <a href="/tags/{tagSlugify(tag)}" class="bg-gray-100 hover:bg-gray-200 transition">#{tagSlugify(tag)}</a>
+    </li>
   {/each}
-</section>
+</ul>
