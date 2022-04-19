@@ -20,7 +20,7 @@ export const getResourcesAsync = async (): Promise<Post[]> => {
   const fileMetadata = Object.keys(validFiles).map(async (filename): Promise<Post> => {
     const postContent = validFiles[filename] as string;
     const { data } = matter(postContent);
-    const slug = filename.replace(new RegExp('/src/routes/(.*)/index.svx'), '$1');
+    const slug = filename?.replace(new RegExp('/src/routes/(.*)/index.svx'), '$1');
 
     return {
       ...(data as Post),
