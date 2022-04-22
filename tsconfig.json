@@ -11,7 +11,8 @@
     "lib": ["ES2019", "ES6", "DOM"],
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "allowJs": true
+    "allowJs": true,
+    "importsNotUsedAsValues": "preserve"
   },
   "extends": "./.svelte-kit/tsconfig.json"
 }
