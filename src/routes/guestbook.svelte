@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Seo from '$lib/components/SEO.svelte';
 </script>
 
@@ -9,14 +9,14 @@
 
 <section class="w-full md:w-3/4 p-6 rounded border border-gray-300 my-8">
   <h2 class="text-2xl font-bold leading-relaxed">Tandai Kamu Disini</h2>
-  <p class="text-gray-500">Bagikan sebuah pesan anda kepada pengunjung yang lain.</p>
+  <p class="text-gray-500">Bagikan sebuah pesan Anda kepada pengunjung yang lain.</p>
 
   <div class="flex justify-between items-center w-full space-x-4 mt-4">
     <div role="group" class="flex w-full flex-col space-y-2">
-      <label for="username">Nama</label>
+      <label for="fullname">Nama</label>
       <input
         type="text"
-        id="username"
+        id="fullname"
         class="rounded-lg transition flex-1 appearance-none border border-gray-300 w-full py-2 px-3 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:(outline-none ring-2 ring-blue-600 border-transparent)"
       />
     </div>
@@ -51,3 +51,14 @@
     </button>
   </div>
 </section>
+
+<div class="grid grid-rows-1 gap-8">
+  <div class="flex flex-col">
+    <p>Selamat berbuka puasa</p>
+    <div class="inline-flex space-x-4 text-gray-500">
+      <p>John Doe</p>
+      <span>/</span>
+      <p>13 Apr 2022 at 10.00 AM</p>
+    </div>
+  </div>
+</div>
