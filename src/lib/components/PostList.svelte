@@ -5,7 +5,7 @@
   export let posts: Post[];
 </script>
 
-<section class="mt-4 grid grid-rows-1 gap-4">
+<section class="mt-6 grid grid-rows-1 gap-4">
   {#each posts as post}
     <a
       in:fly={{ x: -30 }}

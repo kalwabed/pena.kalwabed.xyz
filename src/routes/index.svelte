@@ -31,6 +31,7 @@
 
 <Divider />
 
-<h2 class="text-3xl font-bold mt-16">🌅 Tulisan</h2>
+<h2 class="text-3xl font-bold mt-16 leading-relaxed">🌅 Tulisan</h2>
+<p class="text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ad.</p>
 
 <PostList {posts} />
