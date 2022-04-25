@@ -7,4 +7,4 @@
 - [x] Adding some animations?
 - [ ] Adding 'back to top' button?
 - [ ] Adding heading description
-- [ ] consider to using same component for tag button
+- [x] consider to using same component for tag button

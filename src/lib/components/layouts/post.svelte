@@ -5,6 +5,7 @@
   import Divider from '../Divider.svelte';
   import { tagSlugify } from '$lib/utils/slug';
   import Seo from '../SEO.svelte';
+  import Tag from '../Tag.svelte';
 
   export let title = '';
   export let publishedAt = new Date();
@@ -53,10 +54,7 @@
     </div>
     <div class="inline-flex items-center justify-center space-x-2">
       {#each tags as tag}
-        <a
-          href="/tags/{tagSlugify(tag)}"
-          class="hover:(text-gray-700 bg-gray-300) bg-gray-200 py-0.5 px-1 rounded transition">#{tagSlugify(tag)}</a
-        >
+        <Tag {tag} />
       {/each}
     </div>
   </header>

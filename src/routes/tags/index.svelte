@@ -24,8 +24,8 @@
 
 <script lang="ts">
   import Seo from '$lib/components/SEO.svelte';
+  import Tag from '$lib/components/Tag.svelte';
   import type { Post } from '$lib/utils/fetch-data';
-  import { tagSlugify } from '$lib/utils/slug';
 
   export let tags;
 </script>
@@ -38,7 +38,7 @@
 <ul class="flex gap-4 mt-6">
   {#each tags as tag}
     <li>
-      <a href="/tags/{tagSlugify(tag)}" class="bg-gray-100 hover:bg-gray-200 transition">#{tagSlugify(tag)}</a>
+      <Tag {tag} />
     </li>
   {/each}
 </ul>
