@@ -1,10 +1,8 @@
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '$lib/providers/prisma';
 import type { RequestEvent } from '@sveltejs/kit/types/private';
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function get() {
-  const prisma = new PrismaClient();
-
   const guests = await prisma.guestBook.findMany();
 
   return {
@@ -14,7 +12,6 @@ export async function get() {
 }
 
 export async function post({ request }: RequestEvent) {
-  const prisma = new PrismaClient();
   console.log(await request.json());
 
   const guest = await prisma.guestBook.create({

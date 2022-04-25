@@ -2,10 +2,10 @@
   import { onMount } from 'svelte';
 
   import { page } from '$app/stores';
-  import redis from '$lib/providers/redis';
   import Divider from '../Divider.svelte';
   import { tagSlugify } from '$lib/utils/slug';
   import Seo from '../SEO.svelte';
+  import type { Views } from 'src/routes/api/views.json';
 
   export let title = '';
   export let publishedAt = new Date();
@@ -24,7 +24,18 @@
 
   onMount(async () => {
     const slug = $page.url.pathname.replace('/', '');
-    readCount = await redis.incr(slug);
+    const reqViews = await fetch('/api/views.json', {
+      body: JSON.stringify({
+        slug
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'POST'
+    });
+
+    const resJson = (await reqViews.json()) as Views;
+    readCount = resJson.count;
   });
 </script>
 

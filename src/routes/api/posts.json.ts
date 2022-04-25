@@ -11,9 +11,6 @@ export async function get({ url: { searchParams: q } }: RequestEvent) {
   if (items.length > 0) {
     return {
       status: 200,
-      headers: {
-        'content-type': 'application/json'
-      },
       body: items
     };
   }
