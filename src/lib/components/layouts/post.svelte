@@ -5,7 +5,6 @@
   import Divider from '../Divider.svelte';
   import { tagSlugify } from '$lib/utils/slug';
   import Seo from '../SEO.svelte';
-  import type { Views } from 'src/routes/api/views.json';
 
   export let title = '';
   export let publishedAt = new Date();
@@ -34,7 +33,7 @@
       method: 'POST'
     });
 
-    const resJson = (await reqViews.json()) as Views;
+    const resJson = await reqViews.json();
     readCount = resJson.count;
   });
 </script>

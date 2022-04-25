@@ -1,7 +1,10 @@
 <script lang="ts">
   import { guestsStore } from '$lib/store/guest';
 
-  let name, email, body;
+  let name,
+    email,
+    body,
+    isLoading = false;
 
   const handleOnSubmit = async () => {
     if (!name || !email || !body) {
@@ -16,6 +19,7 @@
       return;
     }
 
+    isLoading = true;
     const req = await fetch('/api/guests.json', {
       method: 'POST',
       headers: {
@@ -35,10 +39,11 @@
     name = '';
     email = '';
     body = '';
+    isLoading = false;
   };
 </script>
 
-<section class="w-full md:w-3/4 p-6 rounded border border-gray-300 my-8">
+<section class="w-full md:w-3/4 p-6 rounded border border-gray-300 my-8 shadow-sm">
   <h2 class="text-2xl font-bold leading-relaxed">Tandai Kamu Disini</h2>
   <p class="text-gray-500">Bagikan sebuah pesan Anda kepada pengunjung yang lain.</p>
 
@@ -73,16 +78,17 @@
     />
   </div>
 
-  <div class="flex justify-between w-full mt-4">
+  <div class="flex flex-col items-end md:(items-start flex-row justify-between) w-full mt-4 gap-4">
     <small class="text-sm text-gray-500">
       Informasi Anda hanya digunakan untuk menampilkan <br /> nama Anda dan membalas melalui email.
     </small>
 
     <button
       on:click={handleOnSubmit}
-      class="inline-flex items-center w-full h-10 px-6 font-semibold tracking-wide text-teal-900 transition rounded shadow md:w-auto bg-teal-400 hover:(text-teal-800 bg-teal-500) focus:(ring-2 ring-blue outline-none)"
+      class="inline-flex items-center h-10 px-6 font-semibold tracking-wide text-teal-900 transition rounded shadow md:w-auto bg-teal-400 hover:(text-teal-800 bg-teal-500) focus:(ring-2 ring-blue outline-none) disabled:(cursor-not-allowed bg-gray-300 text-gray-500 hover:bg-gray-300 hover:text-gray-500)"
+      disabled={isLoading}
     >
-      Kirim
+      {isLoading ? 'Loading...' : 'Kirim'}
     </button>
   </div>
 </section>
