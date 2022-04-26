@@ -2,7 +2,6 @@
 - [x] RSS
 - [x] Add post description
 - [x] Manifest
-- [ ] Comment system // untuk sekarang hold dulu
 - [x] Finalisasi nama
 - [x] Adding some animations?
 - [ ] Adding 'back to top' button?
