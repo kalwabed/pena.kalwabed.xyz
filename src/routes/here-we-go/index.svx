@@ -2,6 +2,7 @@
 draft: false
 title: My impression on two border window manager
 publishedAt: 2020-04-01
+updatedAt: 2022-04-13
 desc: kalau pulang ya sekalian
 tags:
   - linux

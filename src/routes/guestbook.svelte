@@ -13,6 +13,7 @@
   import GuestBookForm from '$lib/components/GuestBookForm.svelte';
   import Seo from '$lib/components/SEO.svelte';
   import { guestsStore } from '$lib/store/guest';
+  import { dateFormatter } from '$lib/utils/date';
   import type { Guest } from './api/guests.json';
 
   export let guestsBook: Guest[];
@@ -39,13 +40,11 @@
   {#each guests as guest}
     <div class="flex flex-col">
       <p>{guest.body}</p>
-      <div class="inline-flex space-x-4 text-gray-500">
+      <div class="inline-flex space-x-2 text-gray-500">
         <p>{guest.name}</p>
-        <span>/</span>
+        <span aria-readonly="true" class="text-gray-300">/</span>
         <p>
-          {new Intl.DateTimeFormat(['id', 'en-US'], { dateStyle: 'medium', timeStyle: 'short' }).format(
-            new Date(guest.created_at)
-          )}
+          {dateFormatter(guest.created_at, { dateStyle: 'medium', timeStyle: 'short' })}
         </p>
       </div>
     </div>

@@ -1,11 +1,11 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-
   import { page } from '$app/stores';
+
   import Divider from '../Divider.svelte';
-  import { tagSlugify } from '$lib/utils/slug';
   import Seo from '../SEO.svelte';
   import Tag from '../Tag.svelte';
+  import { dateFormatter } from '$lib/utils/date';
 
   export let title = '';
   export let publishedAt = new Date();
@@ -13,14 +13,6 @@
   export let updatedAt = new Date();
   export let desc = '';
   let readCount = 0;
-
-  const dateFormatter = date => {
-    const currentDate = new Date(date);
-
-    return `${currentDate.getDate()} ${currentDate.toLocaleString('default', {
-      month: 'long'
-    })} ${currentDate.getFullYear()}`;
-  };
 
   onMount(async () => {
     const slug = $page.url.pathname.replace('/', '');
@@ -50,7 +42,7 @@
         >@kalwabed</a
       >
       <span class="text-gray-500">/</span>
-      <time datetime={new Date(publishedAt).toDateString()}>{dateFormatter(publishedAt)}</time>
+      <time datetime={new Date(publishedAt).toDateString()}>{dateFormatter(publishedAt, { dateStyle: 'long' })}</time>
     </div>
     <div class="inline-flex items-center justify-center space-x-2">
       {#each tags as tag}
@@ -65,7 +57,9 @@
 
   <footer class="w-full flex flex-col my-14">
     <Divider />
-    <p class="mt-8">Terakhir update: {dateFormatter(updatedAt)}</p>
+    <p class="mt-8">
+      Terakhir update: {dateFormatter(updatedAt, { dateStyle: 'long' })}
+    </p>
     <p>Sudah tayang: {readCount} kali</p>
   </footer>
 </article>
