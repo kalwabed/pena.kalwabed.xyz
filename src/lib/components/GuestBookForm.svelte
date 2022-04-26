@@ -43,9 +43,9 @@
   };
 </script>
 
-<section class="w-full md:w-3/4 p-6 rounded border border-gray-300 my-8 shadow-sm">
-  <h2 class="text-2xl font-bold leading-relaxed">Tandai Kamu Disini</h2>
-  <p class="text-gray-500">Bagikan sebuah pesan Anda kepada pengunjung yang lain.</p>
+<section class="w-full md:w-3/4 bg-blue-50 p-6 rounded border border-gray-300 my-8 shadow-sm">
+  <h2 class="text-xl font-bold leading-relaxed">Tandai Kamu Disini</h2>
+  <p class="text-gray-600">Bagikan sebuah pesan Anda kepada pengunjung yang lain.</p>
 
   <div class="flex justify-between items-center w-full space-x-4 mt-4">
     <div role="group" class="flex w-full flex-col space-y-2">
@@ -54,7 +54,7 @@
         bind:value={name}
         type="text"
         id="fullname"
-        class="rounded-lg transition flex-1 appearance-none border border-gray-300 w-full py-2 px-3 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:(outline-none ring-2 ring-blue-600 border-transparent)"
+        class="rounded-lg transition flex-1 appearance-none border border-gray-300 w-full py-2 px-3 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base hover:border-gray-400 focus:(outline-none ring-2 ring-blue-600 border-transparent)"
       />
     </div>
 
@@ -64,7 +64,7 @@
         bind:value={email}
         type="email"
         id="email"
-        class="rounded-lg transition flex-1 appearance-none border border-gray-300 w-full py-2 px-3 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:(outline-none ring-2 ring-blue-600 border-transparent)"
+        class="rounded-lg transition flex-1 appearance-none border border-gray-300 w-full py-2 px-3 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base hover:border-gray-400 focus:(outline-none ring-2 ring-blue-600 border-transparent)"
       />
     </div>
   </div>
@@ -74,12 +74,12 @@
     <textarea
       bind:value={body}
       id="message"
-      class="rounded-lg transition flex-1 appearance-none border border-gray-300 w-full py-2 px-3 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:(outline-none ring-2 ring-blue-600 border-transparent)"
+      class="rounded-lg transition flex-1 appearance-none border border-gray-300 w-full py-2 px-3 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base hover:border-gray-400 focus:(outline-none ring-2 ring-blue-600 border-transparent)"
     />
   </div>
 
   <div class="flex flex-col items-end md:(items-start flex-row justify-between) w-full mt-4 gap-4">
-    <small class="text-sm text-gray-500">
+    <small class="text-sm text-gray-600">
       Informasi Anda hanya digunakan untuk menampilkan <br /> nama Anda dan membalas melalui email.
     </small>
 

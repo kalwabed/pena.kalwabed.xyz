@@ -29,7 +29,9 @@
 <Seo title="Buku Tamu" />
 
 <h1 class="text-4xl font-bold leading-relaxed">👤 Buku Tamu</h1>
-<p class="text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ad.</p>
+<p class="text-gray-500">
+  Tinggalkan komentar di bawah. Bisa berupa apa saja -- apresiasi, informasi, harapan, atau bahkan lelucon.
+</p>
 
 <GuestBookForm />
 

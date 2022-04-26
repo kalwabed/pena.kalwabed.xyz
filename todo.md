@@ -6,5 +6,5 @@
 - [x] Finalisasi nama
 - [x] Adding some animations?
 - [ ] Adding 'back to top' button?
-- [ ] Adding heading description
+- [x] Adding heading description
 - [x] consider to using same component for tag button

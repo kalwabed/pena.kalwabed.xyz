@@ -24,14 +24,14 @@
 
 <img src="/logo.jpg" alt="Logo" width="50" height="50" class="rounded-full shadow" decoding="async" loading="lazy" />
 
-<p class="mt-12 text-xl md:text-2xl mb-16">
-  Hai! Saya Kalwabed, <br class="md:hidden" />seorang software engineer. <br />
+<section class="mt-12 text-xl md:text-2xl mb-16">
+  <h1 class="inline-flex">Hai! Saya Kalwabed <span>,</span></h1>
+  <br class="md:hidden" />seorang Software Engineer. <br />
   Sekarang lagi ngumpulin tulisan-tulisan saya yang berserakan ke sini.
-</p>
+</section>
 
 <Divider />
 
 <h2 class="text-3xl font-bold mt-16 leading-relaxed">🌅 Tulisan</h2>
-<p class="text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ad.</p>
 
 <PostList {posts} />
