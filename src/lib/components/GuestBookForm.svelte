@@ -12,12 +12,12 @@
       return;
     }
 
-    const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    // const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-    if (!isEmailValid) {
-      alert('Email tidak valid');
-      return;
-    }
+    // if (!isEmailValid) {
+    //   alert('Email tidak valid');
+    //   return;
+    // }
 
     isLoading = true;
     const req = await fetch('/api/guests.json', {

@@ -9,7 +9,7 @@
 
     const breadcrumb = pathnames.map((pathname, index) => {
       const url = pathnames.slice(0, index + 1).join('/');
-      const label = pathname.replace(/-/g, ' ');
+      const label = pathname.replace('/', '');
 
       return {
         url: url || '/',

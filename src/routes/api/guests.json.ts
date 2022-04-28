@@ -58,6 +58,31 @@ export async function post({ request }: RequestEvent) {
       }
     });
 
+    const escapedText = (text: string) => {
+      // eslint-disable-next-line no-useless-escape
+      return text.replace(/[\_\*\[\]\(\)\~\`\>\#\+\-\=\|\{\}\.]/g, '\\$&');
+    };
+
+    const text = `
+*New Guest Book Entry*
+Name: ||${escapedText(name)}||
+Email: ||${escapedText(email)}||
+Message: ||${escapedText(body)}||
+    `;
+
+    if (!process.env.BOT_TOKEN || !process.env.BOT_GROUP_ID) {
+      console.error('Missing BOT_TOKEN or BOT_GROUP_ID');
+    } else {
+      fetch(
+        `https://api.telegram.org/bot${process.env.BOT_TOKEN}/sendMessage?chat_id=${
+          process.env.BOT_GROUP_ID
+        }&text=${encodeURIComponent(text)}&parse_mode=MarkdownV2`,
+        {
+          method: 'POST'
+        }
+      );
+    }
+
     return {
       status: 201,
       body: guest
