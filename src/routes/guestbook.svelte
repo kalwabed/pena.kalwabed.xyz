@@ -1,26 +1,20 @@
-<script context="module" lang="ts">
-  export async function load({ fetch }) {
-    const req = await fetch('/api/guests.json');
-    const guestsBook = (await req.json()) as Guest[];
-
-    return {
-      props: { guestsBook }
-    };
-  }
-</script>
-
 <script lang="ts">
+  import { onMount } from 'svelte';
+
   import GuestBookForm from '$lib/components/GuestBookForm.svelte';
   import Seo from '$lib/components/SEO.svelte';
   import { guestsStore } from '$lib/store/guest';
   import { dateFormatter } from '$lib/utils/date';
   import type { Guest } from './api/guests.json';
 
-  export let guestsBook: Guest[];
+  let guestsBook: Guest[] = [];
+  let guests: Guest[] = [];
 
-  guestsStore.set(guestsBook);
-
-  let guests = [];
+  onMount(async () => {
+    const req = await fetch('/api/guests.json');
+    guestsBook = (await req.json()) as Guest[];
+    guestsStore.set(guestsBook);
+  });
 
   guestsStore.subscribe(guestsBook => {
     guests = guestsBook.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
@@ -37,6 +31,12 @@
 <GuestBookForm />
 
 <div class="grid grid-rows-1 gap-8">
+  {#if guests.length === 0}
+    <div class="w-3/4 text-center bg-gray-50 rounded-lg shadow p-4">
+      <p class="font-semibold">Memuat...</p>
+    </div>
+  {/if}
+
   {#each guests as guest}
     <div class="flex flex-col">
       <p>{guest.body}</p>
