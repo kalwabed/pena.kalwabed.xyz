@@ -25,9 +25,9 @@
 <img src="/logo.jpg" alt="Logo" width="50" height="50" class="rounded-full shadow" decoding="async" loading="lazy" />
 
 <section class="mt-12 text-xl md:text-2xl mb-16">
-  <h1 class="inline-flex">Hai! Saya Kalwabed <span>,</span></h1>
-  <br class="md:hidden" />seorang Software Engineer. <br />
-  Sekarang lagi ngumpulin tulisan-tulisan saya yang berserakan ke sini.
+  <h1 class="inline-flex font-semibold">Hai! Saya Kalwabed <span>.</span></h1>
+  <br />
+  Terkadang memang suka menulis hal-hal yang random.
 </section>
 
 <Divider />
