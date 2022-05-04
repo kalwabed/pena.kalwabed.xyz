@@ -63,6 +63,7 @@ export async function post({ request }: RequestEvent) {
       return text.replace(/[\_\*\[\]\(\)\~\`\>\#\+\-\=\|\{\}\.]/g, '\\$&');
     };
 
+    // reference https://core.telegram.org/bots/api#sendmessage
     const text = `
 *New Guest Book Entry*
 Name: ||${escapedText(name)}||
