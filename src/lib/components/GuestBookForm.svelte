@@ -20,26 +20,32 @@
     }
 
     isLoading = true;
-    const req = await fetch('/api/guests.json', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        body
-      })
-    });
+    try {
+      const req = await fetch('/api/add-guest.json', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          body
+        })
+      });
 
-    const guest = await req.json();
+      const guest = await req.json();
+      alert(`Terima kasih ${guest.name}!`);
 
-    guestsStore.update(guestsBook => [...guestsBook, guest]);
-
-    name = '';
-    email = '';
-    body = '';
-    isLoading = false;
+      guestsStore.update(guestsBook => [...guestsBook, guest]);
+    } catch (error) {
+      alert('Terjadi kesalahan saat menyimpan data');
+      console.error(error);
+    } finally {
+      name = '';
+      email = '';
+      body = '';
+      isLoading = false;
+    }
   };
 </script>
 
