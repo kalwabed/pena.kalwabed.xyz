@@ -32,7 +32,7 @@
 
 <div class="grid grid-rows-1 gap-8">
   {#if guests.length === 0}
-    <div class="w-3/4 text-center bg-gray-50 rounded-lg shadow p-4">
+    <div class="w-full md:w-3/4 text-center bg-gray-50 rounded-lg shadow p-4">
       <p class="font-semibold">Memuat...</p>
     </div>
   {/if}
