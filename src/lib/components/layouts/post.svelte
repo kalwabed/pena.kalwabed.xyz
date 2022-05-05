@@ -37,7 +37,7 @@
   <h1 class="text-4xl font-bold text-center">{title}</h1>
 
   <header class="text-lg mt-2 mb-10 mx-auto flex flex-col gap-4">
-    <div class="text-gray-500">
+    <div class="text-gray-500 text-center">
       <a href="https://instagram.com/kalwabed" title="Instagram account" target="_blank" rel="noopener noreferrer"
         >@kalwabed</a
       >
