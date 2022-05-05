@@ -24,11 +24,13 @@
 
 <img src="/logo.jpg" alt="Logo" width="50" height="50" class="rounded-full shadow" decoding="async" loading="lazy" />
 
-<section class="mt-12 text-xl md:text-2xl mb-16">
+<section class="mt-12 text-xl md:text-2xl">
   <h1 class="inline-flex font-semibold">Hai! Saya Kalwabed <span>.</span></h1>
   <br />
   Terkadang memang suka menulis hal-hal yang random.
 </section>
+
+<a class="mt-8 mb-16 font-semibold text-blue-500 bg-gray-200 p-1 rounded-sm w-fit" href="/guestbook">👤 Buku tamu</a>
 
 <Divider />
 
