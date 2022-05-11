@@ -6,7 +6,7 @@ updatedAt: 2022-05-04
 desc: Pesan dan perasaan. Terkadang banyak sekali perasaan anak manusia yang ingin disampaikan melalui sebuah pesan.
 tags:
   - manusia
-  - anak-muda
+  - anak_muda
 ---
 
 Ada aja manusia yang dia mendapati sebuah pesan yang secara teknis, teori, sampai substansinya sama tapi bisa memberikan efek yang berbeda.

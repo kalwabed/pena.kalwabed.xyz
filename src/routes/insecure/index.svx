@@ -7,7 +7,7 @@ desc: Insecure jangan dijadikan alasan untuk menyalahkan diri sendiri lalu membu
 tags:
   - hidup
   - motivasi
-  - anak-muda
+  - anak_muda
 ---
 
 Terkadang kita merasa kecil, kadang merasa minder ketika ada teman kita atau orang lain yang levelnya, dalam hal-hal yang sedang kita geluti atau kita hadapi, mereka sudah berada diatas kita. Sehingga, tak jarang membuat kita merasa tidak memiliki kesempatan, hilang semangat, atau *insecure* kalau istilah kekiniannya.
