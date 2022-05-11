@@ -2,7 +2,7 @@
 draft: false
 title: Mulai dari yang mudah
 publishedAt: 2022-05-04
-updatedAt: 2022-04-29
+updatedAt: 2022-05-11
 desc: Memulai dari yang mudah tidak hanya supaya lebih cepat tapi juga supaya lebih terarah.
 tags:
   - hidup
@@ -19,8 +19,6 @@ Fungsinya tidak hanya ketika waktu di ujian saja, tetapi bisa dibawa ke dalam ko
 Terbukti ketika saya sudah menerapkan prinsip “Mulai dari yang mudah” dalam pengembangan aplikasi yang dampaknya proses pengembangan aplikasi itu lebih jelas dan terarah tujuannya.
 
 Dari sini saya mengenal istilah [MVP](http://theleanstartup.com/principles#develop_mvp) (minimum viable product) yang berarti tidak harus menunggu semua fitur aplikasi semuanya jadi baru proses *launching*. Kerjakan yang minimal lebih dulu, yang penting aplikasi dapat berfungsi, baru kita petakan lagi apa-apa yang kiranya kurang dan mau kita tingkatkan lagi.
-
-<Image src='/omah.png' caption="<span>Sumber:</span> <a href='https://allrumahminimalis.blogspot.com/2015/02/konstruksi-rumah-minimalis.html'>https://allrumahminimalis.blogspot.com/2015/02/konstruksi-rumah-minimalis.html</a> " />
 
 Konsep MVP juga bisa dibawa ke dalam kehidupan sehari-hari, ketika ingin membangun sebuah rumah misalnya. Ketika membangun sebuah rumah yang cepat maka goals-nya adalah rumah itu bisa berdiri dengan ruangan, perabotan yang sudah memadai. Setelah rumah sudah jadi, maka setelah itu mungkin bisa memikirkan bagaimana membangun garasi misalnya.
 
