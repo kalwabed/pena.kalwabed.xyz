@@ -9,7 +9,7 @@ tags:
 ---
 
 <script>
-	import Image from "./image.svelte";
+	import Image from "$lib/components/blog/image.svelte";
 </script>
 
 Kesalahan saya terdahulu ketika mulai menggeluti bidang *software development* ini adalah tidak memiliki mindset “Mulai dari yang mudah”. Padahal sudah sering diajarkan waktu masih duduk di bangku sekolah ketika ujian berlangsung yaitu “Kerjakan yang paling mudah terlebih dahulu”.
@@ -20,7 +20,7 @@ Terbukti ketika saya sudah menerapkan prinsip “Mulai dari yang mudah” dalam 
 
 Dari sini saya mengenal istilah [MVP](http://theleanstartup.com/principles#develop_mvp) (minimum viable product) yang berarti tidak harus menunggu semua fitur aplikasi semuanya jadi baru proses *launching*. Kerjakan yang minimal lebih dulu, yang penting aplikasi dapat berfungsi, baru kita petakan lagi apa-apa yang kiranya kurang dan mau kita tingkatkan lagi.
 
-<Image />
+<Image src='/omah.png' caption="<span>Sumber:</span> <a href='https://allrumahminimalis.blogspot.com/2015/02/konstruksi-rumah-minimalis.html'>https://allrumahminimalis.blogspot.com/2015/02/konstruksi-rumah-minimalis.html</a> " />
 
 Konsep MVP juga bisa dibawa ke dalam kehidupan sehari-hari, ketika ingin membangun sebuah rumah misalnya. Ketika membangun sebuah rumah yang cepat maka goals-nya adalah rumah itu bisa berdiri dengan ruangan, perabotan yang sudah memadai. Setelah rumah sudah jadi, maka setelah itu mungkin bisa memikirkan bagaimana membangun garasi misalnya.
 

@@ -1,0 +1,27 @@
+---
+draft: false
+title: Satu persen
+publishedAt: 2022-05-11
+updatedAt: 2022-05-11
+desc: Mencoba satu persen lebih baik daripada tidak sama sekali.
+tags:
+  - motivasi
+---
+
+<script>
+	import Image from "$lib/components/blog/image.svelte";
+</script>
+
+Berikan diri kesempatan untuk mencoba.
+
+Berikan diri kesempatan untuk berkembangan.
+
+Takut akan kegagalan adalah hal yang wajar. Maka coba dengan motivasi dan niat yang benar. Supaya ketika gagal kecewanya tetap wajar.
+
+Yang penting usaha dulu, mau dulu.
+
+Tak mengapa jika belum maksimal. Berikan diri ruang untuk berkembang.
+
+Meskipun hanya satu persen.
+
+<Image src="/budi-tanrim-try.png" caption="<a href='https://www.linkedin.com/posts/buditanrim_activity-6927665519261085696-KA-R'>https://www.linkedin.com/posts/buditanrim_activity-6927665519261085696-KA-R</a>" />

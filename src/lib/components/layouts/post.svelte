@@ -38,7 +38,7 @@
 
   <header class="text-lg mt-2 mb-10 mx-auto flex flex-col gap-4">
     <div class="text-gray-500 text-center">
-      <a href="https://instagram.com/kalwabed" title="Instagram account" target="_blank" rel="noopener noreferrer"
+      <a href="https://twitter.com/kalwabedrzk" title="Twitter account" target="_blank" rel="noopener noreferrer"
         >@kalwabed</a
       >
       <span class="text-gray-500">/</span>
