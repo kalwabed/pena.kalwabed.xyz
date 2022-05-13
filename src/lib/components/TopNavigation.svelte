@@ -2,6 +2,8 @@
   import { page, navigating } from '$app/stores';
   import { fly } from 'svelte/transition';
 
+  import logo from '../assets/logo.jpg';
+
   let breadcrumbs = [];
 
   const breadcrumbParser = () => {
@@ -25,7 +27,7 @@
 </script>
 
 <nav class="max-w-screen-xl mx-auto w-full p-4 flex items-center gap-3">
-  <img src="/logo.jpg" alt="Logo" width="30" height="30" decoding="async" loading="lazy" class="rounded-full shadow" />
+  <img src={logo} alt="Logo" width="30" height="30" decoding="async" loading="lazy" class="rounded-full shadow" />
   <div class="link inline-flex items-center gap-1">
     {#each breadcrumbs as breadcrumb}
       <a

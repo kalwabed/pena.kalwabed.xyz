@@ -16,13 +16,14 @@
   import PostList from '$lib/components/PostList.svelte';
   import Seo from '$lib/components/SEO.svelte';
   import type { Post } from '$lib/utils/fetch-data';
+  import logo from '../lib/assets/logo.jpg';
 
   export let posts: Post[];
 </script>
 
 <Seo title="Home" />
 
-<img src="/logo.jpg" alt="Logo" width="50" height="50" class="rounded-full shadow" decoding="async" loading="lazy" />
+<img src={logo} alt="Logo" width="50" height="50" class="rounded-full shadow" decoding="async" loading="lazy" />
 
 <section class="mt-12 text-xl md:text-2xl">
   <h1 class="inline-flex font-semibold">Hai! Saya Kalwabed <span>.</span></h1>
