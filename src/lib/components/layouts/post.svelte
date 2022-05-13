@@ -6,6 +6,8 @@
   import Seo from '../SEO.svelte';
   import Tag from '../Tag.svelte';
   import { dateFormatter } from '$lib/utils/date';
+  import Link from '../Link.svelte';
+  import ArrowLeft from '$lib/assets/arrow-left.svg';
 
   export let title = '';
   export let publishedAt = new Date();
@@ -63,3 +65,5 @@
     <p>Sudah tayang: {readCount} kali</p>
   </footer>
 </article>
+
+<Link href="/#tulisan"><img src={ArrowLeft} alt="arrow left" decoding="async" loading="lazy" /> Tulisan lainnya</Link>

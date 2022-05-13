@@ -35,6 +35,6 @@
 
 <Divider />
 
-<h2 class="text-3xl font-bold mt-16 leading-relaxed">🌅 Tulisan</h2>
+<h2 id="tulisan" class="text-3xl font-bold mt-16 leading-relaxed">🌅 Tulisan</h2>
 
 <PostList {posts} />
