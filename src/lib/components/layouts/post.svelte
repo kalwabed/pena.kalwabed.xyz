@@ -14,11 +14,10 @@
   export let tags = [];
   export let updatedAt = new Date();
   export let desc = '';
-  let readCount = 0;
 
   onMount(async () => {
     const slug = $page.url.pathname.replace('/', '');
-    const reqViews = await fetch('/api/views.json', {
+    await fetch('/api/views.json', {
       body: JSON.stringify({
         slug
       }),
@@ -27,9 +26,6 @@
       },
       method: 'POST'
     });
-
-    const resJson = await reqViews.json();
-    readCount = resJson.count;
   });
 </script>
 
@@ -62,7 +58,6 @@
     <p class="mt-8">
       Terakhir update: {dateFormatter(updatedAt, { dateStyle: 'long' })}
     </p>
-    <p>Sudah tayang: {readCount} kali</p>
   </footer>
 </article>
 

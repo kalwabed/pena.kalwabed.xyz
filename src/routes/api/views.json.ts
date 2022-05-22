@@ -1,4 +1,4 @@
-import type { RequestEvent } from '@sveltejs/kit/types/private';
+import type { RequestEvent } from '@sveltejs/kit';
 
 import { prisma } from '$lib/providers/prisma';
 
@@ -7,27 +7,13 @@ export type Views = {
   slug: string;
 };
 
-/** @type {import('@sveltejs/kit').RequestHandler} */
-export async function get({ url: { searchParams: q } }: RequestEvent) {
-  const slug = q.get('slug');
-  if (!slug)
-    return {
-      status: 400,
-      body: {
-        message: 'slug is required'
-      }
-    };
-
+export async function get() {
   try {
-    const postViewsCount = await prisma.views.findUnique({
-      where: {
-        slug
-      }
-    });
+    const postViewsCount = await prisma.views.findMany();
 
     return {
       status: 200,
-      body: postViewsCount
+      body: { stats: postViewsCount }
     };
   } catch (error) {
     console.error(error);
@@ -44,7 +30,6 @@ export async function get({ url: { searchParams: q } }: RequestEvent) {
   }
 }
 
-/** @type {import('@sveltejs/kit').RequestHandler} */
 export async function post({ request }: RequestEvent) {
   const req = await request.json();
   const slug = req.slug as string;
