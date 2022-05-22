@@ -16,7 +16,6 @@
   import type { Views } from './api/views.json';
 
   export let stats: Views[] = [];
-  console.log(stats);
 </script>
 
 <Seo title="Stats" />
