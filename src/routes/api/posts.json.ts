@@ -2,7 +2,7 @@ import type { RequestEvent } from '@sveltejs/kit';
 
 import { getResourcesAsync } from '$lib/utils/fetch-data';
 
-export async function get({ url: { searchParams: q } }: RequestEvent) {
+export async function GET({ url: { searchParams: q } }: RequestEvent) {
   const limit = parseInt(q.get('limit'));
   let items = await getResourcesAsync();
 

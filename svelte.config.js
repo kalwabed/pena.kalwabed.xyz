@@ -14,9 +14,6 @@ const config = {
     adapter: adapter(),
     prerender: {
       default: true
-    },
-    vite: {
-      plugins: [Unocss()]
     }
   }
 };

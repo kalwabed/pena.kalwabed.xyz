@@ -7,7 +7,7 @@ export type Views = {
   slug: string;
 };
 
-export async function get() {
+export async function GET() {
   try {
     const postViewsCount = await prisma.views.findMany();
 
@@ -30,7 +30,7 @@ export async function get() {
   }
 }
 
-export async function post({ request }: RequestEvent) {
+export async function POST({ request }: RequestEvent) {
   const req = await request.json();
   const slug = req.slug as string;
 

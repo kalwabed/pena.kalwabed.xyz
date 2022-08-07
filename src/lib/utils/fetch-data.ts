@@ -17,8 +17,10 @@ const POSTS = import.meta.glob('/src/routes/**/index.svx', {
 
 export const getResourcesAsync = async (): Promise<Post[]> => {
   const validFiles = POSTS ?? [];
+
   const fileMetadata = Object.keys(validFiles).map(async (filename): Promise<Post> => {
-    const postContent = validFiles[filename] as string;
+    const postContent = (await validFiles[filename]()) as string;
+
     const { data } = matter(postContent);
     const slug = filename?.replace(new RegExp('/src/routes/(.*)/index.svx'), '$1');
 

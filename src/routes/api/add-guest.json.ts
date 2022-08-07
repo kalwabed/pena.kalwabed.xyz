@@ -5,7 +5,7 @@ import { prisma } from '$lib/providers/prisma';
 // NOTE: ini aneh. seharusnya dijadikan satu file di guests.json tapi ternyata entah kenapa masih error 405.
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
-export async function post({ request }: RequestEvent) {
+export async function POST({ request }: RequestEvent) {
   const req = await request.json();
   const { name, body, email } = req;
 

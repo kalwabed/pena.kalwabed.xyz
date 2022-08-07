@@ -10,7 +10,7 @@ export type Guest = {
 };
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
-export async function get() {
+export async function GET() {
   try {
     const guests = await prisma.guestBook.findMany();
 

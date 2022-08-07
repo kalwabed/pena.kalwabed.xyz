@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/xml" href="https://pena.kalwabed.xyz/rss.xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="alternate" type="application/xml" href="https://pena.kalwabed.xyz/rss.xml" />
-	<link rel="manifest" href="/manifest.webmanifest">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-	<link rel="icon" href="/favicon.ico" sizes="any">
-	<link rel="icon" href="/icon.svg" type="image/svg+xml">
+    %sveltekit.head%
+  </head>
 
-	%svelte.head%
-</head>
-
-<body>
-	<div id="svelte">%svelte.body%</div>
-</body>
-
+  <body>
+    <div id="svelte">%sveltekit.body%</div>
+  </body>
 </html>
