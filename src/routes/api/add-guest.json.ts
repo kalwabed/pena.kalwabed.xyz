@@ -40,9 +40,7 @@ Email: ||${escapedText(email)}||
 Message: ||${escapedText(body)}||
     `;
 
-    if (!process.env.BOT_TOKEN || !process.env.BOT_GROUP_ID) {
-      console.error('Missing BOT_TOKEN or BOT_GROUP_ID');
-    } else {
+    if (process.env.BOT_TOKEN && process.env.BOT_GROUP_ID) {
       await fetch(
         `https://api.telegram.org/bot${process.env.BOT_TOKEN}/sendMessage?chat_id=${
           process.env.BOT_GROUP_ID
