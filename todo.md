@@ -1,9 +1,0 @@
-- [x] SEO
-- [x] RSS
-- [x] Add post description
-- [x] Manifest
-- [x] Finalisasi nama
-- [x] Adding some animations?
-- [x] Adding heading description
-- [x] consider to using same component for tag button
-- [x] add telegram webhook for guestbook service?
