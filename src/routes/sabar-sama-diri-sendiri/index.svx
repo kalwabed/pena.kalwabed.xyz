@@ -5,8 +5,8 @@ publishedAt: 2022-08-13
 updatedAt: 2022-08-13
 desc: Tentang bagaimana seseorang sabar dengan segala tentang dirinya.
 tags:
-  - diri
   - hidup
+  - motivasi
 ---
 
 <script>
