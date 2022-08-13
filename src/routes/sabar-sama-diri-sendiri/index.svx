@@ -1,0 +1,32 @@
+---
+draft: false
+title: Sabar sama diri sendiri
+publishedAt: 2022-08-13
+updatedAt: 2022-08-13
+desc: Tentang bagaimana seseorang sabar dengan segala tentang dirinya.
+tags:
+  - diri
+  - hidup
+---
+
+<script>
+	import Image from "$lib/components/blog/image.svelte";
+</script>
+
+<Image src="/todo.png" caption="To Do" />
+
+Banyak hal yang mau dilakuin tapi ada hal lain yang membuat hal tersebut sangat sulit untuk dilakuin.
+
+Sabar sama diri sendiri.
+
+Sudah susun rencana sedemikian rupa tapi kurang maksimal ketika mengeksekusinya.
+
+Sudah ditata sebegitu rapinya, bahkan memberikan tempat pada diri untuk bisa senyaman mungkin di dalamnya, pada akhirnya roboh juga.
+
+Rencana untuk seharian yang sudah terstruktur bisa hancur hanya karena kitanya telat bangun tidur.
+
+Di satu titik kita sadar bahwa kita lemah. Tidak cukup dengan kata semangat, perlu energi lebih supaya bisa terus berjalan dalam harmoni kehidupan ini dengan penuh kerendahan hati.
+
+Menepi sejenak untuk evaluasi yang kurang, koreksi yang salah, lalu berdamai dengan keadaan.
+
+Sadar akan kelebihan dan kekurangan diri ini sehingga lebih sabar sama diri sendiri.
