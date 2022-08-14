@@ -7,7 +7,7 @@ export type Views = {
 
 export async function GET() {
   try {
-    const postViewsCount = await prisma.views.findMany();
+    const postViewsCount = await prisma.views.findMany({ orderBy: { count: 'desc' } });
 
     return {
       status: 200,
