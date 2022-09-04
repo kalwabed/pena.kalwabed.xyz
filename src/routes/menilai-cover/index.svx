@@ -1,5 +1,4 @@
 ---
-draft: false
 title: Menilai (tidak cukup) dari cover
 publishedAt: 2022-05-04
 updatedAt: 2022-04-29

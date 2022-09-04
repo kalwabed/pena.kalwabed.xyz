@@ -1,5 +1,4 @@
 ---
-draft: false
 title: Insecure
 publishedAt: 2022-05-05
 updatedAt: 2022-05-05

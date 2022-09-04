@@ -1,0 +1,64 @@
+---
+title: Atur keuangan
+publishedAt: 2022-09-04
+updatedAt: 2022-09-04
+desc: Bagaimana aku mengatur keuanganku dalam bentuk pos-pos yang aku buat dengan menggunakan Bank Jago.
+tags:
+  - tips
+---
+
+<script>
+	import Callout from "$lib/components/blog/Callout.svelte";
+	import Image from "$lib/components/blog/Image.svelte";
+	import ToggleList from "$lib/components/blog/ToggleList.svelte";
+</script>
+
+Salah satu hal yang menjadi penyebab sakit kepala bagi sebagian orang adalah karena masalah keuangan. Selain sakit kepala karena bingung dapat pemasukannya darimana juga sakit kepala karena bingung pengeluarannya ini habis buat apa.
+
+Pernah nggak di **pertengahan bulan**, gitu, bertanya-tanya *ini uang habis dimana aja kok udah segini aja?*
+
+Atau ketika masih di **awal bulan** bingung *uang segini enaknya mau dikemanain ya?*
+
+Nah, kalau ngerasain hal-hal diatas mungkin tips yang akan saya coba bagikan ini semoga bisa bermanfaat buat kamu juga.
+
+<Callout title="Disclaimer">
+Apa yang saya sampaikan adalah murni karena ingin berbagi, tidak ada kepentingan apapun atau kerja sama dengan pihak manapun.
+</Callout>
+
+## Mapping Tujuan
+
+Pada bagian pertama ini kita harus memiliki rencana kedepan ini apa yang mau dicapai. Ada beberapa formula yang bisa kita gunakan dalam hal perencanaan ini, salah satunya adalah [formula 50/30/20](https://www.thewaystowealth.com/money-management/50-30-20-budget/): **50%** untuk kebutuhan sehari-hari (*needs*) **30%** untuk keinginan beli apa gitu (*wants*), **20%** untuk investasi/simpanan (*savings*).
+
+<Image src="/mapping-tujuan.png" isFullWidth caption="Pecah 100% dari pemasukan." />
+
+*Goals* yang mau kita dapatkan dalam hal perencanaan ini nantinya akan berguna sekali ketika kita akan menentukan pos-pos apa saja yang akan kita buat.
+
+## Bikin Pos
+
+Setelah kita sudah membuat rencana apa-apa saja yang akan kita masukkan daftar finansial yang akan kita bikin posnya nanti.
+
+<Image src="/list-pos.png" caption="Daftar pos dan nominalnya." />
+
+Kita bisa membagi pos-pos dengan masing-masing nominal yang dibutuhkan. Kamu bisa juga menambahkan tanggal dan waktu kapan kamu akan menggunakan dana tersebut.
+
+## Membagi Pos
+
+Untuk urusan membagikan isi dari tiap pos-pos tadi yang sudah kita buat saya menggunakan [Bank Jago](https://www.jago.com/). Bank Jago menawarkan kita fitur [Kantong](https://www.jago.com/id/digital/pocket) yang bisa kita manfaatkan untuk menyimpan dana dari masing-masing kantong/post yang sudah kita buat.
+
+<ToggleList title="Untuk kita yang Muslim">
+  Bank Jago juga memiliki versi syariahnya yaitu <a href="https://www.jago.com/public/id/syariah">Bank Jago Syariah</a> yang insyaallah lebih aman dengan tanpa adanya riba.
+</ToggleList>
+
+Sebagai contoh, supaya lebih realistis, saya ada kantong yang namanya “Nikah”. Di kantong ini saya bisa mengatur berapa target dananya dan kapan kira-kira target itu ingin dicapai, misalnya: targetnya xx juta dan mau kita ambil xx tahun lagi.
+
+<Image src="/nikah.png" caption="Contoh prototype pos nikah." />
+
+Selanjutnya kita juga bisa menambahkan fitur **“Auto Save”**. Ini sih yang saya suka banget. Fitur ini memungkinkan kantong ini bisa terisi secara otomatis sesuai dengan rentang waktu yang bisa kita pilih (harian/mingguan/bulanan).
+
+## Kesimpulan
+
+Beberapa poin yang ada kali ini jika direkap kira-kira begini:
+
+- **Mapping tujuan** dulu kira-kira apa saja yang perlu kita perhatikan dan rencanakan dalam urusan mengatur finansial kita dengan **formula 50/30/20 (kebutuhan, keinginan, investasi/simpanan)**.
+- **Bikin pos** berdasarkan apa yang sudah kita rencanakan sebelumnya. Saya sendiri memiliki sebuah kantong “Dana Darurat” yang dimana ini masuk di bagian dana simpanan dengan rumus 5% gaji tiap bulannya.
+- **Membagi pos** dari pos-pos yang sudah kita bikin sebelumnya berdasarkan kemampuan kita masing-masing. Kita bisa memberikan berapa target yang mau dicapai, kapan ingin mencapainya, dan kita juga bisa memilih rentang waktunya.

@@ -1,5 +1,4 @@
 ---
-draft: false
 title: Satu persen
 publishedAt: 2022-05-11
 updatedAt: 2022-05-11
@@ -9,7 +8,7 @@ tags:
 ---
 
 <script>
-	import Image from "$lib/components/blog/image.svelte";
+	import Image from "$lib/components/blog/Image.svelte";
 </script>
 
 Berikan diri kesempatan untuk mencoba.

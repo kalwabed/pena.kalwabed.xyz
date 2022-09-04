@@ -1,5 +1,4 @@
 ---
-draft: false
 title: Bukan pertama kali
 publishedAt: 2022-05-04
 updatedAt: 2022-04-29
