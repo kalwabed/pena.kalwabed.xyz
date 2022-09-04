@@ -1,21 +1,17 @@
-<script context="module" lang="ts">
-  export async function load({ fetch }) {
-    const getStats = await fetch('/api/views.json');
-    const { stats } = await getStats.json();
-
-    return {
-      props: {
-        stats
-      }
-    };
-  }
-</script>
-
 <script lang="ts">
+  import { onMount } from 'svelte';
+
   import Seo from '$lib/components/SEO.svelte';
   import type { Views } from './api/views.json';
 
   export let stats: Views[] = [];
+
+  onMount(async () => {
+    const getStats = await fetch('/api/views.json');
+    const { stats: statsResult } = await getStats.json();
+
+    stats = statsResult;
+  });
 </script>
 
 <Seo title="Stats" />

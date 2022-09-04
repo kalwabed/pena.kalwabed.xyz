@@ -17,14 +17,14 @@
 
   onMount(async () => {
     const slug = $page.url.pathname.replace('/', '');
-    await fetch('/api/views.json', {
-      body: JSON.stringify({
-        slug
-      }),
+    await fetch('/api/add-view.json', {
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      method: 'POST'
+      body: JSON.stringify({
+        slug
+      })
     });
   });
 </script>

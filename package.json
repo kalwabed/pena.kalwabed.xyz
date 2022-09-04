@@ -17,7 +17,7 @@
     "@unocss/preset-wind": "^0.45.6",
     "@unocss/reset": "^0.45.6",
     "@unocss/transformer-variant-group": "^0.45.6",
-    "eslint": "^8.21.0",
+    "eslint": "^8.22.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "gray-matter": "^4.0.3",
     "mdsvex": "^0.10.6",
