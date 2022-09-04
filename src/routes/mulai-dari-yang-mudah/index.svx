@@ -1,5 +1,4 @@
 ---
-draft: false
 title: Mulai dari yang mudah
 publishedAt: 2022-05-04
 updatedAt: 2022-05-11
@@ -7,10 +6,6 @@ desc: Memulai dari yang mudah tidak hanya supaya lebih cepat tapi juga supaya le
 tags:
   - hidup
 ---
-
-<script>
-	import Image from "$lib/components/blog/image.svelte";
-</script>
 
 Kesalahan saya terdahulu ketika mulai menggeluti bidang *software development* ini adalah tidak memiliki mindset “Mulai dari yang mudah”. Padahal sudah sering diajarkan waktu masih duduk di bangku sekolah ketika ujian berlangsung yaitu “Kerjakan yang paling mudah terlebih dahulu”.
 

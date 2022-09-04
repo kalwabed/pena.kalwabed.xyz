@@ -1,5 +1,4 @@
 ---
-draft: false
 title: Sakit gila no. 29
 publishedAt: 2022-05-11
 updatedAt: 2022-05-11

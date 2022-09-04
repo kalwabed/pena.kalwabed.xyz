@@ -54,7 +54,7 @@ export default defineConfig({
     [
       /^prose-custom$/,
       (_, { theme }) => ({
-        '--font-heading': '"Poppins", sans-serif',
+        '--font-heading': '"Montserrat", sans-serif',
         '--font-sans': '"Open Sans", sans-serif',
         '--un-prose-headings': theme.colors.gray[700],
         '--un-prose-body': theme.colors.gray[600],

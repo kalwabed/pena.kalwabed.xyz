@@ -1,5 +1,4 @@
 ---
-draft: false
 title: Sabar sama diri sendiri
 publishedAt: 2022-08-13
 updatedAt: 2022-08-13
@@ -10,7 +9,7 @@ tags:
 ---
 
 <script>
-	import Image from "$lib/components/blog/image.svelte";
+	import Image from "$lib/components/blog/Image.svelte";
 </script>
 
 <Image src="/todo.png" caption="To Do" />

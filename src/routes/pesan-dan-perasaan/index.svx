@@ -1,5 +1,4 @@
 ---
-draft: false
 title: Pesan dan perasaan
 publishedAt: 2022-05-04
 updatedAt: 2022-05-04

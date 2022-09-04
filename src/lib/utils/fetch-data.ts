@@ -7,7 +7,6 @@ export interface Post {
   tags: string[];
   layout: string;
   slug: string;
-  draft: boolean;
   type: string;
 }
 
@@ -32,7 +31,5 @@ export const getResourcesAsync = async (): Promise<Post[]> => {
 
   const result = await Promise.all(fileMetadata);
 
-  return result
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-    .filter(({ draft }) => !draft);
+  return result.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 };
