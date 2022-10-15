@@ -21,7 +21,7 @@
 
     isLoading = true;
     try {
-      const req = await fetch('/api/add-guest.json', {
+      const req = await fetch('/api/guests/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

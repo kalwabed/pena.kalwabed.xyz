@@ -10,7 +10,7 @@ export interface Post {
   type: string;
 }
 
-const POSTS = import.meta.glob('/src/routes/**/index.svx', {
+const POSTS = import.meta.glob('/src/routes/**/+page.svx', {
   as: 'raw'
 });
 
@@ -21,7 +21,7 @@ export const getResourcesAsync = async (): Promise<Post[]> => {
     const postContent = (await validFiles[filename]()) as string;
 
     const { data } = matter(postContent);
-    const slug = filename?.replace(new RegExp('/src/routes/(.*)/index.svx'), '$1');
+    const slug = filename.replace('/src/routes/', '').replace('/+page.svx', '');
 
     return {
       ...(data as Post),

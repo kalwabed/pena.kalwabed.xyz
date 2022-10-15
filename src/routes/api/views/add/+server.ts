@@ -1,4 +1,4 @@
-import type { RequestEvent } from '@sveltejs/kit';
+import { error, json, type RequestEvent } from '@sveltejs/kit';
 
 import { prisma } from '$lib/providers/prisma';
 
@@ -7,12 +7,7 @@ export async function POST({ request }: RequestEvent) {
   const slug = req.slug as string;
 
   if (!slug) {
-    return {
-      status: 400,
-      body: {
-        message: 'slug is required'
-      }
-    };
+    throw error(400, 'slug is required');
   }
 
   try {
@@ -31,21 +26,9 @@ export async function POST({ request }: RequestEvent) {
       }
     });
 
-    return {
-      status: 201,
-      body: postViewsCount
-    };
+    return json(postViewsCount, { status: 201 });
   } catch (error) {
     console.error(error);
-    return {
-      status: 500,
-      body: {
-        error: {
-          message: error.message,
-          code: error.errorCode,
-          clientVersion: error.clientVersion
-        }
-      }
-    };
+    throw error(500, 'Internal Server Error');
   }
 }

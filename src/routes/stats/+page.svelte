@@ -2,12 +2,12 @@
   import { onMount } from 'svelte';
 
   import Seo from '$lib/components/SEO.svelte';
-  import type { Views } from './api/views.json';
+  import type { Views } from '../api/views/+server';
 
   export let stats: Views[] = [];
 
   onMount(async () => {
-    const getStats = await fetch('/api/views.json');
+    const getStats = await fetch('/api/views');
     const { stats: statsResult } = await getStats.json();
 
     stats = statsResult;

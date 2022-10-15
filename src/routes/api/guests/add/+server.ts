@@ -1,21 +1,16 @@
-import type { RequestEvent } from '@sveltejs/kit';
+import { error, json } from '@sveltejs/kit';
 
 import { prisma } from '$lib/providers/prisma';
 
 // NOTE: ini aneh. seharusnya dijadikan satu file di guests.json tapi ternyata entah kenapa masih error 405.
 
-/** @type {import('@sveltejs/kit').RequestHandler} */
-export async function POST({ request }: RequestEvent) {
+/** @type {import('./$types').RequestHandler} */
+export async function POST({ request }) {
   const req = await request.json();
   const { name, body, email } = req;
 
   if (!name || !body || !email) {
-    return {
-      status: 400,
-      body: {
-        message: 'name, body, and email are required'
-      }
-    };
+    throw error(400, 'name, body, and email are required');
   }
 
   try {
@@ -51,21 +46,9 @@ Message: ||${escapedText(body)}||
       );
     }
 
-    return {
-      status: 201,
-      body: guest
-    };
-  } catch (error) {
-    console.error(error);
-    return {
-      status: 500,
-      body: {
-        error: {
-          message: error.message,
-          code: error.errorCode,
-          clientVersion: error.clientVersion
-        }
-      }
-    };
+    return json(guest, { status: 201 });
+  } catch (err) {
+    console.error(err);
+    throw error(500, 'Internal Server Error');
   }
 }

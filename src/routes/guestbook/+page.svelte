@@ -5,13 +5,13 @@
   import Seo from '$lib/components/SEO.svelte';
   import { guestsStore } from '$lib/store/guest';
   import { dateFormatter } from '$lib/utils/date';
-  import type { Guest } from './api/guests.json';
+  import type { Guest } from '../api/guests/+server';
 
   let guestsBook: Guest[] = [];
   let guests: Guest[] = [];
 
   onMount(async () => {
-    const req = await fetch('/api/guests.json');
+    const req = await fetch('/api/guests');
     guestsBook = (await req.json()) as Guest[];
     guestsStore.set(guestsBook);
   });
