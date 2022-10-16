@@ -1,12 +1,12 @@
 import { prisma } from '$lib/providers/prisma';
-import { error, json } from '@sveltejs/kit';
+import { error, json, type RequestHandler } from '@sveltejs/kit';
 
 export type Views = {
   count: number;
   slug: string;
 };
 
-export async function GET() {
+export const GET: RequestHandler = async () => {
   try {
     const postViewsCount = await prisma.views.findMany({ orderBy: { count: 'desc' } });
 
@@ -15,4 +15,4 @@ export async function GET() {
     console.error(err);
     throw error(500, 'Internal Server Error');
   }
-}
+};

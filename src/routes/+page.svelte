@@ -1,11 +1,12 @@
 <script lang="ts">
+  import type { PageData } from './$types';
   import Divider from '$lib/components/Divider.svelte';
   import PostList from '$lib/components/PostList.svelte';
   import Seo from '$lib/components/SEO.svelte';
   import logo from '../lib/assets/logo.jpg';
 
-  /** @type {import('./$types').PageData} */
-  export let data;
+  export let data: PageData;
+  const { posts } = data;
 </script>
 
 <Seo title="Home" />
@@ -28,4 +29,4 @@
 
 <h2 id="tulisan" class="text-3xl font-bold mt-16 leading-relaxed">🌅 Tulisan</h2>
 
-<PostList posts={data.posts} />
+<PostList {posts} />

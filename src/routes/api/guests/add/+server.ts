@@ -1,11 +1,10 @@
-import { error, json } from '@sveltejs/kit';
+import { error, json, type RequestHandler } from '@sveltejs/kit';
 
 import { prisma } from '$lib/providers/prisma';
 
 // NOTE: ini aneh. seharusnya dijadikan satu file di guests.json tapi ternyata entah kenapa masih error 405.
 
-/** @type {import('./$types').RequestHandler} */
-export async function POST({ request }) {
+export const POST: RequestHandler = async ({ request }) => {
   const req = await request.json();
   const { name, body, email } = req;
 
@@ -51,4 +50,4 @@ Message: ||${escapedText(body)}||
     console.error(err);
     throw error(500, 'Internal Server Error');
   }
-}
+};

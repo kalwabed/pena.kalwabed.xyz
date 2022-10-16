@@ -1,8 +1,9 @@
+import type { PageLoad } from './$types';
+
 import Post from '$lib/components/layouts/post.svelte';
 import { deslugify } from '$lib/utils/slug';
 
-/** @type {import('./$types').PageLoad} */
-export async function load({ fetch, params }) {
+export const load: PageLoad = async ({ fetch, params }) => {
   const getPosts = await fetch('/api/posts');
   const posts = (await getPosts.json()) as Post[];
   const tag = params.tag as string;
@@ -13,4 +14,4 @@ export async function load({ fetch, params }) {
     posts: postsByTag ?? [],
     tag: deslugify(tag)
   };
-}
+};

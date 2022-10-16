@@ -1,10 +1,12 @@
+import type { PageLoad } from './$types';
+
 import Post from '$lib/components/layouts/post.svelte';
 
-export async function load({ fetch }) {
+export const load: PageLoad = async ({ fetch }) => {
   const getPosts = await fetch('/api/posts');
   const posts = (await getPosts.json()) as Post[];
 
   return {
     posts
   };
-}
+};

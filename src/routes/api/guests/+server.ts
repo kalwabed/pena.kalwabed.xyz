@@ -1,4 +1,4 @@
-import { json, error } from '@sveltejs/kit';
+import { json, error, type RequestHandler } from '@sveltejs/kit';
 
 import { prisma } from '$lib/providers/prisma';
 
@@ -11,8 +11,7 @@ export type Guest = {
   updated_at?: string;
 };
 
-/** @type {import('./$types').RequestHandler} */
-export async function GET() {
+export const GET: RequestHandler = async () => {
   try {
     const guests = await prisma.guestBook.findMany();
 
@@ -21,4 +20,4 @@ export async function GET() {
     console.error(err);
     throw error(500, 'Internal Server Error');
   }
-}
+};

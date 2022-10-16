@@ -1,9 +1,11 @@
 <script lang="ts">
+  import type { PageData } from './$types';
   import Seo from '$lib/components/SEO.svelte';
   import Tag from '$lib/components/Tag.svelte';
 
-  /** @type {import('./$types').PageData} */
-  export let data;
+  export let data: PageData;
+
+  const { tags } = data;
 </script>
 
 <Seo title="Tags" />
@@ -12,7 +14,7 @@
 <p class="text-gray-500">Temukan tulisan-tulisan berdasarkan Tag di bawah.</p>
 
 <ul class="flex gap-4 mt-6">
-  {#each data.tags as tag}
+  {#each tags as tag}
     <li>
       <Tag {tag} />
     </li>

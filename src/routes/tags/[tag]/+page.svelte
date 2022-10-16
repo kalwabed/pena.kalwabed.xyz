@@ -1,13 +1,15 @@
 <script lang="ts">
+  import type { PageData } from './$types';
   import PostList from '$lib/components/PostList.svelte';
   import Seo from '$lib/components/SEO.svelte';
 
-  /** @type {import('./$types').PageData} */
-  export let data;
+  export let data: PageData;
+
+  const { tag, posts } = data;
 </script>
 
-<Seo title={data.tag} />
+<Seo title={tag} />
 
-<h1 class="text-4xl font-bold leading-relaxed">🧵{data.tag}</h1>
+<h1 class="text-4xl font-bold leading-relaxed">🧵{tag}</h1>
 
-<PostList posts={data.posts} />
+<PostList {posts} />
