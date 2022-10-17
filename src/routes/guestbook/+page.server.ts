@@ -1,4 +1,5 @@
 import { error, invalid } from '@sveltejs/kit';
+import { BOT_GROUP_ID, BOT_TOKEN } from '$env/static/private';
 
 import type { PageServerLoad, Actions } from './$types';
 import { prisma } from '$lib/providers/prisma';
@@ -20,7 +21,6 @@ export const actions: Actions = {
     const name = data.get('name') as string;
     const body = data.get('body') as string;
     const email = data.get('email') as string;
-    console.log('🚀 ~ file: +page.server.ts ~ line 23 ~ default: ~ email', email);
 
     if (!name || !body || !email) {
       return invalid(400, { msg: 'Nama, Pesan, dan Email wajib diisi' });
@@ -48,11 +48,11 @@ Email: ||${escapedText(email)}||
 Message: ||${escapedText(body)}||
               `;
 
-      if (process.env.BOT_TOKEN && process.env.BOT_GROUP_ID) {
+      if (BOT_TOKEN && BOT_GROUP_ID) {
         await fetch(
-          `https://api.telegram.org/bot${process.env.BOT_TOKEN}/sendMessage?chat_id=${
-            process.env.BOT_GROUP_ID
-          }&text=${encodeURIComponent(text)}&parse_mode=MarkdownV2`,
+          `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${BOT_GROUP_ID}&text=${encodeURIComponent(
+            text
+          )}&parse_mode=MarkdownV2`,
           {
             method: 'POST'
           }

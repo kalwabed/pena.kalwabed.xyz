@@ -2,7 +2,7 @@
   import type { Post } from '$lib/utils/fetch-data';
   import Link from './Link.svelte';
 
-  export let posts: Post[];
+  export let posts: Post[] = [];
 </script>
 
 <section class="mt-6 grid grid-rows-1 gap-4">
