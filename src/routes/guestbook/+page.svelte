@@ -32,7 +32,7 @@
   {/if}
 
   {#each guestBook as guest}
-    <div class="flex flex-col">
+    <div class="flex flex-col max-w-3xl">
       <p>{guest.body}</p>
       <div class="inline-flex space-x-2 text-gray-500">
         <p>{guest.name}</p>

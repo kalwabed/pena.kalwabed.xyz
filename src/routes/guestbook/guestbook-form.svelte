@@ -37,7 +37,9 @@
   <p class="text-gray-600">Bagikan sebuah pesan Anda kepada pengunjung yang lain.</p>
 
   <form method="post" on:submit|preventDefault={handleOnSubmit}>
-    <div class="flex justify-between items-center w-full space-x-4 mt-4">
+    <div
+      class="flex flex-col md:flex-row md:justify-between items-center w-full space-y-4 md:space-x-4 md:space-y-0 mt-4"
+    >
       <div role="group" class="flex w-full flex-col space-y-2">
         <label for="name">Nama</label>
         <input
