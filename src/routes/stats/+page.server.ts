@@ -14,5 +14,3 @@ export const load: PageServerLoad = async () => {
     throw error(500, 'Internal Server Error');
   }
 };
-
-// pindahkan juga method ketika tambah view ke file ini
