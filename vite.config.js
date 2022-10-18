@@ -1,9 +1,18 @@
 import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig } from 'vitest/config';
 import Unocss from 'unocss/vite';
 
 /** @type {import('vite').UserConfig} */
-const config = {
+const viteConfig = {
   plugins: [sveltekit(), Unocss()]
 };
 
-export default config;
+export default defineConfig({
+  test: {
+    globals: true,
+    coverage: {
+      provider: 'istanbul'
+    }
+  },
+  ...viteConfig
+});

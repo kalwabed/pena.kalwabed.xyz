@@ -1,17 +1,10 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import type { PageServerData } from './$types';
 
   import Seo from '$lib/components/SEO.svelte';
-  import type { Views } from './api/views.json';
 
-  export let stats: Views[] = [];
-
-  onMount(async () => {
-    const getStats = await fetch('/api/views.json');
-    const { stats: statsResult } = await getStats.json();
-
-    stats = statsResult;
-  });
+  export let data: PageServerData;
+  const { stats } = data;
 </script>
 
 <Seo title="Stats" />

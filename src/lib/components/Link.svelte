@@ -11,7 +11,7 @@
 </script>
 
 {#if withTransition}
-  <a in:fly={{ x: -30 }} {href} class={composedClass}>
+  <a in:fly={{ x: -30 }} {href} class={composedClass} data-sveltekit-prefetch>
     <slot />
   </a>
 {:else}

@@ -12,7 +12,8 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "allowJs": true,
-    "importsNotUsedAsValues": "preserve"
+    "importsNotUsedAsValues": "preserve",
+    "types": ["vitest/globals"]
   },
   "extends": "./.svelte-kit/tsconfig.json"
 }

@@ -1,23 +1,17 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-
-  import GuestBookForm from '$lib/components/GuestBookForm.svelte';
   import Seo from '$lib/components/SEO.svelte';
-  import { guestsStore } from '$lib/store/guest';
   import { dateFormatter } from '$lib/utils/date';
-  import type { Guest } from './api/guests.json';
+  import type { PageServerData } from './$types';
 
-  let guestsBook: Guest[] = [];
-  let guests: Guest[] = [];
+  import GuestbookForm from './guestbook-form.svelte';
 
-  onMount(async () => {
-    const req = await fetch('/api/guests.json');
-    guestsBook = (await req.json()) as Guest[];
-    guestsStore.set(guestsBook);
-  });
+  export let data: PageServerData;
 
-  guestsStore.subscribe(guestsBook => {
-    guests = guestsBook.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
+  $: guestBook = data?.guests?.map(guest => {
+    return {
+      ...guest,
+      date: dateFormatter(guest.created_at, { dateStyle: 'medium', timeStyle: 'short' })
+    };
   });
 </script>
 
@@ -28,23 +22,23 @@
   Tinggalkan komentar di bawah. Bisa berupa apa saja -- apresiasi, informasi, harapan, atau bahkan lelucon.
 </p>
 
-<GuestBookForm />
+<GuestbookForm />
 
 <div class="grid grid-rows-1 gap-8">
-  {#if guests.length === 0}
+  {#if guestBook.length === 0}
     <div class="w-full md:w-3/4 text-center bg-gray-50 rounded-lg shadow p-4">
       <p class="font-semibold">Memuat...</p>
     </div>
   {/if}
 
-  {#each guests as guest}
-    <div class="flex flex-col">
+  {#each guestBook as guest}
+    <div class="flex flex-col max-w-3xl">
       <p>{guest.body}</p>
       <div class="inline-flex space-x-2 text-gray-500">
         <p>{guest.name}</p>
         <span aria-readonly="true" class="text-gray-300">/</span>
         <p>
-          {dateFormatter(guest.created_at, { dateStyle: 'medium', timeStyle: 'short' })}
+          {guest.date}
         </p>
       </div>
     </div>

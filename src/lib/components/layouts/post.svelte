@@ -17,7 +17,7 @@
 
   onMount(async () => {
     const slug = $page.url.pathname.replace('/', '');
-    await fetch('/api/add-view.json', {
+    await fetch('/api/views/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
