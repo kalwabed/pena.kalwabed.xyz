@@ -8,6 +8,7 @@
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "vercel-build": "prisma generate && yarn build",
+    "coverage": "vitest run --coverage",
     "lint": "prettier --plugin-search-dir . --check . && eslint ."
   },
   "devDependencies": {
@@ -19,6 +20,7 @@
     "@unocss/preset-wind": "^0.45.29",
     "@unocss/reset": "^0.45.29",
     "@unocss/transformer-variant-group": "^0.45.29",
+    "@vitest/coverage-istanbul": "^0.24.3",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
@@ -35,7 +37,8 @@
     "tslib": "^2.4.0",
     "typescript": "~4.8.4",
     "unocss": "^0.45.29",
-    "vite": "^3.1.8"
+    "vite": "^3.1.8",
+    "vitest": "^0.24.3"
   },
   "type": "module",
   "dependencies": {
