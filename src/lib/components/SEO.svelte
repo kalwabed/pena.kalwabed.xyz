@@ -13,7 +13,7 @@
   const ogTitle = title === 'Home' ? siteName : title;
 
   const ogServiceUrl = 'https://www.kalwabed.xyz/api/og';
-  const ogImage = `${ogServiceUrl}?title=${encodeURI(title)}&desc=${encodeURI(desc)}`;
+  const ogImage = `${ogServiceUrl}?title=${encodeURI(ogTitle)}&desc=${encodeURI(desc)}`;
 </script>
 
 <svelte:head>
