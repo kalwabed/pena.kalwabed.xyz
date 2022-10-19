@@ -8,6 +8,9 @@
 
   export let title: string;
   export let desc: string = siteDescription;
+
+  const ogServiceUrl = 'https://www.kalwabed.xyz/api/og';
+  const ogImage = `${ogServiceUrl}?title=${encodeURI(title)}&desc=${encodeURI(desc)}`;
 </script>
 
 <svelte:head>
@@ -21,12 +24,12 @@
   <meta property="og:url" content={pathname} />
   <meta property="og:title" content={title || siteName} />
   <meta property="og:description" content={desc} />
-  <meta property="og:image" content="https://avatars.githubusercontent.com/u/49640654?v=4" />
+  <meta property="og:image" content={ogImage} />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content={pathname} />
   <meta property="twitter:title" content={title || siteName} />
   <meta property="twitter:description" content={desc} />
-  <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/49640654?v=4" />
+  <meta property="twitter:image" content={ogImage} />
 </svelte:head>
