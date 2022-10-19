@@ -1,3 +1,5 @@
+import type { RequestHandler } from '@sveltejs/kit';
+
 import app from '$lib/configs/app';
 import { getResourcesAsync } from '$lib/utils/fetch-data';
 
@@ -34,14 +36,13 @@ const renderXmlRssFeed = (items: any) => {
   `;
 };
 
-export async function get() {
-  const feed = renderXmlRssFeed(await getResourcesAsync());
+export const GET: RequestHandler = async () => {
+  const rss = renderXmlRssFeed(await getResourcesAsync());
 
-  return {
+  return new Response(rss, {
     headers: {
       'Cache-Control': `max-age=0, s-max-age=${600}`,
       'Content-Type': 'application/xml'
-    },
-    body: feed
-  };
-}
+    }
+  });
+};
