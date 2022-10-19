@@ -9,8 +9,11 @@
   export let title: string;
   export let desc: string = siteDescription;
 
+  // to overriding home page title, from Home to Pena
+  const ogTitle = title === 'Home' ? siteName : title;
+
   const ogServiceUrl = 'https://www.kalwabed.xyz/api/og';
-  const ogImage = `${ogServiceUrl}?title=${encodeURI(title)}&desc=${encodeURI(desc)}`;
+  const ogImage = `${ogServiceUrl}?title=${encodeURI(ogTitle)}&desc=${encodeURI(desc)}`;
 </script>
 
 <svelte:head>
@@ -22,14 +25,14 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="blog" />
   <meta property="og:url" content={pathname} />
-  <meta property="og:title" content={title || siteName} />
+  <meta property="og:title" content={ogTitle} />
   <meta property="og:description" content={desc} />
   <meta property="og:image" content={ogImage} />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content={pathname} />
-  <meta property="twitter:title" content={title || siteName} />
+  <meta property="twitter:title" content={ogTitle} />
   <meta property="twitter:description" content={desc} />
   <meta property="twitter:image" content={ogImage} />
 </svelte:head>
