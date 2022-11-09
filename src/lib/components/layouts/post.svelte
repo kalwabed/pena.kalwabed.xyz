@@ -34,18 +34,13 @@
 <article class="flex flex-col mx-auto">
   <h1 class="text-4xl font-bold text-center">{title}</h1>
 
-  <header class="text-lg mt-2 mb-10 mx-auto flex flex-col gap-4">
+  <header class="text-lg mt-2 mb-12 mx-auto flex flex-col gap-4">
     <div class="text-gray-500 text-center">
       <a href="https://www.instagram.com/kalwabed" title="Instagram account" target="_blank" rel="noopener noreferrer"
         >@kalwabed</a
       >
       <span class="text-gray-500">/</span>
       <time datetime={new Date(publishedAt).toDateString()}>{dateFormatter(publishedAt, { dateStyle: 'long' })}</time>
-    </div>
-    <div class="inline-flex items-center justify-center space-x-2">
-      {#each tags as tag}
-        <Tag {tag} />
-      {/each}
     </div>
   </header>
 
@@ -55,7 +50,12 @@
 
   <footer class="w-full flex flex-col my-14">
     <Divider />
-    <p class="mt-8">
+    <div class="inline-flex items-center space-x-2 my-4">
+      {#each tags as tag}
+        <Tag {tag} />
+      {/each}
+    </div>
+    <p>
       Terakhir update: {dateFormatter(updatedAt, { dateStyle: 'long' })}
     </p>
   </footer>
