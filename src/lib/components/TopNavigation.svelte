@@ -4,7 +4,7 @@
 
   import logo from '../assets/logo.jpg';
 
-  let breadcrumbs = [];
+  let breadcrumbs: { url: string; label: string }[] = [];
 
   const breadcrumbParser = () => {
     const pathnames = $page.url.pathname.replace(/\/$/, '').split('/');
