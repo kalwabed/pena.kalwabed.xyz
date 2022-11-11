@@ -1,10 +1,9 @@
-import { transformerVariantGroup, presetTypography } from 'unocss';
+import { transformerVariantGroup, presetTypography, presetUno } from 'unocss';
 import { defineConfig } from 'unocss/vite';
-import { presetWind } from '@unocss/preset-wind';
 
 export default defineConfig({
   presets: [
-    presetWind(),
+    presetUno(),
     presetTypography({
       cssExtend: {
         a: {

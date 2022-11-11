@@ -9,7 +9,6 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.42.1
   '@typescript-eslint/parser': ^5.42.1
   '@unocss/preset-typography': ^0.46.4
-  '@unocss/preset-wind': ^0.46.4
   '@unocss/reset': ^0.46.4
   '@unocss/transformer-variant-group': ^0.46.4
   '@vitest/coverage-istanbul': ^0.25.1
@@ -45,7 +44,6 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.42.1_2udltptbznfmezdozpdoa2aemq
   '@typescript-eslint/parser': 5.42.1_rmayb2veg2btbq6mbmnyivgasy
   '@unocss/preset-typography': 0.46.4
-  '@unocss/preset-wind': 0.46.4
   '@unocss/reset': 0.46.4
   '@unocss/transformer-variant-group': 0.46.4
   '@vitest/coverage-istanbul': 0.25.1
