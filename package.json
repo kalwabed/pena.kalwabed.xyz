@@ -16,6 +16,7 @@
     "@sveltejs/kit": "1.0.0-next.539",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
     "@typescript-eslint/parser": "^5.42.1",
+    "@unocss/preset-rem-to-px": "^0.46.4",
     "@unocss/preset-typography": "^0.46.4",
     "@unocss/reset": "^0.46.4",
     "@unocss/transformer-variant-group": "^0.46.4",

@@ -1,9 +1,11 @@
 import { transformerVariantGroup, presetTypography, presetUno } from 'unocss';
 import { defineConfig } from 'unocss/vite';
+import presetRemToPx from '@unocss/preset-rem-to-px';
 
 export default defineConfig({
   presets: [
     presetUno(),
+    presetRemToPx(),
     presetTypography({
       cssExtend: {
         a: {
