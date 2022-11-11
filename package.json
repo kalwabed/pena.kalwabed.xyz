@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-vercel": "1.0.0-next.81",
-    "@sveltejs/kit": "1.0.0-next.539",
+    "@sveltejs/kit": "1.0.0-next.543",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
     "@typescript-eslint/parser": "^5.42.1",
     "@unocss/preset-rem-to-px": "^0.46.4",
@@ -28,10 +28,10 @@
     "mdsvex": "^0.10.6",
     "prettier": "^2.7.1",
     "prettier-plugin-svelte": "^2.8.0",
-    "prisma": "^4.6.0",
+    "prisma": "^4.6.1",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-slug": "^5.1.0",
-    "svelte": "^3.52.0",
+    "svelte": "^3.53.1",
     "svelte-check": "^2.9.2",
     "svelte-preprocess": "^4.10.7",
     "tslib": "^2.4.1",
@@ -44,7 +44,7 @@
   "dependencies": {
     "@fontsource/montserrat": "^4.5.13",
     "@fontsource/open-sans": "^4.5.13",
-    "@prisma/client": "^4.6.0",
+    "@prisma/client": "^4.6.1",
     "notie": "^4.3.1"
   }
 }
