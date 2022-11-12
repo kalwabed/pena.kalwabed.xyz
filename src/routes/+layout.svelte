@@ -2,10 +2,10 @@
   import 'uno.css';
   import '@unocss/reset/tailwind.css';
 
-  import '@fontsource/open-sans/400.css';
-  import '@fontsource/open-sans/600.css';
-  import '@fontsource/montserrat/400.css';
-  import '@fontsource/montserrat/600.css';
+  import '@fontsource/open-sans/latin-400.css';
+  import '@fontsource/open-sans/latin-600.css';
+  import '@fontsource/montserrat/latin-400.css';
+  import '@fontsource/montserrat/latin-600.css';
   import { PUBLIC_UMAMI_WEBSITE_ID, PUBLIC_UMAMI_URL } from '$env/static/public';
 
   import TopNavigation from '$lib/components/TopNavigation.svelte';

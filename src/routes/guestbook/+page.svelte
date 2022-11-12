@@ -36,7 +36,7 @@
       <p>{guest.body}</p>
       <div class="inline-flex space-x-2 text-gray-500">
         <p>{guest.name}</p>
-        <span aria-readonly="true" class="text-gray-300">/</span>
+        <span class="text-gray-300">/</span>
         <p>
           {guest.date}
         </p>
