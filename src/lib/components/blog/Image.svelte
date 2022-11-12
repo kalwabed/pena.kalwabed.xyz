@@ -7,8 +7,8 @@
 <figure class="text-center not-prose space-y-2 lg:w-[800px] lg:-mx-24">
   <img
     {src}
-    alt="Ini gambar"
-    class="rounded-lg mx-auto {isFullWidth ? 'w-full' : ''}"
+    alt={caption}
+    class="rounded-lg mx-auto {isFullWidth ? 'w-[800px]' : ''}"
     height="420"
     width="420"
     decoding="async"

@@ -1,0 +1,55 @@
+---
+title: Tulis dulu idenya
+publishedAt: 2022-11-12
+updatedAt: 2022-11-12
+desc: Tentang kenapa harus menulis ide yang muncul di kepalamu itu dulu.
+tags:
+  - tips
+---
+
+<script>
+	import Image from "$lib/components/blog/Image.svelte";
+</script>
+
+Ide-ide kerap kali muncul di dalam kepalaku yang kadang tidak tahu waktu dan suasana. Iya kalau saat itu juga bisa mengeksekusinya, tapi kalau tidak? Ya, eksekusinya nanti kalau masih ingat.
+
+Kebiasaanku ketika mendapati hal seperti itu adalah dengan mencatatnya terlebih dahulu. Dapat ide, tulis dulu, eksekusinya nanti (*…tidak tahu kapan, yang penting nanti*).
+
+Sebelumnya ketika ada suatu ide muncul itu ya… sudah. Muncul lalu menguap begitu saja. Pada saat lagi ada waktu untuk eksekusi sudah lupa pokok idenya itu apa dan bagaimana.
+
+> Sesuatu terasa lebih berharga ketika kehadirannya kini telah tiada.
+— **nemu di Instagram.**
+>
+
+Beberapa kejadian memberiku pelajaran pentingnya untuk mencatat hal-hal yang sifatnya **pas**: pas kepikiran, pas kejadian, momennya pas, *mood*-nya lagi pas, pas-pas-pas.
+
+## Catat Dulu
+
+Pada umumnya otak manusia itu mempunyai kapasitas memori jangka pendek yang [relatif kecil dan singkat](https://www.verywellmind.com/what-is-short-term-memory-2795348). Itulah mengapa kebanyakan orang pada hari-hari ini setelah beberapa saat mendapatkan ide mereka—termasuk aku, itu langsung lupa.
+
+Kebiasaanku untuk menyimpan ide itu adalah dengan menulisnya. Menulis apapun itu.
+
+Untuk menulis ide itu sendiri tidak ada aturan yang mengikat atau gaya penulisan yang harus diikuti.
+
+Beberapa hal yang ada dalam format catatan yang biasa aku tulis, seperti:
+
+1. **Judul**: penting untuk memberikan gambaran awal.
+2. **Deskripsi**: penjelasan dari ide apa yang aku pikirkan. Ada yang hanya 1-2 paragraf. Ada yang kompleks sampai menuliskan latar belakang, batasan masalah, *flow*, hingga referensi. Intinya jabarkan ide dengan lebih jelas itu lebih baik.
+3. **Status**: memberikan gambaran bagaimana statusnya, apakah sudah *on progress*, *need review*, *archived*, atau **completed**.
+4. **Kategori**: ide itu masuk ke kategori jangka pendek atau jangka panjang? Ini penting untuk mengatur prioritas dan waktu untuk eksekusi.
+
+Ketika aku ingin menulis juga terkadang bukan menulis judul yang saat itu aku kepikiran untuk menulisnya. Ada beberapa judul yang aku kepikiran judul itu sudah beberapa minggu sebelumnya dan baru bisa mengeksekusinya dikemudian hari.
+
+Catat dan berikan deskripsi yang lengkap kalau perlu.
+
+<Image src="/format-catatan.png" caption="Contoh format catatan." isFullWidth />
+
+## Mulai Dulu
+
+Untuk mulai mencatat ide kita perlu alat atau aplikasi yang bisa menjadi sarana dalam tulis-menulis. Yang paling sederhana adalah pakai aplikasi **notes** bawaan, atau aplikasi **notepad** kalau di komputer.
+
+Kalau ingin mendapatkan fitur lebih seperti unggah gambar, *formatting*, dan fitur-fitur yang mungkin tidak ditemukan sebelumnya, bisa menggunakan [Notion](https://notion.so). Atau, jika teman-teman ingin lebih “ekstrem” lagi bisa menggunakan [Obsidian](https://obsidian.md/). Aku sendiri menggunakan semuanya secara paralel untuk kebutuhan sehari-hari, dan kedua-duanya itu **gratis**.
+
+Aku juga sempat menulis hal-hal seperti ide atau apapun itu di media kertas. Bukan seperti sekarang yang sudah digital semua. Barangkali teman-temanku masa SMK dulu sempat mendapati aku sering mencatatnya di sebuah buku catatan kecil yang dulu aku selalu bawa kemana-mana 😁
+
+Jadi, jangan sampai kehilangan ide lagi, ya. Catat dulu, eksekusi kemudian.

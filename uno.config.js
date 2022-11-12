@@ -46,6 +46,13 @@ export default defineConfig({
         },
         strong: {
           color: 'var(--un-prose-headings)'
+        },
+        blockquote: {
+          'border-left': '4px solid #78716c',
+          'padding-left': '1rem',
+          'margin-left': '0',
+          'margin-right': '0',
+          'font-style': 'italic'
         }
       }
     })
