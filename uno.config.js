@@ -1,10 +1,11 @@
-import { transformerVariantGroup, presetTypography } from 'unocss';
+import { transformerVariantGroup, presetTypography, presetUno } from 'unocss';
 import { defineConfig } from 'unocss/vite';
-import { presetWind } from '@unocss/preset-wind';
+import presetRemToPx from '@unocss/preset-rem-to-px';
 
 export default defineConfig({
   presets: [
-    presetWind(),
+    presetUno(),
+    presetRemToPx(),
     presetTypography({
       cssExtend: {
         a: {
@@ -45,6 +46,13 @@ export default defineConfig({
         },
         strong: {
           color: 'var(--un-prose-headings)'
+        },
+        blockquote: {
+          'border-left': '4px solid #78716c',
+          'padding-left': '1rem',
+          'margin-left': '0',
+          'margin-right': '0',
+          'font-style': 'italic'
         }
       }
     })
