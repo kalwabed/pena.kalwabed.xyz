@@ -2,7 +2,7 @@ import { error, json, type RequestHandler } from '@sveltejs/kit';
 
 import { prisma } from '$lib/providers/prisma';
 
-export const POST: RequestHandler = async ({ request }) => {
+export const POST = (async ({ request }) => {
   const req = await request.json();
   const slug = req.slug as string;
 
@@ -31,4 +31,4 @@ export const POST: RequestHandler = async ({ request }) => {
     console.error(error);
     throw error(500, 'Internal Server Error');
   }
-};
+}) satisfies RequestHandler;

@@ -1,8 +1,7 @@
+import type { Post } from '$lib/utils/fetch-data';
 import type { PageLoad } from './$types';
 
-import Post from '$lib/components/layouts/post.svelte';
-
-export const load: PageLoad = async ({ fetch }) => {
+export const load = (async ({ fetch }) => {
   const getPosts = await fetch('/api/posts');
   const posts = (await getPosts.json()) as Post[];
 
@@ -20,4 +19,4 @@ export const load: PageLoad = async ({ fetch }) => {
     posts,
     tags: removeDuplicateTags(postsTag)
   };
-};
+}) satisfies PageLoad;
