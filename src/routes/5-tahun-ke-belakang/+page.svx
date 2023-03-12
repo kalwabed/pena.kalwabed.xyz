@@ -1,7 +1,7 @@
 ---
 title: 5 tahun ke belakang
 publishedAt: 2022-05-04
-updatedAt: 2022-04-29
+updatedAt: 2022-05-29
 desc: Bagaimana seseorang mengingat impian sebelum perjuangannya hari ini setelah 5 tahun berjalan.
 tags:
   - hidup
