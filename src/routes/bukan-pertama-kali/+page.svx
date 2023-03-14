@@ -1,7 +1,7 @@
 ---
 title: Bukan pertama kali
 publishedAt: 2022-05-04
-updatedAt: 2022-04-29
+updatedAt: 2022-05-29
 desc: Sesekali hidup memang perlu ada 'sentilan' dikit biar sadar.
 tags:
   - motivasi

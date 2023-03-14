@@ -4,7 +4,7 @@ import type { views } from '@prisma/client';
 import type { PageServerLoad } from './$types';
 import { prisma } from '$lib/providers/prisma';
 
-export const load: PageServerLoad = async () => {
+export const load = (async () => {
   try {
     const postViewsCount: views[] = await prisma.views.findMany({ orderBy: { count: 'desc' } });
 
@@ -13,4 +13,4 @@ export const load: PageServerLoad = async () => {
     console.error(err);
     throw error(500, 'Internal Server Error');
   }
-};
+}) satisfies PageServerLoad;

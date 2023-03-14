@@ -2,8 +2,7 @@ import { error, json, type RequestHandler } from '@sveltejs/kit';
 
 import { getResourcesAsync } from '$lib/utils/fetch-data';
 
-/** @type {import('./$types').RequestHandler} */
-export const GET: RequestHandler = async ({ url }) => {
+export const GET = (async ({ url }) => {
   const { searchParams: q } = url;
   const limit = parseInt(q.get('limit'));
   let items = await getResourcesAsync();
@@ -15,4 +14,4 @@ export const GET: RequestHandler = async ({ url }) => {
   }
 
   throw error(404, 'Not found');
-};
+})satisfies RequestHandler;

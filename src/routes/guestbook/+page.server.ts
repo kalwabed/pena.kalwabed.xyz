@@ -1,10 +1,10 @@
-import { error, invalid } from '@sveltejs/kit';
+import { error, fail } from '@sveltejs/kit';
 import { BOT_GROUP_ID, BOT_TOKEN } from '$env/static/private';
 
 import type { PageServerLoad, Actions } from './$types';
 import { prisma } from '$lib/providers/prisma';
 
-export const load: PageServerLoad = async () => {
+export const load = (async () => {
   try {
     const guests = await prisma.guestBook.findMany({ orderBy: { created_at: 'desc' } });
 
@@ -13,9 +13,9 @@ export const load: PageServerLoad = async () => {
     console.error(err);
     throw error(500, 'Internal Server Error');
   }
-};
+}) satisfies PageServerLoad
 
-export const actions: Actions = {
+export const actions = {
   default: async ({ request, fetch }) => {
     const data = await request.formData();
     const name = data.get('name') as string;
@@ -23,7 +23,7 @@ export const actions: Actions = {
     const email = data.get('email') as string;
 
     if (!name || !body || !email) {
-      return invalid(400, { msg: 'Nama, Pesan, dan Email wajib diisi' });
+      return fail(400, { msg: 'Nama, Pesan, dan Email wajib diisi' });
     }
 
     try {
@@ -64,4 +64,4 @@ Message: ||${escapedText(body)}||
       throw error(500, 'Internal Server Error');
     }
   }
-};
+} satisfies Actions ;

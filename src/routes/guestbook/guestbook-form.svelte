@@ -1,6 +1,7 @@
 <script lang="ts">
   import 'notie/dist/notie.min.css';
-  import { applyAction } from '$app/forms';
+
+  import { applyAction, deserialize } from '$app/forms';
   import { invalidateAll } from '$app/navigation';
   import type { ActionResult } from '@sveltejs/kit';
   import notie, { alert } from 'notie';
@@ -15,8 +16,7 @@
       body: data
     });
 
-    const resJson = await response.json();
-    const result: ActionResult = resJson;
+    const result: ActionResult = deserialize(await response.text());
 
     notie.hideAlerts();
 
@@ -24,8 +24,8 @@
       alert({ type: 'success', text: 'Komentar berhasil dikirim!' });
       // re-run all `load` functions, following the successful update
       await invalidateAll();
-    } else if (result.type === 'invalid') {
-      alert({ type: 'error', text: resJson?.data?.msg });
+    } else if (result.type === 'failure') {
+      alert({ type: 'error', text: result?.data?.msg });
     }
 
     applyAction(result);

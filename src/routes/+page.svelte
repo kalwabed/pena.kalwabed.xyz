@@ -19,11 +19,7 @@
   Terkadang memang suka menulis hal-hal yang random.
 </section>
 
-<a
-  class="mt-8 mb-16 font-semibold text-blue-700 bg-gray-200 p-1 rounded-sm w-fit"
-  href="/guestbook"
-  data-sveltekit-prefetch>👤 Buku tamu</a
->
+<a class="mt-8 mb-16 font-semibold text-blue-700 bg-gray-200 p-1 rounded-sm w-fit" href="/guestbook">👤 Buku tamu</a>
 
 <Divider />
 
