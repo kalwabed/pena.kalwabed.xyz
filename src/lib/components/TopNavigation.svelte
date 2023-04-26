@@ -34,7 +34,6 @@
         transition:fly={{ x: -10 }}
         href={breadcrumb.url}
         class="outline-none hover:bg-gray-200 focus:(ring ring-offset-2 ring-blue-500) transition p-0.5"
-        data-sveltekit-prefetch
       >
         {breadcrumb.label}
       </a>

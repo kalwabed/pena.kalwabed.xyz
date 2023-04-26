@@ -10,6 +10,8 @@
 
   import TopNavigation from '$lib/components/TopNavigation.svelte';
   import Footer from '$lib/components/Footer.svelte';
+  import gearSvg from '$lib/assets/gear.svg';
+  import homeSvg from '$lib/assets/home.svg';
 </script>
 
 <svelte:head>
@@ -28,6 +30,18 @@
     <slot />
   </main>
   <Footer />
+
+  <div
+    class="sticky flex items-center justify-between shadow w-3/4 mx-auto bottom-4 rounded-xl border border-gray-100 p-2 bg-gray-50 bg-opacity-0.2 backdrop-blur"
+  >
+    <a href="/" class="outline-none p-2">
+      <img src={homeSvg} alt="Home icon" loading="lazy" decoding="async" />
+    </a>
+    <!-- <span class="text-xs text-black">pena</span> -->
+    <button class="outline-none p-2">
+      <img src={gearSvg} alt="App icon" loading="lazy" decoding="async" />
+    </button>
+  </div>
 </div>
 
 <style global>
@@ -48,5 +62,23 @@
   h5,
   h6 {
     font-family: Montserrat, sans-serif;
+  }
+
+  .gradient {
+    background: linear-gradient(to right, rgba(255, 191, 0, 0.3), rgba(255, 0, 128, 0.3), rgba(128, 0, 255, 0.3));
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 </style>
