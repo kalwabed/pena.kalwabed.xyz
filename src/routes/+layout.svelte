@@ -87,7 +87,7 @@
   <div
     bind:this={tooltip}
     role="tooltip"
-    class="bg-gray-50 dark:border-mauveThree dark:bg-mauveTwo border p-2 max-h-1/2 w-40 shadow rounded-lg {show
+    class="bg-gray-50 dark:border-mauveSix dark:bg-mauveTwo border p-2 max-h-1/2 w-40 shadow rounded-lg {show
       ? ''
       : 'hidden'}"
   >
