@@ -34,16 +34,16 @@
   <h1 class="text-4xl font-bold text-center">{title}</h1>
 
   <header class="text-lg mt-2 mb-12 mx-auto flex flex-col gap-4">
-    <div class="text-gray-500 text-center">
+    <div class="text-gray-500 dark:text-mauveEleven text-center">
       <a href="https://www.instagram.com/kalwabed" title="Instagram account" target="_blank" rel="noopener noreferrer"
         >@kalwabed</a
       >
-      <span class="text-gray-500">/</span>
+      <span>/</span>
       <time datetime={new Date(publishedAt).toDateString()}>{dateFormatter(publishedAt, { dateStyle: 'long' })}</time>
     </div>
   </header>
 
-  <main class="prose prose-custom text-left mx-auto">
+  <main class="prose prose-custom dark:prose-invert text-left mx-auto">
     <slot />
   </main>
 

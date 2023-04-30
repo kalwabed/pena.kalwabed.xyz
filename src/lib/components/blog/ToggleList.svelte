@@ -10,7 +10,7 @@
   };
 </script>
 
-<div class="my-2 p-2 bg-gray-1 rounded border">
+<div class="my-2 p-2 bg-gray-100 dark:(bg-plumTwo text-plumTwelve border-plumSeven) rounded border">
   <button class="w-full flex items-center outline-none rounded-t transition gap-2" on:click={handleOnClick}>
     <span
       ><svg class="w-6 h-6" fill="#93c5fd" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
