@@ -17,19 +17,19 @@ const mauveDark = {
   mauve12: '#ededef',
 };
 
-const plum = {
-  plum1: '#fefcff',
-  plum2: '#fff8ff',
-  plum3: '#fceffc',
-  plum4: '#f9e5f9',
-  plum5: '#f3d9f4',
-  plum6: '#ebc8ed',
-  plum7: '#dfafe3',
-  plum8: '#cf91d8',
+const plumDark = {
+  plum1: '#1d131d',
+  plum2: '#251425',
+  plum3: '#341a34',
+  plum4: '#3e1d40',
+  plum5: '#48214b',
+  plum6: '#542658',
+  plum7: '#692d6f',
+  plum8: '#883894',
   plum9: '#ab4aba',
-  plum10: '#a43cb4',
-  plum11: '#9c2bad',
-  plum12: '#340c3b',
+  plum10: '#bd54c6',
+  plum11: '#d864d8',
+  plum12: '#fbecfc',
 };
 
 export default defineConfig({
@@ -118,10 +118,19 @@ export default defineConfig({
       mauveFour: mauveDark.mauve4,
       mauveFive: mauveDark.mauve5,
       mauveSix: mauveDark.mauve6,
+      mauveSeven: mauveDark.mauve7,
       mauveEleven: mauveDark.mauve11,
       mauveTwelve: mauveDark.mauve12,
-      plumNine: plum.plum9,
-      plumEleven: plum.plum11,
+      plumThree: plumDark.plum3,
+      plumFour: plumDark.plum4,
+      plumFive: plumDark.plum5,
+      plumSix: plumDark.plum6,
+      plumSeven: plumDark.plum7,
+      plumEight: plumDark.plum8,
+      plumNine: plumDark.plum9,
+      plumTen: plumDark.plum10,
+      plumEleven: plumDark.plum11,
+      plumTwelve: plumDark.plum12,
     },
   },
 });

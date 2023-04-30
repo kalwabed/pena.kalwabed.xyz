@@ -7,7 +7,6 @@
   import Tag from '../Tag.svelte';
   import { dateFormatter } from '$lib/utils/date';
   import Link from '../Link.svelte';
-  import ArrowLeft from '$lib/assets/arrow-left.svg';
 
   export let title = '';
   export let publishedAt = new Date();
@@ -20,11 +19,11 @@
     await fetch('/api/views/add', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        slug
-      })
+        slug,
+      }),
     });
   });
 </script>
@@ -61,4 +60,7 @@
   </footer>
 </article>
 
-<Link href="/#tulisan"><img src={ArrowLeft} alt="arrow left" decoding="async" loading="lazy" /> Tulisan lainnya</Link>
+<Link href="/#tulisan" extClass="gap-2">
+  <div class="i-rdi:arrow-left" />
+  <span>Tulisan lainnya</span>
+</Link>

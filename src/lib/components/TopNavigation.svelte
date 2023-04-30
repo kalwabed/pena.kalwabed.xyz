@@ -15,7 +15,7 @@
 
       return {
         url: url || '/',
-        label: label || 'Pena'
+        label: label || 'Pena',
       };
     });
 
@@ -33,7 +33,7 @@
       <a
         transition:fly={{ x: -10 }}
         href={breadcrumb.url}
-        class="outline-none hover:bg-gray-200 focus:(ring ring-offset-2 ring-blue-500) transition p-0.5"
+        class="outline-none hover:bg-gray-200 focus:(ring ring-offset-2 ring-blue-500) dark:hover:bg-plumTen transition p-0.5"
       >
         {breadcrumb.label}
       </a>
