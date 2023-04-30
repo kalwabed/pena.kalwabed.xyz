@@ -13,7 +13,7 @@ export const load = (async () => {
     console.error(err);
     throw error(500, 'Internal Server Error');
   }
-}) satisfies PageServerLoad
+}) satisfies PageServerLoad;
 
 export const actions = {
   default: async ({ request, fetch }) => {
@@ -23,7 +23,7 @@ export const actions = {
     const email = data.get('email') as string;
 
     if (!name || !body || !email) {
-      return fail(400, { msg: 'Nama, Pesan, dan Email wajib diisi' });
+      return fail(400, { msg: 'Nama, Email, dan Pesan wajib diisi' });
     }
 
     try {
@@ -31,8 +31,8 @@ export const actions = {
         data: {
           name,
           body,
-          email
-        }
+          email,
+        },
       });
 
       const escapedText = (text: string) => {
@@ -54,7 +54,7 @@ Message: ||${escapedText(body)}||
             text
           )}&parse_mode=MarkdownV2`,
           {
-            method: 'POST'
+            method: 'POST',
           }
         );
       }
@@ -63,5 +63,5 @@ Message: ||${escapedText(body)}||
     } catch (err) {
       throw error(500, 'Internal Server Error');
     }
-  }
-} satisfies Actions ;
+  },
+} satisfies Actions;

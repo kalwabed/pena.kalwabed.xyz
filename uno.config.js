@@ -119,6 +119,7 @@ export default defineConfig({
       mauveFive: mauveDark.mauve5,
       mauveSix: mauveDark.mauve6,
       mauveSeven: mauveDark.mauve7,
+      mauveEight: mauveDark.mauve8,
       mauveEleven: mauveDark.mauve11,
       mauveTwelve: mauveDark.mauve12,
       plumTwo: plumDark.plum2,

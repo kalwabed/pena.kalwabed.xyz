@@ -6,14 +6,17 @@
   import type { ActionResult } from '@sveltejs/kit';
   import notie, { alert } from 'notie';
 
+  let isLoading = false;
+
   async function handleOnSubmit() {
     const data = new FormData(this);
 
+    isLoading = true;
     alert({ type: 'info', text: 'Tunggu yaa', stay: true });
 
     const response = await fetch(this.action, {
       method: 'post',
-      body: data
+      body: data,
     });
 
     const result: ActionResult = deserialize(await response.text());
@@ -28,13 +31,19 @@
       alert({ type: 'error', text: result?.data?.msg });
     }
 
+    isLoading = false;
     applyAction(result);
   }
+
+  const inputClass =
+    'rounded-lg transition flex-1 appearance-none border border-gray-300 w-full py-2 px-3 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base hover:border-gray-400 outline-none focus:(ring-2 ring-blue-600) dark:(bg-mauveFour text-mauveEleven border-mauveSeven) hover:dark:(border-mauveEight)';
 </script>
 
-<section class="w-full md:w-3/4 bg-blue-50 p-6 rounded border border-gray-300 my-8 shadow-sm">
+<section
+  class="w-full md:w-3/4 bg-blue-50 dark:bg-mauveTwo p-6 rounded border border-gray-300 dark:border-mauveSix my-8 shadow-sm"
+>
   <h2 class="text-xl font-bold leading-relaxed">Tandai Kamu Disini</h2>
-  <p class="text-gray-600">Bagikan sebuah pesan Anda kepada pengunjung yang lain.</p>
+  <p class="text-gray-600 dark:text-mauveEleven">Bagikan sebuah pesan Anda kepada pengunjung yang lain.</p>
 
   <form method="post" on:submit|preventDefault={handleOnSubmit}>
     <div
@@ -42,42 +51,29 @@
     >
       <div role="group" class="flex w-full flex-col space-y-2">
         <label for="name">Nama</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          class="rounded-lg transition flex-1 appearance-none border border-gray-300 w-full py-2 px-3 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base hover:border-gray-400 focus:(outline-none ring-2 ring-blue-600 border-transparent)"
-        />
+        <input type="text" id="name" name="name" class={inputClass} />
       </div>
 
       <div role="group" class="flex w-full flex-col space-y-2">
         <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          class="rounded-lg transition flex-1 appearance-none border border-gray-300 w-full py-2 px-3 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base hover:border-gray-400 focus:(outline-none ring-2 ring-blue-600 border-transparent)"
-        />
+        <input type="email" id="email" name="email" class={inputClass} />
       </div>
     </div>
 
     <div role="group" class="flex w-full flex-col space-y-2 mt-4">
       <label for="body">Pesan</label>
-      <textarea
-        id="body"
-        name="body"
-        class="rounded-lg transition flex-1 appearance-none border border-gray-300 w-full py-2 px-3 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base hover:border-gray-400 focus:(outline-none ring-2 ring-blue-600 border-transparent)"
-      />
+      <textarea id="body" name="body" class={inputClass} />
     </div>
 
     <div class="flex flex-col items-end md:(items-start flex-row justify-between) w-full mt-4 gap-4">
-      <small class="text-sm text-gray-600">
+      <small class="text-sm text-gray-600 dark:text-mauveEleven">
         Informasi Anda hanya digunakan untuk menampilkan <br /> nama Anda dan membalas melalui email.
       </small>
 
       <button
         type="submit"
-        class="inline-flex items-center h-10 px-6 font-semibold tracking-wide text-teal-900 transition rounded shadow md:w-auto !bg-teal-300 hover:(text-teal-800 !bg-teal-500) focus:(ring-2 ring-blue outline-none) disabled:(cursor-not-allowed !bg-gray-300 text-gray-500 hover:(!bg-gray-300 text-gray-500)"
+        disabled={isLoading}
+        class="inline-flex items-center h-10 px-6 font-semibold tracking-wide text-teal-800 !bg-teal-300 hover:!bg-teal-400 dark:(text-plumEleven !bg-plumFour) transition rounded shadow md:w-auto dark:hover:!bg-plumFive outline-none focus:(ring-2 ring-blue) disabled:(cursor-wait opacity-50)"
       >
         Kirim
       </button>
