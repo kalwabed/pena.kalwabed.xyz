@@ -11,7 +11,7 @@
   alt="Logo"
   {width}
   {height}
-  class="rounded-full shadow ring-2 hidden dark:block"
+  class="rounded-full shadow ring-2 hidden dark:block hover:animate-spin"
   decoding="async"
   loading="lazy"
 />
@@ -20,7 +20,7 @@
   alt="Logo"
   {width}
   {height}
-  class="rounded-full shadow ring-2 dark:hidden"
+  class="rounded-full shadow ring-2 dark:hidden hover:animate-spin"
   decoding="async"
   loading="lazy"
 />
