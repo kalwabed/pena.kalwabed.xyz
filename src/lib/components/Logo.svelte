@@ -1,6 +1,6 @@
 <script lang="ts">
   import logo from '$lib/assets/logo.avif';
-  import oldLogo from '$lib/assets/old-logo.jpg';
+  import oldLogo from '$lib/assets/old-logo.avif';
 
   export let width: number = 30;
   export let height: number = 30;
