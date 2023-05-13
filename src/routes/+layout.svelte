@@ -9,7 +9,6 @@
   import { PUBLIC_UMAMI_WEBSITE_ID, PUBLIC_UMAMI_URL } from '$env/static/public';
   import TopNavigation from '$lib/components/TopNavigation.svelte';
   import Footer from '$lib/components/Footer.svelte';
-  import BottomBar from '$lib/components/bottom-bar.svelte';
 </script>
 
 <svelte:head>
@@ -28,7 +27,6 @@
     <slot />
   </main>
   <Footer />
-  <BottomBar />
 </div>
 
 <style global>
