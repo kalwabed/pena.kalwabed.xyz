@@ -78,8 +78,9 @@
     </div>
   </div>
 </div>
+
 <div
-  class="sticky flex items-center justify-between shadow w-3/4 md:w-1/4 mx-auto bottom-4 rounded-xl border border-gray-100 dark:border-mauveSix p-2 bg-gray-50 bg-opacity-0.2 backdrop-blur"
+  class="sticky flex items-center justify-between transition shadow w-3/4 md:w-1/4 mx-auto bottom-[3%] rounded-xl border border-gray-100 dark:border-mauveSix p-2 bg-gray-50 bg-opacity-0.2 backdrop-blur h-full"
 >
   <a
     href="/"
