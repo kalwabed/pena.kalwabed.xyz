@@ -2,7 +2,7 @@
   import { page, navigating } from '$app/stores';
   import { fly } from 'svelte/transition';
 
-  import logo from '../assets/logo.jpg';
+  import Logo from './Logo.svelte';
 
   let breadcrumbs: { url: string; label: string }[] = [];
 
@@ -15,7 +15,7 @@
 
       return {
         url: url || '/',
-        label: label || 'Pena'
+        label: label || 'Pena',
       };
     });
 
@@ -27,14 +27,13 @@
 </script>
 
 <nav class="max-w-screen-xl mx-auto w-full p-4 flex items-center gap-3">
-  <img src={logo} alt="Logo" width="30" height="30" decoding="async" loading="lazy" class="rounded-full shadow" />
+  <Logo />
   <div class="link inline-flex items-center gap-1">
     {#each breadcrumbs as breadcrumb}
       <a
         transition:fly={{ x: -10 }}
         href={breadcrumb.url}
-        class="outline-none hover:bg-gray-200 focus:(ring ring-offset-2 ring-blue-500) transition p-0.5"
-        data-sveltekit-prefetch
+        class="outline-none hover:bg-gray-200 focus:(ring ring-offset-2 ring-blue-500) dark:hover:bg-plumTen transition p-0.5"
       >
         {breadcrumb.label}
       </a>

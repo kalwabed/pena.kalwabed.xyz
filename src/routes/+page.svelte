@@ -3,7 +3,7 @@
   import Divider from '$lib/components/Divider.svelte';
   import PostList from '$lib/components/PostList.svelte';
   import Seo from '$lib/components/SEO.svelte';
-  import logo from '../lib/assets/logo.jpg';
+  import Logo from '$lib/components/Logo.svelte';
 
   export let data: PageData;
   const { posts } = data;
@@ -11,15 +11,18 @@
 
 <Seo title="Home" />
 
-<img src={logo} alt="Logo" width="50" height="50" class="rounded-full shadow" decoding="async" loading="lazy" />
+<Logo width={50} height={50} />
 
 <section class="mt-12 text-xl md:text-2xl">
-  <h1 class="inline-flex font-semibold">Hai! Saya Kalwabed <span>.</span></h1>
+  <h1 class="inline-flex font-semibold">Hai! Saya Kalwabed.</h1>
   <br />
-  Terkadang memang suka menulis hal-hal yang random.
+  <span class="dark:text-mauveEleven text-gray-600"> Terkadang memang suka menulis hal-hal yang random. </span>
 </section>
 
-<a class="mt-8 mb-16 font-semibold text-blue-700 bg-gray-200 p-1 rounded-sm w-fit" href="/guestbook">👤 Buku tamu</a>
+<a
+  class="mt-8 mb-16 font-semibold text-blue-700 bg-gray-200 border hover:(border-gray-200 bg-gray-300) dark:(bg-plumFour text-plumEleven border-plumSeven) hover:dark:(bg-plumFive border-plumEight) focus:dark:bg-plumSeven py-1 px-2 rounded-sm w-fit transition"
+  href="/guestbook">👤 Buku tamu</a
+>
 
 <Divider />
 

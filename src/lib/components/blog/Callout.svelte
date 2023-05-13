@@ -2,7 +2,7 @@
   export let title = 'Callout';
 </script>
 
-<aside class="w-full flex bg-gray-1 gap-1 p-2 rounded border">
+<aside class="w-full flex bg-gray-100 dark:(bg-plumTwo text-plumTwelve border-plumSix) gap-1 p-2 rounded border">
   <span
     ><svg class="w-6 h-6" fill="#fde047" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
       ><path

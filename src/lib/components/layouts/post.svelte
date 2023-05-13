@@ -7,7 +7,6 @@
   import Tag from '../Tag.svelte';
   import { dateFormatter } from '$lib/utils/date';
   import Link from '../Link.svelte';
-  import ArrowLeft from '$lib/assets/arrow-left.svg';
 
   export let title = '';
   export let publishedAt = new Date();
@@ -20,11 +19,11 @@
     await fetch('/api/views/add', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        slug
-      })
+        slug,
+      }),
     });
   });
 </script>
@@ -35,16 +34,16 @@
   <h1 class="text-4xl font-bold text-center">{title}</h1>
 
   <header class="text-lg mt-2 mb-12 mx-auto flex flex-col gap-4">
-    <div class="text-gray-500 text-center">
+    <div class="text-gray-500 dark:text-mauveEleven text-center">
       <a href="https://www.instagram.com/kalwabed" title="Instagram account" target="_blank" rel="noopener noreferrer"
         >@kalwabed</a
       >
-      <span class="text-gray-500">/</span>
+      <span>/</span>
       <time datetime={new Date(publishedAt).toDateString()}>{dateFormatter(publishedAt, { dateStyle: 'long' })}</time>
     </div>
   </header>
 
-  <main class="prose prose-custom text-left mx-auto">
+  <main class="prose prose-custom dark:prose-invert text-left mx-auto">
     <slot />
   </main>
 
@@ -61,4 +60,7 @@
   </footer>
 </article>
 
-<Link href="/#tulisan"><img src={ArrowLeft} alt="arrow left" decoding="async" loading="lazy" /> Tulisan lainnya</Link>
+<Link href="/#tulisan" extClass="gap-2">
+  <div class="i-rdi:arrow-left" />
+  <span>Tulisan lainnya</span>
+</Link>

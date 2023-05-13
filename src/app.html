@@ -9,6 +9,18 @@
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
 
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      const isPreferDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const themeInStorage = 'theme' in localStorage;
+
+      if ((themeInStorage && JSON.parse(localStorage.theme) === 'dark') || (!themeInStorage && isPreferDark)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.add('light');
+      }
+    </script>
+
     %sveltekit.head%
   </head>
 
