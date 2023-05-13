@@ -96,7 +96,7 @@ export default defineConfig({
   rules: [
     [
       /^prose-custom$/,
-      (_, { theme }) => ({
+      (_, { theme }: { theme: any }) => ({
         '--font-heading': '"Montserrat", sans-serif',
         '--font-sans': '"Open Sans", sans-serif',
         '--un-prose-headings': theme.colors.gray[700],
