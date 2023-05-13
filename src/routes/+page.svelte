@@ -3,7 +3,7 @@
   import Divider from '$lib/components/Divider.svelte';
   import PostList from '$lib/components/PostList.svelte';
   import Seo from '$lib/components/SEO.svelte';
-  import logo from '../lib/assets/logo.jpg';
+  import Logo from '$lib/components/Logo.svelte';
 
   export let data: PageData;
   const { posts } = data;
@@ -11,7 +11,7 @@
 
 <Seo title="Home" />
 
-<img src={logo} alt="Logo" width="50" height="50" class="rounded-full shadow" decoding="async" loading="lazy" />
+<Logo width={50} height={50} />
 
 <section class="mt-12 text-xl md:text-2xl">
   <h1 class="inline-flex font-semibold">Hai! Saya Kalwabed.</h1>
