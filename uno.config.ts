@@ -1,4 +1,4 @@
-import { transformerVariantGroup, presetTypography, presetUno, presetIcons } from 'unocss';
+import { transformerVariantGroup, presetTypography, presetUno, presetIcons, presetWebFonts } from 'unocss';
 import { defineConfig } from 'unocss/vite';
 import presetRemToPx from '@unocss/preset-rem-to-px';
 
@@ -39,6 +39,13 @@ export default defineConfig({
     presetIcons({
       collections: {
         rdi: () => import('@iconify-json/radix-icons/icons.json').then(i => i.default),
+      },
+    }),
+    presetWebFonts({
+      provider: 'bunny',
+      fonts: {
+        sans: ['Open Sans:400,500,600'],
+        heading: ['Montserrat:400,500,600,700', 'sans-serif'],
       },
     }),
     presetTypography({
@@ -107,10 +114,6 @@ export default defineConfig({
     ],
   ],
   theme: {
-    fontFamily: {
-      sans: '"Open Sans", sans-serif',
-      heading: 'Montserrat, sans-serif',
-    },
     colors: {
       mauveOne: mauveDark.mauve1,
       mauveTwo: mauveDark.mauve2,
