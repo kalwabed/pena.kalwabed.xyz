@@ -33,12 +33,12 @@
       <a
         transition:fly={{ x: -10 }}
         href={breadcrumb.url}
-        class="outline-none hover:bg-gray-200 focus:(ring ring-offset-2 ring-blue-500) dark:hover:bg-plumTen transition p-0.5"
+        class="outline-none hover:bg-gray-200 focus:(ring ring-offset-2 ring-blue-500) dark:hover:bg-plumTen p-0.5"
       >
         {breadcrumb.label}
       </a>
       {#if breadcrumb.url !== $page.url.pathname}
-        <span transition:fly={{ x: -10 }} class="text-gray-500">/</span>
+        <span transition:fly={{ x: -10, delay: 400 }} class="text-gray-500">/</span>
       {/if}
     {/each}
   </div>
