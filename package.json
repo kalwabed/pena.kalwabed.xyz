@@ -10,6 +10,7 @@
     "vercel-build": "prisma generate && yarn build",
     "coverage": "vitest run --coverage",
     "test": "vitest run",
+    "test": "vitest run",
     "lint": "prettier --plugin-search-dir . --check . && eslint ."
   },
   "devDependencies": {
