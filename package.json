@@ -10,7 +10,6 @@
     "vercel-build": "prisma generate && yarn build",
     "coverage": "vitest run --coverage",
     "test": "vitest run",
-    "test": "vitest run",
     "lint": "prettier --plugin-search-dir . --check . && eslint ."
   },
   "devDependencies": {
@@ -19,11 +18,8 @@
     "@sveltejs/kit": "1.20.5",
     "@typescript-eslint/eslint-plugin": "^5.60.0",
     "@typescript-eslint/parser": "^5.60.0",
-    "@unocss/preset-icons": "^0.53.3",
     "@unocss/preset-rem-to-px": "^0.53.3",
-    "@unocss/preset-typography": "^0.53.3",
     "@unocss/reset": "^0.53.3",
-    "@unocss/transformer-variant-group": "^0.53.3",
     "@vitest/coverage-istanbul": "^0.32.2",
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
@@ -46,8 +42,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@fontsource/montserrat": "^5.0.3",
-    "@fontsource/open-sans": "^5.0.3",
     "@prisma/client": "^4.16.1",
     "notie": "^4.3.1"
   }
