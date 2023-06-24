@@ -5,12 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@fontsource/montserrat':
-    specifier: ^5.0.3
-    version: 5.0.3
-  '@fontsource/open-sans':
-    specifier: ^5.0.3
-    version: 5.0.3
   '@prisma/client':
     specifier: ^4.16.1
     version: 4.16.1(prisma@4.16.1)
@@ -34,22 +28,10 @@ devDependencies:
   '@typescript-eslint/parser':
     specifier: ^5.60.0
     version: 5.60.0(eslint@8.43.0)(typescript@5.1.3)
-  '@unocss/preset-icons':
-    specifier: ^0.53.3
-    version: 0.53.3
   '@unocss/preset-rem-to-px':
     specifier: ^0.53.3
     version: 0.53.3
-  '@unocss/preset-typography':
-    specifier: ^0.53.3
-    version: 0.53.3
   '@unocss/reset':
-    specifier: ^0.53.3
-    version: 0.53.3
-  '@unocss/transformer-directives':
-    specifier: ^0.53.3
-    version: 0.53.3
-  '@unocss/transformer-variant-group':
     specifier: ^0.53.3
     version: 0.53.3
   '@vitest/coverage-istanbul':
@@ -560,14 +542,6 @@ packages:
     resolution: {integrity: sha512-s2UHCoiXfxMvmfzqoN+vrQ84ahUSYde9qNO1MdxmoEhyHWsfmwOpFlwYV+ePJEVc7gFnATGUi376WowX1N7tFg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
-
-  /@fontsource/montserrat@5.0.3:
-    resolution: {integrity: sha512-HxbmY6UeFmwwaqLg3vdkre2U0YgACood2cllKC2ohJdwP9YAieJltodOAcgY0lwvpTAeadW8FlvKFWQIPcS4cg==}
-    dev: false
-
-  /@fontsource/open-sans@5.0.3:
-    resolution: {integrity: sha512-L86qrEfW7IWSGojCtiPpw2/M6qKjxDG+EV4k1xMVFCkhh6Z6gyZwevqCt0yOvd1BmjrtUAIAfSzFTjBn3DeZJw==}
-    dev: false
 
   /@humanwhocodes/config-array@0.11.10:
     resolution: {integrity: sha512-KVVjQmNUepDVGXNuoRRdmmEjruj0KfiGSbS8LVc12LMsWDQzRXJ0qdhN8L8uUigKpfEHRhlaQFY0ib1tnUbNeQ==}
