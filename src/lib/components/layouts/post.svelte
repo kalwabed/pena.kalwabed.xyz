@@ -35,8 +35,11 @@
 
   <header class="text-lg mt-2 mb-12 mx-auto flex flex-col gap-4">
     <div class="text-gray-500 dark:text-mauveEleven text-center">
-      <a href="https://www.instagram.com/kalwabed" title="Instagram account" target="_blank" rel="noopener noreferrer"
-        >@kalwabed</a
+      <a
+        href="https://www.instagram.com/kalwabed"
+        title="Kalwabed Instagram account"
+        target="_blank"
+        rel="noopener noreferrer">@kalwabed</a
       >
       <span>/</span>
       <time datetime={new Date(publishedAt).toDateString()}>{dateFormatter(publishedAt, { dateStyle: 'long' })}</time>
