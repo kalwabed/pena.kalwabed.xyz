@@ -1,0 +1,66 @@
+---
+title: Kampus Merdeka
+publishedAt: 2023-07-05
+updatedAt: 2023-07-05
+desc: Pengalamanku menjadi mentor di kelas React dalam program Kampus Merdeka.
+tags:
+  - karir
+  - pencapaian
+---
+
+<script>
+	import Image from "$lib/components/blog/Image.svelte";
+</script>
+
+Tak adil rasanya kalau berpendapat menjadi seorang pengajar/guru adalah pekerjaan yang membosankan tanpa terjun sendiri ke lapangan.
+
+Adalah aku, mungkin diantara orang-orang yang sadar bahwa dunia pendidikan itu tak sesederhana kelihatannya. Merasakan menjadi seorang pengajar di program Kampus Merdeka merupakan pengalaman yang tidak pernah aku bayangkan sebelumnya. Meskipun memang durasinya tidak terlalu panjang, hanya sekitar 6 bulan, tapi ada banyak pelajaran yang bisa aku dapatkan… dan aku ingin membagikannya kepada sidang pembaca yang budiman sekalian.
+
+## Setengah Pagi
+
+Beberapa bulan belakangan aku terlibat dalam program [MSIB](https://pusatinformasi.mitrakm.kemdikbud.go.id/hc/en-us/articles/4414636620185-Tentang-Program-MSIB) Kampus Merdeka yang diadakan oleh Kemendikbud yang sudah sejak lama cukup eksis. Mungkin diantara pembaca sudah tidak asing dengan hal ini. Diantara program yang ditawarkan selain Magang Bersertifikat, adalah Studi Independen. Di angkatan ke-4 ini aku berkesempatan menjadi salah satu Mentor untuk kelas [React.js](https://react.dev/) bersama Alterra Academy.
+
+Hal ini cukup membuatku bingung untuk persiapannya. Memang yang akan diajarkan di kelas adalah tentang apa-apa yang sudah hampir setiap hari menjadi sarapan dan makan malamku. “Kalau begitu bukankah lebih mudah?” Secara praktik mungkin iya, tapi secara teori ini menjadi tantangan tersendiri; karena tidak mungkin aku mengarang-ngarang karena bukan pelajaran Bahasa Indonesia; dan kalau hanya mengandalkan ingatan saja tentu akan banyak *miss*-nya. Toh, kalau kerja pun aku masih suka buka dokumentasi. Maka, hal ini akan menjadi PR-ku nanti.
+
+Kalau ditabrak praktik terus menerus tanpa pembahasan secara teori akan terasa seperti setengah pagi: tidak jelas ini sudah pagi atau masih subuh.
+
+## Sedikit Berair
+
+Kelasku terdiri dari 24 anak. Dari 24 itu ada 1 yang [AFK](https://www.grammarly.com/blog/afk-meaning/), jadi hitungannya ada 23 orang.
+
+Dalam satu kali sesi pertemuan aku terkadang keluar dari materi apa yang sebenarnya akan dibahas di pertemuan itu. Bukan tanpa alasan. Bayangkan di dalam kelas membahas materi yang sebenarnya sudah cukup dibahas paling lama 60 menit atau 90 menit, sedangkan dalam satu kali sesi pertemuan durasinya diharuskan minimal selama 180 menit.
+
+Untuk mengisi waktu aku biasanya akan melakukan tanya jawab (Q&A) dengan para mentee. Topik pertanyaannya pun luas. Mulai dari wawasan kebangsaan, novel, sampai pertanyaan seperti “apa yang menjadi penyebab meletusnya perang dunia ke-2?”
+
+Sangat “luas”, bukan?
+
+Tentu di beberapa kesempatan aku juga memberikan hadiah berupa saldo *e-wallet* untuk mereka yang berhasil menjawab pertanyaan yang aku berikan.
+
+Konsep ini aku pelajari dari guru kami ketika aku masih duduk di bangku SMK dulu. **Intermezzo** nama konsepnya; bukan nama asli, maka dari itu tidak akan kita temui di jurnal ilmiah manapun. Intinya, konsep ini mengajak para peserta didik untuk rehat sejenak dari hal-hal yang berkaitan soal pelajaran, lalu mengalihkannya ke kegiatan lain yang relatif lebih santai, seperti: diskusi, bermain teka-teki, Q&A, dsb. Sederhana sekali.
+
+Oh ya, apakah aku sudah bilang kalau kegiatan ini semua bersifat daring? Ya, aku bertemu mahasiswa semester 5-6 dari berbagai kampus di Indonesia. Kami tidak pernah bertatap muka secara langsung, hanya melalui layar kaca. Apakah kamu salah satunya?
+
+Terkadang, kalau sedang di perjalanan dan pada saat itu akan ada sesi kelas aku suka melipir ke kafe. Karena bukan di kamar sendiri seperti biasa, maka harus lebih memperhatikan intonasi dan pemilihan kata yang terkadang membuatku merasa sedikit berair (keringat), saking ingin mengimbangi energi di sekitar dan di dalam kelas.
+
+<Image src="/kafe-disaat-live.webp" caption="Sedang live session di Blanco Cafe." />
+
+## Hari ke Hari
+
+Beberapa bulan pertama diisi dengan pemaparan materi dan pendampingan untuk pengerjaan tugas mingguan. Bulan-bulan selanjutnya akan diisi dengan pengerjaan project secara individu dan kelompok, lalu presentasi. Tiap akhir pekan aku punya PR untuk memeriksa dan memberikan nilai pada tiap tugas yang diberikan kepada para mentee kelasku di minggu itu. Ada yang niat banget ngerjainnya, ada yang biasa-biasa aja yang penting selesai.
+
+Selama mengajar di kelas aku menyadari banyak hal yang mungkin tidak akan aku sadari kalau aku tidak ada pada posisi ini, diantaranya:
+
+1. Ada anak yang ambis: paling fokus tiap aku menerangkan, paling rajin tiap penugasan, aktif diantara yang lain, dan nunjukin kemauan belajar yang tinggi.
+2. Ada anak yang “*medium*”: jarang memperhatikan, tidak bisa membaca situasi, tugas ala kadarnya, kadang di tengah pembelajaran malah ada yang sambil nongkrong bahkan futsal. Tidak berlebihan kalau yang ini adalah tipikal **yang penting selesai**.
+
+Hal-hal di atas menurutku yang masih lumrah. Kesannya aku seperti mendapat *reverse card* dalam permainan UNO. Mengingat aku juga pernah berada di posisi mereka sebagai murid, tentu aku juga merasakan dalam suatu kelas yang banyak murid pasti ada saja dua tipe di atas, benar atau tidak salah?
+
+Semakin kesini malah semakin menarik. Hari ke hari aku mencoba untuk belajar seperti bagaimana caranya menyampaikan materi dengan lebih menarik dan efektif, lalu bagaimana membangun interaksi dengan peserta selama proses pembelajaran.
+
+## Kopi Hitam
+
+Kesimpulannya—dengan sependek pengalamanku, menjadi guru/pengajar adalah pekerjaan yang menyenangkan sekaligus pekerjaan yang tidak mudah. Setidaknya bagiku sebagai *point of view* dari orang yang berkecimpung di dunia industri. Selain membawakan materi di kelas, tentu sebelum itu juga ada persiapan materi yang akan dibawakan, memantau perkembangan murid, memeriksa tugas, menilai dan memberikan arahan.
+
+Mempersiapkan calon talenta baru untuk masuk ke dunia industri IT, yang mana sebagai pengajar itu juga berarti dituntut untuk selalu update dengan perkembangan yang ada di industri saat ini. Bagi sebagian orang ini tidaklah mudah, dan terkadang masih perlu penyesuaian.
+
+Udah *nyemplung* sebentar, dan sudah sedikit merasakan sensasinya. Ibarat kopi hitam, serupa rahasia yang tersembunyi hingga kita merasakannya, tanpa kepastian apakah terdapat manisnya di dalamnya.
