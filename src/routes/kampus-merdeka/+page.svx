@@ -8,6 +8,10 @@ tags:
   - pencapaian
 ---
 
+<script>
+	import Image from "$lib/components/blog/Image.svelte";
+</script>
+
 Tak adil rasanya kalau berpendapat menjadi seorang pengajar/guru adalah pekerjaan yang membosankan tanpa terjun sendiri ke lapangan.
 
 Adalah aku, mungkin diantara orang-orang yang sadar bahwa dunia pendidikan itu tak sesederhana kelihatannya. Merasakan menjadi seorang pengajar merupakan pengalaman yang tidak pernah aku bayangkan sebelumnya. Meskipun memang durasinya tidak terlalu panjang tapi ada banyak pelajaran yang bisa aku dapatkan… dan aku ingin membagikannya kepada sidang pembaca yang budiman sekalian.
@@ -37,6 +41,8 @@ Konsep ini aku pelajari dari guru kami ketika aku masih duduk di bangku SMK dulu
 Oh ya, apakah aku sudah bilang kalau kegiatan ini semua bersifat daring? Ya, aku bertemu mahasiswa semester 5-6 dari berbagai kampus di Indonesia. Kami tidak pernah bertatap muka secara langsung, hanya melalui layar kaca. Apakah kamu salah satunya?
 
 Terkadang, kalau sedang di perjalanan dan pada saat itu akan ada sesi kelas aku suka melipir ke kafe. Karena bukan di kamar sendiri seperti biasa, maka harus lebih memperhatikan intonasi dan pemilihan kata yang terkadang membuatku merasa sedikit berair (keringat), saking ingin mengimbangi energi di sekitar dan di dalam kelas.
+
+<Image src="/kafe-disaat-live.webp" caption="Sedang live session di Blanco Cafe." />
 
 ## Hari ke Hari
 
