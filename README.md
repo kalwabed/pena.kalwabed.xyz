@@ -60,7 +60,7 @@ You can easily deploy to Vercel, or you can learn more from https://kit.svelte.d
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Sveltekit, take a look at the following resources:
 
 - [Svelte Kit Documentation](https://kit.svelte.dev/docs/introduction) - learn about Svelte Kit features and API.
 - [Learn Svelte](https://learn.svelte.dev/tutorial/welcome-to-svelte) - an interactive Svelte tutorial.
