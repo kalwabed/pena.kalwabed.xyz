@@ -13,6 +13,7 @@
   export let tags = [];
   export let updatedAt = new Date();
   export let desc = '';
+  export let location = 'Yogyakarta';
 
   onMount(async () => {
     const slug = $page.url.pathname.replace('/', '');
@@ -35,13 +36,7 @@
 
   <header class="text-lg mt-2 mb-12 mx-auto flex flex-col gap-4">
     <div class="text-gray-500 dark:text-mauveEleven text-center">
-      <a
-        href="https://www.instagram.com/kalwabed"
-        title="Kalwabed Instagram account"
-        target="_blank"
-        rel="noopener noreferrer">@kalwabed</a
-      >
-      <span>/</span>
+      <span>{location},</span>
       <time datetime={new Date(publishedAt).toDateString()}>{dateFormatter(publishedAt, { dateStyle: 'long' })}</time>
     </div>
   </header>
