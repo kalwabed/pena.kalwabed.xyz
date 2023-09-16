@@ -1,0 +1,56 @@
+---
+title: Gak Kerasa
+publishedAt: 2023-09-16
+updatedAt: 2023-09-16
+desc: Hal-hal gak kerasa yang terjadi sejauh ini, dan pelajaran apa yang bisa petik dari situ.
+tags:
+  - pengalaman
+  - manusia
+---
+<script>
+	import ToggleList from "$lib/components/blog/ToggleList.svelte";
+</script>
+
+Gak kerasa sudah semester 5, perasaan baru kemarin masuk kuliah.
+
+Gak kerasa habis ini skripsian, kok aku baru kepikiran nyari judul skripsi sekarang ya.
+
+Gak kerasa sudah di umur 21. 2 tahun lagi jadi 23 tahun. Kira-kira karya apa yang sudah aku lahirkan?
+
+Gak kerasa sudah sekian juta biaya yang orangtua keluarkan hanya untuk supaya kita bisa melanjutkan pendidikan ke perguruan tinggi.
+
+Gak kerasa…
+
+orangtua semakin menua tapi kita masih gini-gini aja.
+
+Banyak momen dan hal-hal yang “gak kerasa” di kehidupan ini. Semakin dewasa akan semakin banyak “gak kerasa”-nya, yang itu menunjukkan sudah sejauh mana kita melangkah.
+
+Gak kerasa tiba-tiba sudah ada yang manggil Om.
+
+Gak kerasa habis ini lebaran.
+
+Gak kerasa sekarang sudah bisa ngasih *sangu* ke anak-anak kecil.
+
+Gak kerasa teman-teman dulu seangkatan di sekolah sekarang sebagian sudah pada nikah.
+
+Gak kerasa 2017 itu sudah 6 tahun berlalu.
+
+Gak kerasa 2024 kurang 4 bulan lagi.
+
+Rasanya begitu cepat waktu berjalan seiring bertambahnya beban tanggungjawab dan rutinitas sehari-hari manusia, kenapa begitu? Entahlah. Sewaktu kecil aku adalah tipe orang yang sangat suka kegiatan yang ***wasting time***, membuang-buang waktu. Tujuannya cuma satu, karena di pergaulanku sendiri aku sering dikelilingi oleh anak-anak yang umurnya lebih tua dariku jadi aku juga ingin cepat tumbuh menjadi laki-laki yang dewasa. 
+
+Hampir setiap sore ketika masa panen telah tiba, aku suka bermain sepakbola di sawah bersama teman-teman yang—seperti kataku tadi—kebanyakan umurnya relatif lebih tua dariku. **“Bawang kuntil”** adalah julukan buat anak yang masih *newbie*/paling muda di permainan itu; aku adalah diantara anak yang langganan dapat julukan itu karena aku paling muda dan tidak bisa diunggulkan di permainan, apalagi permainan yang mayoritas untuk anak-anak lebih tua, seperti: *delikan gerombol* dengan skala lebih luas. 
+
+<ToggleList title="Jika kamu penasaran permainan apa itu">
+Aku tidak tahu apakah ini juga ada di tempatmu, tapi jika kamu penasaran permainan apa itu. Jadi yang dinamakan <em>delikan gerombol</em> itu adalah sejenis gabungan dari permainan petak umpet dan polisi-polisian, yang ini dilakukan secara bergerombol/beramai-ramai, dan biasanya dibagi dalam 2 kelompok yang nanti secara bergantian bertukar peran. Jika ada salah satu anggota dari kelompok yang berperan menjadi “maling” tertangkap, maka kelompok itu harus menyerahkan diri. Permainan ini lebih seru lagi kalau sudah cakupan areanya lebih luas dan anggota kelompok semakin banyak.
+</ToggleList>
+
+Setelah kurang lebih 10 tahun sejak masa-masa itu, ketika aku harus menemui tempat yang sama biasanya akan mulai “gak kerasa”.
+
+Gak kerasa yang dulunya sawah, sekarang sebagian sudah berubah jadi perumahan.
+
+Gak kerasa sudah mulai *relate* dan ketawa waktu lihat jokes bapak-bapak.
+
+**baca lagi tulisan ini di bulan September 2025*: 
+
+Gak kerasa sudah 2 tahun berlalu. Kamu. Apa kabar?
