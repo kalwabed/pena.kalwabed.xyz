@@ -23,23 +23,23 @@ First, clone the repository.
 git clone https://github.com/kalwabed/pena.kalwabed.xyz.git
 ```
 
-Then, install dependencies and fetch data to your local machine. **Note that we use PNPM.**
+Then, install dependencies and fetch data to your local machine. **Note that we use Bun.**
 
 ```bash
 cd pena.kalwabed.xyz
-pnpm install
+bun install
 ```
 
 Generate Prisma Client.
 
 ```bash
-pnpx prisma generate
+bun x prisma generate
 ```
 
 Finally, run the development server.
 
 ```bash
-pnpm dev
+bun dev
 ```
 
 Open [http://127.0.0.1:5173](http://127.0.0.1:5173) with your browser to see the result.
