@@ -2,20 +2,9 @@
   import 'uno.css';
   import '@unocss/reset/tailwind.css';
 
-  import { PUBLIC_UMAMI_WEBSITE_ID, PUBLIC_UMAMI_URL } from '$env/static/public';
   import TopNavigation from '$lib/components/TopNavigation.svelte';
   import Footer from '$lib/components/Footer.svelte';
 </script>
-
-<svelte:head>
-  <script
-    async
-    defer
-    data-do-not-track="true"
-    data-website-id={PUBLIC_UMAMI_WEBSITE_ID}
-    src={PUBLIC_UMAMI_URL}
-  ></script>
-</svelte:head>
 
 <div class="w-full flex-auto flex flex-col font-sans min-h-full dark:bg-mauveOne dark:text-mauveTwelve">
   <TopNavigation />
