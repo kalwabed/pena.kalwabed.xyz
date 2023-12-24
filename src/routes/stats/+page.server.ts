@@ -11,6 +11,6 @@ export const load = (async () => {
     return { stats: postViewsCount };
   } catch (err) {
     console.error(err);
-    throw error(500, 'Internal Server Error');
+    error(500, 'Internal Server Error');
   }
 }) satisfies PageServerLoad;

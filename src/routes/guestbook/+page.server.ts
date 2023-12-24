@@ -11,7 +11,7 @@ export const load = (async () => {
     return { guests };
   } catch (err) {
     console.error(err);
-    throw error(500, 'Internal Server Error');
+    error(500, 'Internal Server Error');
   }
 }) satisfies PageServerLoad;
 
@@ -61,7 +61,7 @@ Message: ||${escapedText(body)}||
 
       return { msg: 'Yayy' };
     } catch (err) {
-      throw error(500, 'Internal Server Error');
+      error(500, 'Internal Server Error');
     }
   },
 } satisfies Actions;

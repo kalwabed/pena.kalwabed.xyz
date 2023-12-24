@@ -13,5 +13,5 @@ export const GET = (async ({ url }) => {
     return json(items, { status: 200 });
   }
 
-  throw error(404, 'Not found');
+  error(404, 'Not found');
 })satisfies RequestHandler;

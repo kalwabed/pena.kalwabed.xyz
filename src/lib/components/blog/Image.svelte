@@ -1,4 +1,5 @@
 <script>
+  /* eslint svelte/no-at-html-tags: "off" */
   export let src;
   export let caption;
   export let isFullWidth = false;

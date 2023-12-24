@@ -14,19 +14,12 @@
   <Footer />
 </div>
 
-<style global>
-  html,
-  body,
-  #svelte {
+<style>
+  :global(html, body, #svelte) {
     height: 100%;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  :global(h1, h2, h3, h4, h5, h6) {
     font-family: Montserrat, sans-serif;
   }
 </style>
