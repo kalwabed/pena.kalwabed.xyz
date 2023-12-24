@@ -1,6 +1,5 @@
 import { transformerVariantGroup, presetTypography, presetUno, presetIcons, presetWebFonts } from 'unocss';
 import { defineConfig } from 'unocss/vite';
-import presetRemToPx from '@unocss/preset-rem-to-px';
 
 const mauveDark = {
   mauve1: '#161618',
@@ -35,7 +34,6 @@ const plumDark = {
 export default defineConfig({
   presets: [
     presetUno(),
-    presetRemToPx(),
     presetIcons({
       collections: {
         rdi: () => import('@iconify-json/radix-icons/icons.json').then(i => i.default),
