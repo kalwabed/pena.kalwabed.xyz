@@ -7,7 +7,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "vercel-build": "prisma generate && bun run build",
+    "build-prod": "prisma generate && pnpm build",
     "coverage": "vitest run --coverage",
     "test": "vitest run",
     "lint": "prettier --write --plugin-search-dir=. ./**/*.svelte && eslint 'src/**/*.{ts,svelte}'"
