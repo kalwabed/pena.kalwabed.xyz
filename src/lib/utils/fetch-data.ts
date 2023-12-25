@@ -18,7 +18,7 @@ export function slugTransformer(folderName: string): string {
   return folderName.replace('/src/routes/', '').replace('/+page.svx', '');
 }
 
-export function generateFileMetadata(files: any[] | Record<string, () => Promise<string>>): Promise<Post>[] {
+export function generateFileMetadata(files: Record<string, () => Promise<string>>): Promise<Post>[] {
   return Object.keys(files).map(async (folderName): Promise<Post> => {
     const postContent = (await files[folderName]()) as string;
 

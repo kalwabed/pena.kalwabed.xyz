@@ -9,15 +9,16 @@
   export let title: string;
   export let desc: string = siteDescription;
 
-  // to overriding home page title, from Home to Pena
-  const ogTitle = title === 'Home' ? siteName : title;
+  // to overriding home page title, from Home to Pena Kalwabed
+  const ogTitle = title === 'home' ? `${siteName} Kalwabed` : title;
+  const combinedTitle = title === 'home' ? ogTitle : `${title} | ${siteName}`;
 
   const ogServiceUrl = 'https://www.kalwabed.xyz/api/og';
   const ogImage = `${ogServiceUrl}?domain=pena&title=${encodeURI(ogTitle)}&desc=${encodeURI(desc)}`;
 </script>
 
 <svelte:head>
-  <title>{title} | {siteName}</title>
+  <title>{combinedTitle}</title>
   <link rel="canonical" href={pathname} />
   <meta name="description" content={desc} />
   <meta name="keywords" content={keywords.join(',').toLowerCase()} />

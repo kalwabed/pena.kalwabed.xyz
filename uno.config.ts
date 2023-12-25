@@ -1,6 +1,5 @@
 import { transformerVariantGroup, presetTypography, presetUno, presetIcons, presetWebFonts } from 'unocss';
 import { defineConfig } from 'unocss/vite';
-import presetRemToPx from '@unocss/preset-rem-to-px';
 
 const mauveDark = {
   mauve1: '#161618',
@@ -35,7 +34,6 @@ const plumDark = {
 export default defineConfig({
   presets: [
     presetUno(),
-    presetRemToPx(),
     presetIcons({
       collections: {
         rdi: () => import('@iconify-json/radix-icons/icons.json').then(i => i.default),
@@ -45,7 +43,7 @@ export default defineConfig({
       provider: 'bunny',
       fonts: {
         sans: ['Open Sans:400,500,600'],
-        heading: ['Montserrat:400,500,600,700', 'sans-serif'],
+        heading: ['Crimson Pro:400,500,600', 'sans-serif'],
       },
     }),
     presetTypography({
@@ -104,7 +102,7 @@ export default defineConfig({
     [
       /^prose-custom$/,
       (_, { theme }: { theme: any }) => ({
-        '--font-heading': '"Montserrat", sans-serif',
+        '--font-heading': '"Crimson Pro", sans-serif',
         '--font-sans': '"Open Sans", sans-serif',
         '--un-prose-headings': theme.colors.gray[700],
         '--un-prose-body': theme.colors.gray[600],

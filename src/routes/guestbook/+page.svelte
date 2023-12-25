@@ -10,7 +10,7 @@
   $: guestBook = data?.guests?.map(guest => {
     return {
       ...guest,
-      date: dateFormatter(guest.created_at, { dateStyle: 'medium', timeStyle: 'short' }),
+      date: dateFormatter(guest.created_at, { hour: '2-digit', minute: '2-digit' }),
     };
   });
 </script>

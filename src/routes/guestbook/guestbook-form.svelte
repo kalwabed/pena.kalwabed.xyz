@@ -4,7 +4,7 @@
   import { applyAction, deserialize } from '$app/forms';
   import { invalidateAll } from '$app/navigation';
   import type { ActionResult } from '@sveltejs/kit';
-  import notie, { alert } from 'notie';
+  import notie from 'notie';
 
   let isLoading = false;
 
@@ -12,7 +12,7 @@
     const data = new FormData(this);
 
     isLoading = true;
-    alert({ type: 'info', text: 'Tunggu yaa', stay: true });
+    notie.alert({ type: 'info', text: 'Tunggu yaa', stay: true });
 
     const response = await fetch(this.action, {
       method: 'post',
@@ -24,11 +24,11 @@
     notie.hideAlerts();
 
     if (result.type === 'success') {
-      alert({ type: 'success', text: 'Komentar berhasil dikirim!' });
+      notie.alert({ type: 'success', text: 'Komentar berhasil dikirim!' });
       // re-run all `load` functions, following the successful update
       await invalidateAll();
     } else if (result.type === 'failure') {
-      alert({ type: 'error', text: result?.data?.msg });
+      notie.alert({ type: 'error', text: result?.data?.msg });
     }
 
     isLoading = false;

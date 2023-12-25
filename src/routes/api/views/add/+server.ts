@@ -7,7 +7,7 @@ export const POST = (async ({ request }) => {
   const slug = req.slug as string;
 
   if (!slug) {
-    throw error(400, 'slug is required');
+    error(400, 'slug is required');
   }
 
   try {

@@ -1,9 +1,9 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 import app from '$lib/configs/app';
-import { getResourcesAsync } from '$lib/utils/fetch-data';
+import { getResourcesAsync, type Post } from '$lib/utils/fetch-data';
 
-const feedItem = (item: any) => {
+const feedItem = (item: Post) => {
   const postLink = app.siteUrl.concat('/', item.slug);
 
   return `
@@ -18,7 +18,7 @@ const feedItem = (item: any) => {
   `;
 };
 
-const renderXmlRssFeed = (items: any) => {
+const renderXmlRssFeed = (items: Post[]) => {
   return `<?xml version="1.0" encoding="UTF-8" ?>
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
