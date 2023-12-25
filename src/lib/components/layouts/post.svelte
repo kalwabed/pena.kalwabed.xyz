@@ -14,6 +14,8 @@
   export let updatedAt = new Date();
   export let desc = '';
   export let location = 'Yogyakarta';
+  export let darkCover = '';
+  export let lightCover = '';
 
   onMount(async () => {
     const slug = $page.url.pathname.replace('/', '');
@@ -31,14 +33,19 @@
 
 <Seo {title} {desc} />
 
-<article class="flex flex-col mx-auto">
-  <h1 class="text-4xl font-bold text-center">{title}</h1>
-
-  <header class="text-lg mt-2 mb-12 mx-auto flex flex-col gap-4">
-    <div class="text-gray-500 dark:text-mauveEleven text-center">
-      <span>{location},</span>
-      <time datetime={new Date(publishedAt).toDateString()}>{dateFormatter(publishedAt, { dateStyle: 'long' })}</time>
+<article class="flex flex-col mx-auto -mt-16">
+  <header class="h-auto flex items-center aspect-[1.6] relative">
+    <div class="w-[70%]">
+      <div class="text-sm text-gray-500 dark:text-mauveEleven">
+        <span>{location},</span>
+        <time datetime={new Date(publishedAt).toDateString()}>{dateFormatter(publishedAt, { dateStyle: 'long' })}</time>
+      </div>
+      <h1 class="text-4xl font-bold leading-relaxed">{title}</h1>
     </div>
+    {#if lightCover}
+      <img src={lightCover} alt={`${title} cover image`} class="block dark:hidden -right-4 md:-right-12 top-20 absolute w-[40%]" width="300" height="400" />
+      <img src={darkCover} alt={`${title} cover image`} class="hidden dark:block -right-4 md:-right-12 top-20 absolute w-[40%]" width="300" height="400" />
+    {/if}
   </header>
 
   <main class="prose prose-custom dark:prose-invert text-left mx-auto">

@@ -1,6 +1,8 @@
 ---
 title: Resolusi
 location: Banyuwangi
+lightCover: /cover-resolusi.svg
+darkCover: /cover-resolusi-dark.svg
 publishedAt: 2023-12-25
 updatedAt: 2023-12-25
 desc: Tentang resolusi tahunan.
