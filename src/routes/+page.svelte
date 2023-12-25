@@ -9,7 +9,7 @@
   const { posts } = data;
 </script>
 
-<Seo title="Home" />
+<Seo title="home" />
 
 <Logo width={50} height={50} />
 

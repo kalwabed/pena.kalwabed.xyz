@@ -38,13 +38,25 @@
     <div class="w-[70%]">
       <div class="text-sm text-gray-500 dark:text-mauveEleven">
         <span>{location},</span>
-        <time datetime={new Date(publishedAt).toDateString()}>{dateFormatter(publishedAt, { dateStyle: 'long' })}</time>
+        <time datetime={new Date(publishedAt).toDateString()}>{dateFormatter(publishedAt)}</time>
       </div>
       <h1 class="text-4xl font-bold leading-relaxed">{title}</h1>
     </div>
     {#if lightCover}
-      <img src={lightCover} alt={`${title} cover image`} class="block dark:hidden -right-4 md:-right-12 top-20 absolute w-[40%]" width="300" height="400" />
-      <img src={darkCover} alt={`${title} cover image`} class="hidden dark:block -right-4 md:-right-12 top-20 absolute w-[40%]" width="300" height="400" />
+      <img
+        src={lightCover}
+        alt={`${title} cover image`}
+        class="block dark:hidden -right-4 md:-right-12 top-20 absolute w-[40%]"
+        width="300"
+        height="400"
+      />
+      <img
+        src={darkCover}
+        alt={`${title} cover image`}
+        class="hidden dark:block -right-4 md:-right-12 top-20 absolute w-[40%]"
+        width="300"
+        height="400"
+      />
     {/if}
   </header>
 
@@ -60,7 +72,7 @@
       {/each}
     </div>
     <p>
-      Terakhir update: {dateFormatter(updatedAt, { dateStyle: 'long' })}
+      Terakhir update: {dateFormatter(updatedAt)}
     </p>
   </footer>
 </article>
