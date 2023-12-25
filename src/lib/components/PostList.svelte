@@ -12,7 +12,7 @@
       <h3 class="font-medium font-sans">
         {post.title}
       </h3>
-      <p class="c-gray5 my-.5">{post.desc}</p>
+      <p class="c-gray5 dark:c-gray my-.5">{post.desc}</p>
       <time datetime={new Date(post.publishedAt).toDateString()} class="text-sm">{dateFormatter(post.publishedAt)}</time
       >
     </CardPost>
