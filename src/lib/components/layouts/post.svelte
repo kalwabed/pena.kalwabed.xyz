@@ -35,7 +35,7 @@
 
 <article class="flex flex-col mx-auto -mt-16">
   <header class="h-auto flex items-center aspect-[1.6] relative">
-    <div class="w-[70%]">
+    <div class="w-[68%]">
       <div class="text-sm text-gray-500 dark:text-mauveEleven">
         <span>{location},</span>
         <time datetime={new Date(publishedAt).toDateString()}>{dateFormatter(publishedAt)}</time>
