@@ -1,0 +1,46 @@
+---
+title: Jika pada akhirnya kita tidak bersama
+location: Yogyakarta
+lightCover: /cover-jika-tidak-bersama.svg
+darkCover: /cover-jika-tidak-bersama-dark.svg
+publishedAt: 2024-01-30
+updatedAt: 2024-01-30
+desc: Kompilasi dari pengamatan pribadi dan pengalaman orang lain.
+tags:
+  - hidup
+  - manusia
+---
+
+**Jika pada akhirnya kita tidak bersama**, ketahuilah bahwa bumi masih berputar, format kehidupan masih 24/7.
+
+**Jika pada akhirnya kita tidak bersama**, aku masih bisa menikmati Mie Ayam di seberang rumah nenekmu itu.
+
+**Jika pada akhirnya kita tidak bersama**, aku masih akan mengunjungi toko buku karena aku tahu kamu suka membaca buku.
+
+**Jika pada akhirnya kita tidak bersama**, ban sepedaku yang mulai kehilangan tenaganya itu akan aku kuatkan, sehingga bisa aku pakai untuk bersepeda dan siapa tahu bisa kembali bertemu denganmu secara tidak sengaja seperti beberapa bulan yang lalu.
+
+**Jika pada akhirnya kita tidak bersama**, akan kurapikan kemejaku tiap kali ke taman kota, sehingga aku lebih percaya diri bilamana kembali dipertemukan dengan ayahmu, dan kamu menunduk malu di belakangnya seperti tahun lalu.
+
+**Jika pada akhirnya kita tidak bersama**, aku akan belajar menulis dan meramu kopi. Kali ini aku tidak tahu apakah kamu menyukai kopi atau tidak, dan aku pun tidak yakin kamu suka membaca tulisanku.
+
+**Jika pada akhirnya kita tidak bersama**, aku yakin bisa segera melupakanmu karena sekarang aku sibuk belajar bahasa pemrograman baru. Aku pun yakin kamu juga akan kebingungan kalau harus aku jelaskan konsep Borrowing dan Multithreading di [Rust](https://www.rust-lang.org).
+
+**Jika pada akhirnya kita tidak bersama**, mengenalmu sebagai perempuan yang salihah, pemalu dan memiliki akhlak yang baik sudah cukup bagiku. Tapi, sebentar, apakah kita sudah saling mengenal sebelumnya? Aku mendengar banyak dari ayahmu.
+
+**Jika pada akhirnya kita tidak bersama**, semoga ayah dan ibumu masih mengenaliku sebagai anak muda yang baik, anak muda yang sama yang dulu pernah menabrakmu di persimpangan jalan menuju rumah orangtuamu yang sekarang menjadi rumahmu dan lelaki pilihanmu.
+
+## Selesai
+
+Tepat 1 bulan yang lalu aku menghadiri sebuah pesta pernikahan yang diadakan secara sederhana tapi penuh khidmat. Saat bersalaman dengan ayahmu, beliau menjabat tanganku seakan memberikan isyarat kepadaku untuk kuat menerima kenyataan bahwa laki-laki yang bersamamu di pelaminan itu ternyata bukanlah aku.
+
+Kini semua fenomena tentangmu hanya seperti jentikan jari yang sewaktu-waktu bisa aku bawa dalam sebuah forum untuk dijadikan sebuah kisah pengalaman dan pelajaran hidup yang berharga. Soal kesabaran, keikhlasan, dan fakta bahwa semua yang sudah digariskan kepada kita akan mencari jalannya sendiri.
+
+*Aku penasaran dengan buku apa yang sedang kamu baca sekarang?*
+
+*Apakah kamu lebih suka kopi, teh, atau yang lain?*
+
+*Apakah kamu suka membaca tulisanku?*
+
+*Bagaimana pendapatmu jika ada orang yang suka gigitin batu?*
+
+Aku masih penasaran dengan jawabanmu atas pertanyaan-pertanyaanku itu, tapi yang pasti aku ingin kamu tahu bahwa aku sudah mengikhlaskanmu sejak pertama kali kita bertemu.
