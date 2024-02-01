@@ -11,12 +11,12 @@
       <a class="hover:text-blue-500 dark:hover:text-plumEleven" href="/guestbook">/guestbook</a>
       <div class="inline-flex items-center gap-1">
         <a
-          href="https://www.kalwabed.xyz"
+          href="https://www.kalwabed.com"
           class="hover:text-blue-500 dark:hover:text-plumEleven inline-flex items-center gap-1"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <span> kalwabed.xyz </span>
+          <span> kalwabed.com </span>
           <div class="i-rdi:external-link text-xs" />
         </a>
       </div>
