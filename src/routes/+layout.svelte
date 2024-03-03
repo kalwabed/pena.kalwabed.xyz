@@ -8,7 +8,7 @@
 
 <div class="w-full flex-auto flex flex-col font-sans min-h-full dark:bg-mauveOne dark:text-mauveTwelve">
   <TopNavigation />
-  <main class="w-full max-w-full md:max-w-screen-lg mx-auto flex flex-col mt-10 md:mt-20 p-4 md:p-0">
+  <main class="w-full max-w-full md:max-w-screen-lg mx-auto flex flex-col mt-10 md:mt-20 p-4 lg:p-0">
     <slot />
   </main>
   <Footer />
