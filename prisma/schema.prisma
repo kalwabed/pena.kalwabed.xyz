@@ -3,21 +3,21 @@ generator client {
 }
 
 datasource db {
-  provider     = "mysql"
+  provider     = "postgresql"
   url          = env("DATABASE_URL")
   relationMode = "prisma"
 }
 
-model guestBook {
+model guest_books {
   id         Int      @id @default(autoincrement())
   name       String
-  body       String   @db.VarChar(255)
+  body       String
   email      String
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 }
 
 model views {
-  slug  String @id @db.VarChar(128)
+  slug  String @id
   count Int    @default(0)
 }

@@ -6,7 +6,7 @@ import { prisma } from '$lib/providers/prisma';
 
 export const load = (async () => {
   try {
-    const guests = await prisma.guestBook.findMany({ orderBy: { created_at: 'desc' } });
+    const guests = await prisma.guest_books.findMany({ orderBy: { created_at: 'desc' } });
 
     return { guests };
   } catch (err) {
@@ -27,7 +27,7 @@ export const actions = {
     }
 
     try {
-      await prisma.guestBook.create({
+      await prisma.guest_books.create({
         data: {
           name,
           body,
