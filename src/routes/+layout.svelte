@@ -4,12 +4,17 @@
 
   import TopNavigation from '$lib/components/TopNavigation.svelte';
   import Footer from '$lib/components/Footer.svelte';
+  interface Props {
+    children?: import('svelte').Snippet;
+  }
+
+  let { children }: Props = $props();
 </script>
 
 <div class="w-full flex-auto flex flex-col font-sans min-h-full dark:bg-mauveOne dark:text-mauveTwelve">
   <TopNavigation />
   <main class="w-full max-w-full md:max-w-screen-lg mx-auto flex flex-col mt-10 md:mt-20 p-4 lg:p-0">
-    <slot />
+    {@render children?.()}
   </main>
   <Footer />
 </div>

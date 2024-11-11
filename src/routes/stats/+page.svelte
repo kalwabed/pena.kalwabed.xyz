@@ -3,7 +3,11 @@
 
   import Seo from '$lib/components/SEO.svelte';
 
-  export let data: PageServerData;
+  interface Props {
+    data: PageServerData;
+  }
+
+  let { data }: Props = $props();
   const { stats } = data;
 </script>
 

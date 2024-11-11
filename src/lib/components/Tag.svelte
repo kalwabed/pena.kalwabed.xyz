@@ -1,8 +1,12 @@
 <script lang="ts">
   import { slugify } from '$lib/utils/slug';
 
-  export let tag;
-  export let className = '';
+  interface Props {
+    tag: any;
+    className?: string;
+  }
+
+  let { tag, className = '' }: Props = $props();
 </script>
 
 <a

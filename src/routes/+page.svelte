@@ -5,7 +5,11 @@
   import Seo from '$lib/components/SEO.svelte';
   import Logo from '$lib/components/Logo.svelte';
 
-  export let data: PageData;
+  interface Props {
+    data: PageData;
+  }
+
+  let { data }: Props = $props();
   const { posts } = data;
 </script>
 

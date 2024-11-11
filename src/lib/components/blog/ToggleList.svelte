@@ -1,9 +1,14 @@
-<script>
+<script lang="ts">
   import { fly } from 'svelte/transition';
   import { quintOut } from 'svelte/easing';
 
-  let isOpen = false;
-  export let title = 'Toggle List';
+  let isOpen = $state(false);
+  interface Props {
+    title?: string;
+    children?: import('svelte').Snippet;
+  }
+
+  let { title = 'Toggle List', children }: Props = $props();
 
   const handleOnClick = () => {
     isOpen = !isOpen;
@@ -11,7 +16,7 @@
 </script>
 
 <div class="my-2 p-2 bg-gray-100 dark:(bg-plumTwo text-plumTwelve border-plumSeven) rounded border">
-  <button class="w-full flex items-center outline-none rounded-t transition gap-2" on:click={handleOnClick}>
+  <button class="w-full flex items-center outline-none rounded-t transition gap-2" onclick={handleOnClick}>
     <span
       ><svg class="w-6 h-6" fill="#93c5fd" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
         ><path
@@ -50,7 +55,7 @@
 
   {#if isOpen}
     <p transition:fly={{ y: -10, easing: quintOut }}>
-      <slot />
+      {@render children?.()}
     </p>
   {/if}
 </div>

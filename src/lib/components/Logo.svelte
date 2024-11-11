@@ -2,8 +2,12 @@
   import logo from '$lib/assets/logo.avif';
   import oldLogo from '$lib/assets/old-logo.avif';
 
-  export let width: number = 30;
-  export let height: number = 30;
+  interface Props {
+    width?: number;
+    height?: number;
+  }
+
+  let { width = 30, height = 30 }: Props = $props();
 </script>
 
 <img

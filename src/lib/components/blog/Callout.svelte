@@ -1,5 +1,10 @@
-<script>
-  export let title = 'Callout';
+<script lang="ts">
+  interface Props {
+    title?: string;
+    children?: import('svelte').Snippet;
+  }
+
+  let { title = 'Callout', children }: Props = $props();
 </script>
 
 <aside class="w-full flex bg-gray-100 dark:(bg-plumTwo text-plumTwelve border-plumSix) gap-1 p-2 rounded border">
@@ -15,6 +20,6 @@
   >
   <div class="flex flex-col w-full gap-1">
     <b>{title}</b>
-    <slot />
+    {@render children?.()}
   </div>
 </aside>

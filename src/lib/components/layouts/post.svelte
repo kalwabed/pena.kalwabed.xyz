@@ -8,14 +8,29 @@
   import { dateFormatter } from '$lib/utils/date';
   import Link from '../Link.svelte';
 
-  export let title = '';
-  export let publishedAt = new Date();
-  export let tags = [];
-  export let updatedAt = new Date();
-  export let desc = '';
-  export let location = 'Yogyakarta';
-  export let darkCover = '';
-  export let lightCover = '';
+  interface Props {
+    title?: string;
+    publishedAt?: Date;
+    tags?: string[];
+    updatedAt?: Date;
+    desc?: string;
+    location?: string;
+    darkCover?: string;
+    lightCover?: string;
+    children?: import('svelte').Snippet;
+  }
+
+  let {
+    title = '',
+    publishedAt = new Date(),
+    tags = [],
+    updatedAt = new Date(),
+    desc = '',
+    location = 'Yogyakarta',
+    darkCover = '',
+    lightCover = '',
+    children,
+  }: Props = $props();
 
   onMount(async () => {
     const slug = $page.url.pathname.replace('/', '');
@@ -61,7 +76,7 @@
   </header>
 
   <main class="prose prose-custom dark:prose-invert text-left mx-auto">
-    <slot />
+    {@render children?.()}
   </main>
 
   <footer class="w-full flex flex-col my-14">
@@ -78,6 +93,6 @@
 </article>
 
 <Link href="/#tulisan" extClass="gap-2">
-  <div class="i-rdi:arrow-left" />
+  <div class="i-rdi:arrow-left"></div>
   <span>Tulisan lainnya</span>
 </Link>
