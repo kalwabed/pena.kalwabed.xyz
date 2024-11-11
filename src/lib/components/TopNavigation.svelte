@@ -23,7 +23,7 @@
     return breadcrumb;
   };
 
-  $effect.pre(() => {
+  $effect(() => {
     if (!$navigating) breadcrumbParser();
   });
 </script>
