@@ -3,7 +3,11 @@
   import Seo from '$lib/components/SEO.svelte';
   import Tag from '$lib/components/Tag.svelte';
 
-  export let data: PageData;
+  interface Props {
+    data: PageData;
+  }
+
+  let { data }: Props = $props();
 
   const { tags } = data;
 </script>

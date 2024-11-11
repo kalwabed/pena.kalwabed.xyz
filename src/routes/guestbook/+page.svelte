@@ -5,14 +5,20 @@
 
   import GuestbookForm from './guestbook-form.svelte';
 
-  export let data: PageServerData;
+  interface Props {
+    data: PageServerData;
+  }
 
-  $: guestBook = data?.guests?.map(guest => {
-    return {
-      ...guest,
-      date: dateFormatter(guest.created_at, { hour: '2-digit', minute: '2-digit' }),
-    };
-  });
+  let { data }: Props = $props();
+
+  let guestBook = $derived(
+    data?.guests?.map(guest => {
+      return {
+        ...guest,
+        date: dateFormatter(guest.created_at, { hour: '2-digit', minute: '2-digit' }),
+      };
+    })
+  );
 </script>
 
 <Seo title="Buku Tamu" />

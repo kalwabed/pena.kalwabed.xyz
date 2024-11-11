@@ -4,7 +4,7 @@
 
   import Logo from './Logo.svelte';
 
-  let breadcrumbs: { url: string; label: string }[] = [];
+  let breadcrumbs: { url: string; label: string }[] = $state([]);
 
   const breadcrumbParser = () => {
     const pathnames = $page.url.pathname.replace(/\/$/, '').split('/');
@@ -23,7 +23,9 @@
     return breadcrumb;
   };
 
-  $: if (!$navigating) breadcrumbParser();
+  $effect(() => {
+    if (!$navigating) breadcrumbParser();
+  });
 </script>
 
 <nav class="max-w-screen-xl mx-auto w-full p-4 flex items-center gap-3">

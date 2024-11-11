@@ -6,8 +6,12 @@
   const { siteName, siteUrl, siteDescription, keywords } = app;
   const pathname = siteUrl.concat($page.url.pathname);
 
-  export let title: string;
-  export let desc: string = siteDescription;
+  interface Props {
+    title: string;
+    desc?: string;
+  }
+
+  let { title, desc = siteDescription }: Props = $props();
 
   // to overriding home page title, from Home to Pena Kalwabed
   const ogTitle = title === 'home' ? `${siteName} Kalwabed` : title;

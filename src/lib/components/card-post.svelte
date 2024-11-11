@@ -1,8 +1,13 @@
-<script>
+<script lang="ts">
   import { fly } from 'svelte/transition';
 
-  export let href;
-  export let extClass = '';
+  interface Props {
+    href: string;
+    extClass?: string;
+    children?: import('svelte').Snippet;
+  }
+
+  let { href, extClass = '', children }: Props = $props();
 
   const mainClass =
     'p1 outline-none w-fit transition-none hover:(no-underline bg-gray-100 dark:bg-plumFour) focus:(ring ring-blue-800)';
@@ -10,5 +15,5 @@
 </script>
 
 <a in:fly={{ x: -30 }} {href} class={composedClass}>
-  <slot />
+  {@render children?.()}
 </a>

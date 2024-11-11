@@ -1,8 +1,12 @@
-<script>
-  /* eslint svelte/no-at-html-tags: "off" */
-  export let src;
-  export let caption;
-  export let isFullWidth = false;
+<script lang="ts">
+  interface Props {
+    /* eslint svelte/no-at-html-tags: "off" */
+    src: string;
+    caption: string;
+    isFullWidth?: boolean;
+  }
+
+  let { src, caption, isFullWidth = false }: Props = $props();
 </script>
 
 <figure class="text-center not-prose space-y-2 lg:w-[800px] lg:-mx-24">

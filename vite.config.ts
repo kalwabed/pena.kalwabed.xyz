@@ -4,15 +4,15 @@ import Unocss from 'unocss/vite';
 
 /** @type {import('vite').UserConfig} */
 const viteConfig = {
-  plugins: [sveltekit(), Unocss()]
+  plugins: [sveltekit(), Unocss()],
 };
 
 export default defineConfig({
   test: {
     globals: true,
     coverage: {
-      provider: 'istanbul'
-    }
+      provider: 'istanbul',
+    },
   },
-  ...viteConfig
+  ...viteConfig,
 });

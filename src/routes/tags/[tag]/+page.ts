@@ -12,6 +12,6 @@ export const load = (async ({ fetch, params }) => {
 
   return {
     posts: postsByTag ?? [],
-    tag: deslugify(tag)
+    tag: deslugify(tag),
   };
 }) satisfies PageLoad;

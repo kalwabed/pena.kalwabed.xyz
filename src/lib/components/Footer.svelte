@@ -17,7 +17,7 @@
           target="_blank"
         >
           <span> kalwabed.com </span>
-          <div class="i-rdi:external-link text-xs" />
+          <div class="i-rdi:external-link text-xs"></div>
         </a>
       </div>
     </div>

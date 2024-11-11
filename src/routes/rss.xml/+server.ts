@@ -42,7 +42,7 @@ export const GET: RequestHandler = async () => {
   return new Response(rss, {
     headers: {
       'Cache-Control': `max-age=0, s-max-age=${600}`,
-      'Content-Type': 'application/xml'
-    }
+      'Content-Type': 'application/xml',
+    },
   });
 };

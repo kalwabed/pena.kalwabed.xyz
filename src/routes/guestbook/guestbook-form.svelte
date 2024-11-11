@@ -6,9 +6,10 @@
   import type { ActionResult } from '@sveltejs/kit';
   import notie from 'notie';
 
-  let isLoading = false;
+  let isLoading = $state(false);
 
-  async function handleOnSubmit() {
+  async function handleOnSubmit(event: SubmitEvent) {
+    event.preventDefault();
     const data = new FormData(this);
 
     isLoading = true;
@@ -45,7 +46,7 @@
   <h2 class="text-xl font-bold leading-relaxed">Tandai Kamu Disini</h2>
   <p class="text-gray-600 dark:text-mauveEleven">Bagikan sebuah pesan Anda kepada pengunjung yang lain.</p>
 
-  <form method="post" on:submit|preventDefault={handleOnSubmit}>
+  <form method="post" onsubmit={handleOnSubmit}>
     <div
       class="flex flex-col md:flex-row md:justify-between items-center w-full space-y-4 md:space-x-4 md:space-y-0 mt-4"
     >
@@ -62,7 +63,7 @@
 
     <div role="group" class="flex w-full flex-col space-y-2 mt-4">
       <label for="body">Pesan</label>
-      <textarea id="body" name="body" class={inputClass} />
+      <textarea id="body" name="body" class={inputClass}></textarea>
     </div>
 
     <div class="flex flex-col items-end md:(items-start flex-row justify-between) w-full mt-4 gap-4">

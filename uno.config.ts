@@ -101,7 +101,7 @@ export default defineConfig({
   rules: [
     [
       /^prose-custom$/,
-      (_, { theme }: { theme: any }) => ({
+      (_, { theme }) => ({
         '--font-heading': '"Crimson Pro", sans-serif',
         '--font-sans': '"Open Sans", sans-serif',
         '--un-prose-headings': theme.colors.gray[700],

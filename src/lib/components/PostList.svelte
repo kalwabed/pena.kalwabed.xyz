@@ -3,7 +3,11 @@
   import CardPost from '$lib/components/card-post.svelte';
   import type { Post } from '$lib/utils/fetch-data';
 
-  export let posts: Post[] = [];
+  interface Props {
+    posts?: Post[];
+  }
+
+  let { posts = [] }: Props = $props();
 </script>
 
 <section class="mt-6 grid grid-rows-1 gap-6">
