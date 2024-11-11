@@ -2,7 +2,7 @@
   import { fly } from 'svelte/transition';
 
   interface Props {
-    href: any;
+    href: string;
     extClass?: string;
     children?: import('svelte').Snippet;
   }

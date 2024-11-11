@@ -2,7 +2,7 @@
   import { slugify } from '$lib/utils/slug';
 
   interface Props {
-    tag: any;
+    tag: string;
     className?: string;
   }
 
