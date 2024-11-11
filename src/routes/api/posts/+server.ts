@@ -6,7 +6,6 @@ export const GET = (async ({ url }) => {
   const { searchParams: q } = url;
   const limit = parseInt(q.get('limit'));
   try {
-
     let items = await getResourcesAsync();
 
     if (limit) items = items.slice(0, limit);
@@ -17,6 +16,6 @@ export const GET = (async ({ url }) => {
 
     error(404, 'Not found');
   } catch (error) {
-    console.error(error)
+    console.error(error);
   }
 }) satisfies RequestHandler;

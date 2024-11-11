@@ -5,10 +5,10 @@ import rehypeAutolink from 'rehype-autolink-headings';
 export default defineMDSveXConfig({
   extensions: ['.svx'],
   layout: {
-    _: '/src/lib/components/layouts/post.svelte'
+    _: '/src/lib/components/layouts/post.svelte',
   },
   smartypants: {
-    dashes: 'oldschool'
+    dashes: 'oldschool',
   },
-  rehypePlugins: [rehypeSlug, [rehypeAutolink, { behavior: 'wrap' }]]
+  rehypePlugins: [rehypeSlug, [rehypeAutolink, { behavior: 'wrap' }]],
 });

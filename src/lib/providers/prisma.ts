@@ -2,6 +2,7 @@ import Prisma, * as PrismaScope from '@prisma/client';
 import type { PrismaClient } from '@prisma/client';
 
 export let prisma: PrismaClient;
+let global: { prisma: PrismaClient };
 
 const prismaClient = Prisma?.PrismaClient || PrismaScope?.PrismaClient;
 

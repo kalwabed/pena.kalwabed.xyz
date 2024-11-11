@@ -61,6 +61,7 @@ Message: ||${escapedText(body)}||
 
       return { msg: 'Yayy' };
     } catch (err) {
+      console.error(err);
       error(500, 'Internal Server Error');
     }
   },

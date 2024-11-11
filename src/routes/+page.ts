@@ -7,10 +7,9 @@ export const load = (async ({ fetch }) => {
     const posts = (await getPosts.json()) as Post[];
 
     return {
-      posts
+      posts,
     };
-  }
-  catch (error) {
-    console.error(error)
+  } catch (error) {
+    console.error(error);
   }
 }) satisfies PageLoad;

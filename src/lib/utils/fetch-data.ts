@@ -12,7 +12,7 @@ export interface Post {
 
 export const POSTS = import.meta.glob<string>('/src/routes/**/+page.svx', {
   query: '?raw',
-  import: 'default'
+  import: 'default',
 });
 
 export function slugTransformer(folderName: string): string {
@@ -28,7 +28,7 @@ export function generateFileMetadata(files: Record<string, () => Promise<string>
 
     return {
       ...(data as Post),
-      slug
+      slug,
     };
   });
 }

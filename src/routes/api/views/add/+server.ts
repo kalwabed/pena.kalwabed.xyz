@@ -13,17 +13,17 @@ export const POST = (async ({ request }) => {
   try {
     const postViewsCount = await prisma.views.upsert({
       where: {
-        slug
+        slug,
       },
       create: {
         slug,
-        count: 1
+        count: 1,
       },
       update: {
         count: {
-          increment: 1
-        }
-      }
+          increment: 1,
+        },
+      },
     });
 
     return json(postViewsCount, { status: 201 });

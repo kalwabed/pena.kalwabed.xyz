@@ -17,6 +17,6 @@ export const load = (async ({ fetch }) => {
 
   return {
     posts,
-    tags: removeDuplicateTags(postsTag)
+    tags: removeDuplicateTags(postsTag),
   };
 }) satisfies PageLoad;
