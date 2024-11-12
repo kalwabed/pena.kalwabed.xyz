@@ -1,0 +1,189 @@
+repo_name: kalwabed/pena.kalwabed.xyz
+report_id: 760dbda8615b3a25a68f71deb3753828
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-05T08:54:27+00:00'
+requested_by: kalwabed
+provider: github
+branch: main
+detected_tools_count: 14
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/kalwabed/pena.kalwabed.xyz
+  detection_source: Repo Metadata
+- name: TypeScript
+  description: A superset of JavaScript that compiles to clean JavaScript output
+  website_url: http://www.typescriptlang.org
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/kalwabed/pena.kalwabed.xyz
+  detection_source: Repo Metadata
+- name: Svelte
+  description: A UI framework that compiles into tiny standalone JavaScript modules
+  website_url: https://svelte.technology/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/6113/7exmJEg4_400x400.png
+  detection_source_url: https://github.com/kalwabed/pena.kalwabed.xyz/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: kalwabed
+  last_updated_on: 2023-10-22 08:46:22.000000000 Z
+- name: Prisma
+  description: Modern Database Access for TypeScript &amp; Node.js
+  website_url: https://www.prisma.io/
+  version: 5.4.2
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Object Relational Mapper (ORM)
+  image_url: https://img.stackshare.io/service/8680/Logo_Symbol_White.jpg
+  detection_source_url: https://github.com/kalwabed/pena.kalwabed.xyz/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: kalwabed
+  last_updated_on: 2023-10-22 08:46:22.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/kalwabed/pena.kalwabed.xyz/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: kalwabed
+  last_updated_on: 2022-04-10 05:26:34.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/kalwabed/pena.kalwabed.xyz
+  detection_source: Repo Metadata
+- name: Prettier
+  description: 'Prettier is an opinionated code formatter. '
+  website_url: https://prettier.io/
+  version: 3.0.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
+  detection_source_url: https://github.com/kalwabed/pena.kalwabed.xyz/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Kalwabed Rizki
+  last_updated_on: 2023-09-16 15:33:05.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/kalwabed/pena.kalwabed.xyz/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: kalwabed
+  last_updated_on: 2022-04-10 05:26:34.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/kalwabed/pena.kalwabed.xyz
+  detection_source: Repo Metadata
+- name: "@typescript-eslint/eslint-plugin"
+  description: TypeScript plugin for ESLint
+  package_url: https://www.npmjs.com/@typescript-eslint/eslint-plugin
+  version: 6.8.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15982/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/kalwabed/pena.kalwabed.xyz/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: kalwabed
+  last_updated_on: 2023-10-22 08:46:22.000000000 Z
+- name: "@typescript-eslint/parser"
+  description: An ESLint custom parser which leverages TypeScript ESTree
+  package_url: https://www.npmjs.com/@typescript-eslint/parser
+  version: 6.8.0
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15980/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
+  detection_source_url: https://github.com/kalwabed/pena.kalwabed.xyz/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: kalwabed
+  last_updated_on: 2023-10-22 08:46:22.000000000 Z
+- name: eslint-config-prettier
+  description: Turns off all rules that are unnecessary or might conflict with Prettier
+  package_url: https://www.npmjs.com/eslint-config-prettier
+  version: 9.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
+  detection_source_url: https://github.com/kalwabed/pena.kalwabed.xyz/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: kalwabed
+  last_updated_on: 2023-10-22 08:46:22.000000000 Z
+- name: gray-matter
+  description: Parse front-matter from a string or file
+  package_url: https://www.npmjs.com/gray-matter
+  version: 4.0.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17773/default_2f87d5add351cc79d3471e48bc0dd6f92c1288ad.png
+  detection_source_url: https://github.com/kalwabed/pena.kalwabed.xyz/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: kalwabed
+  last_updated_on: 2022-04-11 16:19:20.000000000 Z
+- name: tslib
+  description: Runtime library for TypeScript helper functions
+  package_url: https://www.npmjs.com/tslib
+  version: 2.6.2
+  license: 0BSD
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15853/default_97d4687bd07ff1bb963fd566c84e7cbf7c73bbee.png
+  detection_source_url: https://github.com/kalwabed/pena.kalwabed.xyz/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Kalwabed Rizki
+  last_updated_on: 2023-09-16 15:33:05.000000000 Z
