@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { page, navigating } from '$app/stores';
+  import { page, navigating } from '$app/state';
   import { fly } from 'svelte/transition';
 
   import Logo from './Logo.svelte';
@@ -7,7 +7,7 @@
   let breadcrumbs: { url: string; label: string }[] = $state([]);
 
   const breadcrumbParser = () => {
-    const pathnames = $page.url.pathname.replace(/\/$/, '').split('/');
+    const pathnames = page.url.pathname.replace(/\/$/, '').split('/');
 
     const breadcrumb = pathnames.map((pathname, index) => {
       const url = pathnames.slice(0, index + 1).join('/');
@@ -24,7 +24,9 @@
   };
 
   $effect(() => {
-    if (!$navigating) breadcrumbParser();
+    if (navigating) {
+      breadcrumbParser();
+    }
   });
 </script>
 
@@ -39,7 +41,7 @@
       >
         {breadcrumb.label}
       </a>
-      {#if breadcrumb.url !== $page.url.pathname}
+      {#if breadcrumb.url !== page.url.pathname}
         <span transition:fly={{ x: -10, delay: 400 }} class="text-gray-500">/</span>
       {/if}
     {/each}

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
 
   import Divider from '../Divider.svelte';
   import Seo from '../SEO.svelte';
@@ -32,9 +32,9 @@
     children,
   }: Props = $props();
 
-  onMount(async () => {
-    const slug = $page.url.pathname.replace('/', '');
-    await fetch('/api/views/add', {
+  onMount(() => {
+    const slug = page.url.pathname.replace('/', '');
+    fetch('/api/views/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
