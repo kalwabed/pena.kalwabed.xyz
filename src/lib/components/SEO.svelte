@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
 
   import app from '$lib/configs/app';
 
   const { siteName, siteUrl, siteDescription, keywords } = app;
-  const pathname = siteUrl.concat($page.url.pathname);
+  const pathname = siteUrl.concat(page.url.pathname);
 
   interface Props {
     title: string;
