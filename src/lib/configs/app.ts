@@ -1,9 +1,9 @@
 export default {
   siteName: 'Pena',
-  siteUrl: 'https://pena.kalwabed.xyz',
+  siteUrl: 'https://pena.kalwabed.com',
   siteDescription:
     'Tempat Kalwabed Rizki menuangkan tulisan-tulisan yang berisi tentang pengalaman, ilmu, dan inspirasi.',
-  contact: 'https://twitter.com/kalwabedrzk',
-  email: 'kalwabed@gmail.com',
+  contact: 'https://x.com/kalwabedrzk',
+  email: 'kalwabedrzk@proton.me',
   keywords: ['kisah', 'inspirasi', 'artikel'],
 };

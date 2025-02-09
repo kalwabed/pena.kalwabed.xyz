@@ -1,10 +1,10 @@
 # Pena
 
-Website coordinates Kalwabed's abstract writings
+Website coordinates Kalwabed's abstract writings in Indonesia.
 
 ## Demo
 
-[https://pena.kalwabed.xyz](https://pena.kalwabed.xyz)
+[https://pena.kalwabed.com](https://pena.kalwabed.com)
 
 ## Tech Stack
 
@@ -20,26 +20,26 @@ To get started running the project locally, please follow the steps below.
 First, clone the repository.
 
 ```bash
-git clone https://github.com/kalwabed/pena.kalwabed.xyz.git
+git clone https://github.com/kalwabed/pena.kalwabed.com.git
 ```
 
-Then, install dependencies and fetch data to your local machine. **Note that we use Bun.**
+Then, install dependencies and fetch data to your local machine. **Note that we use PNPM.**
 
 ```bash
-cd pena.kalwabed.xyz
-bun install
+cd pena.kalwabed.com
+pnpm install
 ```
 
 Generate Prisma Client.
 
 ```bash
-bun x prisma generate
+pnpm dlx prisma generate
 ```
 
 Finally, run the development server.
 
 ```bash
-bun dev
+pnpm dev
 ```
 
 Open [http://127.0.0.1:5173](http://127.0.0.1:5173) with your browser to see the result.
@@ -48,15 +48,11 @@ Open [http://127.0.0.1:5173](http://127.0.0.1:5173) with your browser to see the
 
 To run this project, you will need to add the following environment variables to your `.env` file.
 
-`DATABASE_URL`: Planetscale database URL.
+`DATABASE_URL`: Neon/PostgreSQL database URL.
 
 `BOT_TOKEN`: (optional) Telegram bot token.
 
 `BOT_GROUP_ID`: (optional) Telegram bot group id.
-
-## Deployment
-
-You can easily deploy to Vercel, or you can learn more from https://kit.svelte.dev/docs/adapters.
 
 ## Learn More
 
