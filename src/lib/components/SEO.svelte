@@ -17,8 +17,8 @@
   const ogTitle = title === 'home' ? `${siteName} Kalwabed` : title;
   const combinedTitle = title === 'home' ? ogTitle : `${title} | ${siteName}`;
 
-  const ogServiceUrl = 'https://www.kalwabed.xyz/api/og';
-  const ogImage = `${ogServiceUrl}?domain=pena&title=${encodeURI(ogTitle)}&desc=${encodeURI(desc)}`;
+  // const ogServiceUrl = 'https://www.kalwabed.com/api/og';
+  // const ogImage = `${ogServiceUrl}?domain=pena&title=${encodeURI(ogTitle)}&desc=${encodeURI(desc)}`;
 </script>
 
 <svelte:head>
@@ -32,12 +32,12 @@
   <meta property="og:url" content={pathname} />
   <meta property="og:title" content={ogTitle} />
   <meta property="og:description" content={desc} />
-  <meta property="og:image" content={ogImage} />
+  <!-- <meta property="og:image" content={ogImage} /> -->
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content={pathname} />
   <meta property="twitter:title" content={ogTitle} />
   <meta property="twitter:description" content={desc} />
-  <meta property="twitter:image" content={ogImage} />
+  <!-- <meta property="twitter:image" content={ogImage} /> -->
 </svelte:head>

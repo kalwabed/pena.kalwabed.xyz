@@ -1,6 +1,6 @@
 {
-  "name": "pena.kalwabed.xyz",
-  "version": "1.0.0",
+  "name": "pena.kalwabed.com",
+  "version": "0.2.0",
   "license": "MIT",
   "scripts": {
     "dev": "vite dev",
