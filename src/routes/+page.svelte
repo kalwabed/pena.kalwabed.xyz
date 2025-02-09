@@ -20,7 +20,7 @@
 <section class="mt-12 text-xl md:text-2xl">
   <h1 class="inline-flex font-semibold">Hai! Saya Kalwabed.</h1>
   <br />
-  <small class="dark:text-mauveEleven text-gray-600"> Suka ngopi, dan terkadang menulis hal-hal yang random. </small>
+  <small class="dark:text-mauveEleven text-gray-600"> Suka membaca dan terkadang menulis hal-hal yang random. </small>
 </section>
 
 <a
